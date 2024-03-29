@@ -1,0 +1,564 @@
+material_0,initial CN(%),initial moisture content(%),initial pH,material_1,Excipients,initial TN(%),initial TC(%),Additive Species,TN loss (%)
+Manure,15.0,65.0,7.60664,Swine manure,,2.66,39.9,,35.0
+Manure,,,7.41084,Swine manure,,,,Chemical,12.0
+Manure,,,6.61538,Swine manure,,,,Chemical,5.0
+Manure,,,6.40734,Swine manure,,,,Chemical,1.0
+Manure,36.0,,7.52,Cow manure,,1.31,47.16,,16.0
+Manure,,,7.58,Cow manure,,,,Physical,6.1
+Sewage sludge,19.0,,7.7,,,2.85,54.15,,25.1
+Sewage sludge,,,7.4,,,,,Physical,11.4
+Manure,13.2113821138211,65.0,6.49842,Swine manure,,2.46,32.5,,58.0
+Manure,10.9563636363636,,7.2,Swine manure,,2.75,30.13,Physical,50.3
+Manure,11.1533546325879,,6.1,Swine manure,,3.13,34.91,Physical,44.1
+Manure,9.83606557377049,,6.2,Swine manure,,3.05,30.0,Physical,34.1
+Manure,,65.0,7.13744,Swine manure,,2.46,32.7,,41.0
+Manure,,,,Swine manure,,,,Biological,35.0
+Manure,,,,Swine manure,,,,Biological,56.0
+Manure,,,,Swine manure,,,,Biological,48.0
+Manure,10.3932584269663,,8.70526,Poultry manure,,3.56,37.0,,39.5
+Manure,10.7335243553009,,8.66,Poultry manure,,3.49,37.46,Physical,37.3
+Manure,15.5,,8.55,Poultry manure,,2.96,45.88,Physical,26.7
+Manure,15.0417785398946,65.0,7.46561,Poultry manure,,2.65926,40.0,,55.3
+Manure,13.041958041958,62.5,7.34,Poultry manure,,2.86,37.3,Physical,48.9
+Manure,14.4827586206897,60.5,7.6,Poultry manure,,2.61,37.8,Physical,43.0
+,19.8,73.0,7.3,,,1.8,35.64,,22.0
+,27.5,69.7,7.6,,,1.4,38.5,Physical,3.0
+Manure,12.6461242788792,60.0,7.29412,Poultry manure,,2.98667,37.7698,,32.3
+Manure,13.551724137931,58.3,7.3,Poultry manure,,2.9,39.3,Physical,15.8
+Manure,11.9375,59.0,7.36,Poultry manure,,3.2,38.2,Physical,21.9
+Manure,31.0666666666667,65.0,7.1,Cow manure,,1.5,46.6,,2.01
+Manure,,,,Cow manure,,,,Physical,6.5
+Manure,,,,Cow manure,,,,Physical,1.46
+Manure,,,,Cow manure,,,,Physical,4.33
+Food waste,22.122905027933,60.0,5.01,,,1.79,39.6,,47.4
+Food waste,,,4.43,,,,,Physical,30.7
+Food waste,,,4.28,,,,,Physical,37.5
+Lignin,32.0650406504065,63.0,7.5,,,1.23,39.44,,38.0
+Lignin,,,5.9,,,,,Chemical,13.0
+Lignin,52.8865979381443,70.0,6.7,,,0.97,51.3,,49.18
+Lignin,,,8.1,,,,,Physical,48.71
+Lignin,,,8.6,,,,,Physical,44.74
+Lignin,,,8.6,,,,,Physical,44.62
+Manure,,67.3,7.94,Swine manure,,2.7,,,30.2
+Manure,,,7.62,Swine manure,,,,Chemical,14.8
+Manure,24.8,52.2,8.56364,Swine manure,,2.23,41.3,,43.9
+Manure,,,8.08636,Swine manure,,,,Chemical,22.3
+Manure,17.8341013824885,,7.84967,Swine manure,,2.17,38.7,,40.4
+Manure,,,7.85621,Swine manure,,,,Physical,32.7
+Sewage sludge,11.0,69.0,,,,3.7,40.7,,17.7
+Sewage sludge,16.7,65.0,,,,2.93413173652695,49.0,Physical,12.8
+Sewage sludge,14.0,67.0,,,,3.24285714285714,45.4,Physical,14.0
+Sewage sludge,,68.0,,,,,,,37.1228070175439
+Sewage sludge,,69.0,,,,,,Physical,28.5375494071146
+Sewage sludge,,58.0,,,,,,Physical,16.3057324840764
+Sewage sludge,,60.5,,,,,,Physical,85.5402298850575
+Sewage sludge,,60.0,,,,,,Physical,32.0801526717557
+Sewage sludge,,49.0,,,,,,Physical,35.030303030303
+Manure,20.8,,8.22764,Swine manure,,,,,31.51
+Manure,,,8.11382,Swine manure,,,,Chemical,13.15
+Manure,,,6.7,Swine manure,,,,Chemical,11.5
+Manure,,,7.73984,Swine manure,,,,Chemical,10.69
+Manure,,,6.82927,Swine manure,,,,Chemical,7.59
+Manure,20.3000023678166,70.4,7.25,Swine manure,,2.11165,42.8665,,33.01
+Manure,,,7.82843,Swine manure,,,,Chemical,31.48
+Manure,,,7.86275,Swine manure,,,,Chemical,28.63
+Manure,,66.4,,Swine manure,,0.994521,,,36.8
+Manure,,64.9,,Swine manure,,,,Physical,26.4
+Manure,,63.7,,Swine manure,,,,Physical,16.5
+Manure,,62.4,,Swine manure,,,,Physical,12.7
+Manure,,64.6,7.4,Swine manure,,2.34,,,27.8
+Manure,,,,Swine manure,,,,Biological,13.3
+Manure,,,7.94846,Swine manure,,2.44843,,Physical,28.73
+Manure,,,7.51769,Swine manure,,2.50053,,Physical,14.39
+Manure,,65.5,7.8,Poultry manure,,,,,72.0
+Manure,,,,Poultry manure,,,,Physical,53.0
+Manure,,,,Poultry manure,,,,Physical,42.0
+Manure,,,,Poultry manure,,,,Physical,26.0
+Manure,,,,Poultry manure,,,,Physical,16.0
+Manure,17.9,63.0,8.3,Cow manure,,1.4,25.06,,22.3992857142857
+Manure,17.8,65.4,7.6,Cow manure,,1.33,23.674,Physical,20.7
+Manure,18.9,64.6,7.6,Cow manure,,1.32,24.948,Physical,17.0954545454545
+Manure,18.5,65.4,7.4,Cow manure,,1.29,23.865,Physical,24.3883720930233
+Manure,20.1,64.0,8.4,Cow manure,,1.29,25.929,Physical,12.7085271317829
+Manure,17.1,61.0,8.6,Cow manure,,1.12,19.152,Physical,15.0357142857143
+Manure,18.9,63.7,8.7,Cow manure,,1.23,23.247,Physical,21.3447154471545
+Sewage sludge,16.6428571428571,61.7,5.7,,,2.8,46.6,,24.0
+Sewage sludge,,,4.8,,,,,Chemical,7.9
+Manure,,63.74,6.83,Swine manure,,2.52,,,22.8
+Manure,,,,Swine manure,,,,Biological,17.6
+Manure,26.0,70.0,8.8,Cow manure,,1.59,41.34,,24.6
+Manure,,,8.8,Cow manure,,1.44,,Physical,15.1
+Manure,,,8.6,Cow manure,,1.55,,Physical,15.5
+Manure,30.0,,8.7,Cow manure,,1.36,40.8,Physical,12.1
+Manure,25.0,,8.6,Cow manure,,1.59,39.75,,21.0
+Manure,25.0,,8.6,Cow manure,,1.57,39.25,Chemical,15.5
+Manure,25.0,,8.6,Cow manure,,1.55,38.75,Chemical,16.7
+Manure,25.0,,8.9,Cow manure,,1.55,38.75,Chemical,15.5
+Manure,25.0,,9.1,Cow manure,,1.62,40.5,,20.2
+Manure,25.0,,9.0,Cow manure,,1.35,33.75,Chemical,17.1
+Manure,25.0,,8.7,Cow manure,,1.31,32.75,Chemical,14.7
+Manure,25.0,,8.7,Cow manure,,1.25,31.25,Chemical,16.0
+Manure,18.54,,,Swine manure,,2.1,38.934,,40.1
+Manure,,,,Swine manure,,,,Physical,36.4
+Manure,,,,Swine manure,,,,Physical,34.3
+Manure,,,,Swine manure,,,,Physical,28.1
+Manure,,,,Swine manure,,,,Physical,21.7
+Manure,,,,Swine manure,,,,Physical,11.5
+Sewage sludge,32.8915662650602,71.68,,,,0.83,27.3,,40.7
+Sewage sludge,33.8611449451888,,,,,0.821,27.8,Physical,38.3
+Sewage sludge,35.5638166047088,,,,,0.807,28.7,Physical,32.2
+Sewage sludge,37.1536523929471,,,,,0.794,29.5,Physical,26.7
+Sewage sludge,38.618925831202,,,,,0.782,30.2,Physical,20.4
+Sewage sludge,42.4619640387275,,,,,0.723,30.7,Physical,14.6
+Manure,6.1,71.0,6.8,Poultry manure,,5.77049180327869,35.2,,58.0
+Manure,12.2,65.0,6.95,Poultry manure,,3.99180327868852,48.7,Physical,48.0
+Manure,,,,Poultry manure,,,,,48.0
+Manure,,,,Poultry manure,,,,Physical,42.0
+Sewage sludge,26.6666666666667,,8.0,,,1.8,48.0,,23.4
+Sewage sludge,,,,,,,,Physical,0.9
+Sewage sludge,,,,,,,,Physical,0.414
+Sewage sludge,,,,,,,,Physical,0.55
+Sewage sludge,,,,,,,,Physical,0.4
+Sewage sludge,,58.2,7.7,,,,,,44.7
+Sewage sludge,,,5.52688,,,,,Chemical,24.8
+Sewage sludge,,,6.33333,,,,,Chemical,28.1
+Sewage sludge,20.0,70.9,7.04,,,2.1,42.0,,24.4
+Sewage sludge,21.0,71.7,7.28,,,2.0,42.0,Physical,9.2
+Sewage sludge,25.0,68.3,7.25,,,1.7,42.5,Physical,8.5
+Food waste,26.4,70.0,6.3,,,1.73,45.6,,49.1
+Food waste,,,,,,1.73,,Biological,40.5
+Food waste,,,6.2,,,1.61,,Chemical,18.9
+Lignin,27.7,66.5,7.85,,,1.45,40.1,,15.2
+Lignin,,,,,,1.45,,Physical,10.5
+Lignin,,,,,,1.45,,Physical,9.0
+Lignin,,,,,,1.45,,Physical,4.2
+Manure,,65.4,7.1,Swine manure,,1.4,,,42.8
+Manure,,,,Swine manure,,,,Biological,41.4
+Manure,,64.9,6.9,Swine manure,,3.4,,,46.5483787203244
+Manure,,,,Swine manure,,,,Biological,34.8142452731276
+Manure,,65.0,7.9,Swine manure,,2.8,,,36.6851
+Manure,,,,Swine manure,,,,Physical,26.2983
+Manure,,,,Swine manure,,,,Physical,16.5746
+Manure,,,,Swine manure,,,,Physical,12.5967
+Manure,15.4166666666667,65.0,6.82846,Swine manure,,2.4,37.0,,53.1
+Manure,,,6.00631,Swine manure,,,,Physical,36.2
+Manure,,,6.2,Swine manure,,,,Physical,46.5
+Manure,,,6.1,Swine manure,,,,Physical,41.5
+Lignin,26.7142857142857,65.0,,,,1.4,37.4,,19.53
+Lignin,,,,,,1.4,,Physical,22.53
+Lignin,,,,,,1.4,,Physical,20.85
+Lignin,,,,,,1.4,,Physical,19.4
+Lignin,,,,,,1.4,,Physical,16.26
+Lignin,,,,,,1.4,,Physical,14.85
+Manure,,,,Swine manure,,,,,19.5
+Manure,,,,Swine manure,,,,Biological,18.5
+Manure,,,,Swine manure,,,,Biological,17.6
+Manure,,,,Swine manure,,,,Biological,16.3
+Manure,,,,Swine manure,,,,Biological,18.3
+Manure,,,,Swine manure,,,,Biological,14.9
+Manure,,,,Swine manure,,,,Biological,15.5
+Manure,,,,Swine manure,,,,Biological,15.3
+Sewage sludge,25.0,55.0,7.4,,,2.32,45.81,,6.03
+Sewage sludge,,,7.8,,,,,Physical,4.15
+Sewage sludge,,,7.8,,,,,Physical,2.7
+Sewage sludge,,,8.0,,,,,Physical,3.16
+Sewage sludge,,,8.0,,,,,Physical,2.44
+Sewage sludge,,,8.1,,,,,Physical,2.21
+Sewage sludge,,,8.2,,,,,Physical,2.08
+,,80.7,,,,0.82,,,24.0506329113924
+,,,,,,0.9,,Physical,17.2413793103448
+,,,,,,0.95,,Chemical,11.6393442622951
+,,,,,,0.83,,Mixture,18.1
+Manure,,50.0,8.3,Cow manure,,1.52,,,62.7906976744186
+Manure,,,7.2,Cow manure,,,,Physical,48.8372093023256
+Manure,,,,Cow manure,,,,Physical,51.1627906976744
+Manure,,,8.2,Cow manure,,1.0,,,58.9285714285714
+Manure,,,7.0,Cow manure,,,,Physical,50.0
+Manure,,,,Cow manure,,,,Physical,46.4285714285714
+Manure,,,7.7,Cow manure,,0.85,,,43.75
+Manure,,,6.7,Cow manure,,,,Physical,26.530612244898
+Manure,,,,Cow manure,,,,Physical,29.1666666666667
+Manure,18.4,69.2,8.25,Swine manure,,2.0,37.48,,37.5
+Manure,,,8.03437,Swine manure,,,,Chemical,18.8
+Manure,,,7.9795,Swine manure,,,,Chemical,20.8
+Manure,,,8.11649,Swine manure,,,,Chemical,17.6
+Manure,,,6.85618,Swine manure,,,,Chemical,9.8
+Manure,12.8440366972477,65.03,7.88,Poultry manure,,2.18,28.0,,56.79
+Manure,,63.17,7.88,Poultry manure,,1.9,,Physical,40.09374
+Manure,,62.39,7.7,Poultry manure,,1.8,,Physical,46.62459
+Manure,,62.6,7.88,Poultry manure,,1.8,,Physical,42.36534
+Manure,,61.97,7.88,Poultry manure,,2.05,,Physical,52.36038
+Manure,,63.43,7.88,Poultry manure,,1.8,,Physical,48.89619
+Manure,,63.7,6.5,Swine manure,,2.6,40.0,,30.73
+Manure,,,6.5,Swine manure,,,,Physical,20.73
+Manure,14.4202898550725,65.0,,Swine manure,,2.76,39.8,,34.15
+Manure,15.1481481481481,,,Swine manure,,2.7,40.9,Physical,29.07
+Manure,22.5,89.8,7.84,Cow manure,,1.3,29.25,,15.0
+Manure,,,7.68,Cow manure,,,,Physical,10.8
+Manure,19.91,62.06,7.5,Swine manure,,1.96,38.8245,,20.29
+Manure,18.23,58.69,7.75,Swine manure,,1.29,35.68,Physical,13.03
+Manure,18.9754901960784,67.6,7.8,Swine manure,,2.04,38.71,,32.01
+Manure,,,6.7,Swine manure,,,,Physical,20.32
+Manure,,,8.0,Swine manure,,,,Physical,33.29
+Manure,,,7.2,Swine manure,,,,Chemical,19.58
+Manure,19.25,60.0,7.1,Swine manure,,2.0,38.5,,31.5
+Manure,,,6.6,Swine manure,,,,Chemical,15.82
+Manure,,,6.7,Swine manure,,,,Chemical,27.47
+Manure,,,8.35,Swine manure,,,,Chemical,32.42
+Manure,17.9230769230769,50.0,5.7,Poultry manure,,2.6,46.6,,23.4
+Manure,,,5.6,Poultry manure,,,,Biological,13.05
+Manure,,,,Poultry manure,,,,Biological,16.78
+Sewage sludge,,,7.78,,,,,,37.08
+Sewage sludge,,,,,,,,Physical,28.22
+Manure,18.3725490196078,69.2,8.2,Swine manure,,2.04,37.48,,37.5
+Manure,,,8.0,Swine manure,,,,Chemical,18.8
+Manure,,,7.25,Swine manure,,,,Physical,24.8
+Manure,,,6.75,Swine manure,,,,Chemical,15.5
+Manure,16.45,65.0,,Swine manure,,2.356,38.7562,,53.1
+Manure,,,,Swine manure,,,,Physical,36.2
+Manure,,,,Swine manure,,,,Physical,46.5
+Manure,30.0,60.0,6.53,Poultry manure,,,,,41.19
+Manure,,,6.85,Poultry manure,,,,Physical,38.64
+Manure,,,6.46,Poultry manure,,,,Physical,31.45
+Manure,,,6.52,Poultry manure,,,,Physical,25.78
+Manure,,,6.5,Poultry manure,,,,Physical,18.48
+Manure,,,6.55,Poultry manure,,,,Physical,12.39
+Manure,25.0,55.0,7.75,Swine manure,,2.084,52.1,,3.28
+Manure,,,8.2,Swine manure,,,,Physical,1.87
+Manure,,,,Swine manure,,,,Physical,1.06
+Sewage sludge,33.5,67.6,6.1,,,1.46,42.91,,20.9
+Sewage sludge,33.5245901639344,67.3,7.65,,,1.22,40.9,Chemical,14.7
+Sewage sludge,33.1129032258065,66.8,6.7,,,1.24,41.06,Chemical,17.3
+Sewage sludge,31.530303030303,66.0,6.43,,,1.32,41.62,Chemical,5.7
+Food waste,20.22,,5.34,,,,,,27.3
+Food waste,21.53,,5.47,,,,,Chemical,24.6
+Food waste,25.18,,5.14,,,,,Chemical,11.2
+Food waste,24.82,,5.22,,,,,,17.2
+Sewage sludge,20.0,60.0,8.0,,Corn straw,1.79,30.63,,17.0
+Sewage sludge,20.0,60.0,8.0,,Corn straw,1.79,30.63,Physical,10.5
+Sewage sludge,20.0,60.0,8.0,,Corn straw,1.79,30.63,Chemical,13.3
+Sewage sludge,20.0,60.0,8.0,,Corn straw,1.79,30.63,Mixture,9.71
+Manure,26.7620561738209,60.0,7.8,Poultry manure,Cereal chaff,1.2,32.1144674085851,,18.8
+Manure,2.90159278923324,60.0,7.8,Poultry manure,Cereal chaff,10.4,30.1765650080257,Physical,17.5
+Manure,2.53674592815391,60.0,7.8,Poultry manure,Cereal chaff,13.4,33.9923954372624,Physical,15.8
+Manure,25.0,66.0,,Swine manure,Straw,,6.0,,31.27
+Manure,25.0,66.0,,Swine manure,Straw,,6.35,Physical,7.06
+Manure,25.0,66.0,,Swine manure,Straw,,5.8,Chemical,18.58
+Manure,25.0,66.0,,Swine manure,Straw,,5.85,Mixture,17.78
+Manure,,,7.6,Cow manure,Corn straw,,,,17.42
+Manure,,,7.6,Cow manure,Corn straw,,,Physical,11.14
+Manure,,,7.6,Cow manure,Corn straw,,,Physical,9.5
+Manure,20.0,,7.49,Poultry manure,Corn straw,,,,26.06
+Manure,25.0,,7.45,Poultry manure,Corn straw,,,,21.99
+Manure,30.0,,7.42,Poultry manure,Corn straw,,,,13.04
+Manure,,,,Swine manure,Wheat straw,,,,23.89
+Manure,,,,Swine manure,Wheat straw,,,Biological,30.01
+Manure,,,,Swine manure,Wheat straw,,,Physical,16.59
+Manure,,,,Swine manure,Wheat straw,,,Mixture,22.73
+Manure,20.0,60.0,7.96,Poultry manure,Plant straw,1.99,39.8,,37.37
+Manure,20.0,60.0,7.9,Poultry manure,Plant straw,2.02,40.4,Physical,28.54
+Manure,20.0,60.0,7.54,Poultry manure,Plant straw,1.93,38.6,Chemical,25.82
+Manure,20.0,60.0,7.45,Poultry manure,Plant straw,1.96,39.2,Mixture,16.99
+Manure,25.0,60.0,7.6,Poultry manure,Plant straw,7.87,196.75,,29.9
+Manure,25.0,60.0,7.69,Poultry manure,Plant straw,1.78,44.5,Physical,18.35
+Manure,25.0,60.0,7.16,Poultry manure,Plant straw,1.82,45.5,Physical,16.31
+Manure,25.0,60.0,7.27,Poultry manure,Plant straw,1.76,44.0,Physical,3.4
+Manure,30.0,60.0,7.53,Poultry manure,Plant straw,1.67,50.1,,23.1
+Manure,30.0,60.0,7.48,Poultry manure,Plant straw,1.63,48.9,Physical,16.99
+Manure,30.0,60.0,7.13,Poultry manure,Plant straw,1.7,51.0,Physical,8.15
+Manure,30.0,60.0,7.1,Poultry manure,Plant straw,1.52,45.6,Physical,5.43
+Manure,20.0,60.0,7.96,Poultry manure,Plant straw,1.99,39.8,,37.37
+Manure,25.0,60.0,7.6,Poultry manure,Plant straw,7.87,196.75,,29.9
+Manure,30.0,60.0,7.53,Poultry manure,Plant straw,1.67,50.1,,23.1
+Manure,20.0,60.0,7.9,Poultry manure,Plant straw,2.02,40.4,Physical,28.54
+Manure,25.0,60.0,7.69,Poultry manure,Plant straw,1.78,44.5,Physical,18.35
+Manure,30.0,60.0,7.48,Poultry manure,Plant straw,1.63,48.9,Physical,16.99
+Manure,20.0,60.0,7.54,Poultry manure,Plant straw,1.93,38.6,Physical,25.82
+Manure,25.0,60.0,7.16,Poultry manure,Plant straw,1.82,45.5,Physical,16.31
+Manure,30.0,60.0,7.13,Poultry manure,Plant straw,1.7,51.0,Physical,8.15
+Manure,20.0,60.0,7.45,Poultry manure,Plant straw,1.96,39.2,Physical,16.99
+Manure,25.0,60.0,7.27,Poultry manure,Plant straw,1.76,44.0,Physical,3.4
+Manure,30.0,60.0,7.1,Poultry manure,Plant straw,1.52,45.6,Physical,5.43
+Manure,14.0,,7.21,Cow manure,,2.52,35.3,,16.77
+Manure,11.5,,7.26,Cow manure,,2.34,26.8,Physical,14.92
+Manure,14.7,,7.36,Cow manure,,2.52,36.1,Physical,7.94
+Manure,14.2,65.4,9.1,Cow manure,Wheat straw,2.1,29.7,,29.8
+Manure,14.2,65.4,9.1,Cow manure,Wheat straw,2.1,29.7,,31.0
+Manure,14.2,65.4,9.1,Cow manure,Wheat straw,2.1,29.7,,35.9
+Lignin,21.5660377358491,,8.19,,Soil,1.06,22.86,,55.2
+Lignin,17.0772357723577,,8.82,,Pig manure,2.46,42.01,,35.9
+Lignin,17.7269230769231,,8.08,,Chicken manure,2.6,46.09,,29.9
+Lignin,19.8385416666667,,8.66,,Sheep manure,1.92,38.09,,30.51
+Sewage sludge,11.3619402985075,72.1,7.72,,Corn straw,2.68,30.45,,38.08
+Sewage sludge,11.3619402985075,72.1,7.72,,Corn straw,2.68,30.45,Chemical,30.24
+Sewage sludge,11.3619402985075,72.1,7.72,,Corn straw,2.68,30.45,Chemical,28.22
+Sewage sludge,11.3619402985075,72.1,7.72,,Corn straw,2.68,30.45,Mixture,35.14
+Sewage sludge,11.3619402985075,72.1,7.72,,Corn straw,2.68,30.45,Mixture,26.16
+Sewage sludge,12.13,67.86,5.86,,Dairy manure+ tomato stalk,3.57017844197528,43.3062645011601,,52.0
+Sewage sludge,17.96,75.32,6.28,,Dairy manure+ tomato stalk,1.58511567339641,28.4686774941995,,17.06
+Sewage sludge,17.83,69.37,8.05,,Dairy manure+ tomato stalk,2.56059744454262,45.6554524361949,,37.71
+Sewage sludge,19.19,66.06,8.33,,Dairy manure+ tomato stalk,2.43655761350955,46.7575406032483,,33.42
+Sewage sludge,21.77,76.28,8.74,,Dairy manure+ tomato stalk,2.20934532824179,48.0974477958237,,23.26
+Sewage sludge,21.05,72.85,8.65,,Dairy manure+ tomato stalk,2.27251434271511,47.8364269141531,,31.6
+Sewage sludge,22.43,63.45,8.79,,Dairy manure+ tomato stalk,2.11821671547366,47.5116009280742,,34.13
+Sewage sludge,22.24,76.28,8.73,,Dairy manure+ tomato stalk,2.20621066951543,49.0661252900232,,26.68
+Manure,19.9,59.81,7.3,Swine manure,Corn straw,1.91,38.1,,32.32
+Manure,19.9,60.21,7.89,Swine manure,Spent mushroom substrate,1.79,35.6,,29.84
+Sewage sludge,,,,,Sawdust ,,,,14.75
+Sewage sludge,,,,,Sawdust ,,,Biological,18.6
+Sewage sludge,,,,,Sawdust ,,,Biological,14.45
+Sewage sludge,,,,,Sawdust ,,,Biological,14.85
+Manure,30.0,60.0,6.53,Poultry manure,Wheat straw,,,,41.19
+Manure,30.0,60.0,6.85,Poultry manure,Wheat straw,,,Physical,38.64
+Manure,30.0,60.0,6.46,Poultry manure,Wheat straw,,,Physical,31.45
+Manure,30.0,60.0,6.52,Poultry manure,Wheat straw,,,Physical,25.78
+Manure,30.0,60.0,6.5,Poultry manure,Wheat straw,,,Physical,18.48
+Manure,30.0,60.0,6.55,Poultry manure,Wheat straw,,,Physical,12.39
+Sewage sludge,25.21,56.23,8.12,,Wheat straw,1.78,44.89,,23.5
+Sewage sludge,25.21,56.23,8.12,,Wheat straw,1.78,44.89,Physical,0.5
+Sewage sludge,25.21,56.23,8.12,,Wheat straw,1.78,44.89,Mixture,0.5
+Sewage sludge,25.21,56.23,8.12,,Wheat straw,1.78,44.89,Mixture,0.5
+Sewage sludge,25.21,56.23,8.12,,Wheat straw,1.78,44.89,Mixture,0.5
+Lignin,11.7,65.3,6.92,,Poultury manure,3.51498205326512,41.1252900232019,,55.92
+Lignin,25.0,61.9,6.0,,Poultury manure,1.98236658932715,49.5591647331787,,32.02
+Lignin,45.0,58.4,5.6,,Poultury manure,1.18316576437226,53.2424593967517,,23.29
+Lignin,40.0,56.2,5.8,,Poultury manure,1.31206496519722,52.4825986078886,,28.36
+Lignin,35.0,58.8,5.7,,Poultury manure,1.48442161087173,51.9547563805104,,25.55
+Lignin,30.0,60.9,5.7,,Poultury manure,1.69276875483372,50.7830626450116,,27.35
+Lignin,20.0,61.9,6.7,,Poultury manure,2.38950116009281,47.7900232018562,,42.17
+Lignin,15.0,64.5,6.82,,Poultury manure,2.99729311678268,44.9593967517401,,44.85
+Manure,23.5,,8.3,Cow manure,,1.52,35.65,,63.0
+Manure,22.9,,7.2,Cow manure,,1.04,23.81,Chemical,47.11
+Manure,22.3,,8.3,Cow manure,,1.02,23.61,Physical,49.81
+Manure,23.1,,7.5,Cow manure,,1.03,23.81,Mixture,46.85
+Manure,37.2,,8.2,Cow manure,Rice straw,1.0,37.16,,58.15
+Manure,36.1,,7.0,Cow manure,Rice straw,0.82,29.73,Chemical,49.0
+Manure,37.1,,8.0,Cow manure,Rice straw,0.8,29.73,Physical,46.31
+Manure,36.6,,7.3,Cow manure,Rice straw,0.81,29.73,Mixture,48.46
+Manure,47.5,,7.7,Cow manure,Pine sawdust,0.85,40.41,,44.15
+Manure,45.9,,6.7,Cow manure,Pine sawdust,0.7,32.33,Chemical,26.65
+Manure,47.5,,7.6,Cow manure,Pine sawdust,0.68,32.33,Physical,28.27
+Manure,46.7,,6.9,Cow manure,Pine sawdust,0.69,32.33,Mixture,31.19
+Manure,23.5,,8.3,Cow manure,,1.52,35.65,,63.0
+Manure,37.2,,8.2,Cow manure,Rice straw,1.0,37.16,,58.15
+Manure,47.5,,7.7,Cow manure,Pine sawdust,0.85,40.41,,44.15
+Manure,22.9,,7.2,Cow manure,,1.04,23.81,Physical,47.11
+Manure,36.1,,7.0,Cow manure,Rice straw,0.82,29.73,Physical,49.0
+Manure,45.9,,6.7,Cow manure,Pine sawdust,0.7,32.33,Physical,26.65
+Manure,22.3,,8.3,Cow manure,,1.02,23.61,Physical,49.81
+Manure,37.1,,8.0,Cow manure,Rice straw,0.8,29.73,Physical,46.31
+Manure,47.5,,7.6,Cow manure,Pine sawdust,0.68,32.33,Physical,28.27
+Manure,23.1,,7.5,Cow manure,,1.03,23.81,Physical,46.85
+Manure,36.6,,7.3,Cow manure,Rice straw,0.81,29.73,Physical,48.46
+Manure,46.7,,6.9,Cow manure,Pine sawdust,0.69,32.33,Physical,31.19
+Lignin,52.8865979381443,,6.7,,,0.97,51.3,,36.66
+Lignin,22.0062680470267,,8.76,,,0.92,50.6,Chemical,55.1
+Lignin,53.695652173913,,9.33,,,0.92,49.4,Chemical,53.61
+Lignin,52.0212765957447,,9.35,,,0.94,48.9,Chemical,55.32
+Lignin,51.2087912087912,,8.13,,,0.91,46.6,Chemical,43.57
+Lignin,53.7349397590362,,8.86,,,0.83,44.6,Chemical,47.78
+Lignin,53.3766233766234,,8.77,,,0.77,41.1,Chemical,52.76
+Manure,12.88,65.03,,Manure,Sawdust,,,,56.97
+Manure,24.41,63.17,,Manure,Sawdust,,,Physical,29.4
+Manure,27.43,62.39,,Manure,Sawdust,,,Physical,17.9
+Manure,28.06,62.6,,Manure,Sawdust,,,Physical,25.4
+Manure,16.31,61.97,,Manure,Sawdust,,,Physical,7.8
+Manure,39.93,63.43,,Manure,Sawdust,,,Physical,13.9
+Lignin,20.0,61.1,6.0,,Sewage sludge + Tomato stalks,2.47389791183295,49.4779582366589,,9.58
+Lignin,30.0,53.5,6.1,,Sewage sludge + Tomato stalks,1.72273781902552,51.6821345707657,,6.85
+Lignin,40.0,48.5,6.5,,Sewage sludge + Tomato stalks,1.3631090487239,54.5243619489559,,1.18
+Lignin,23.0,74.7,8.9,,Dariy manure + Tomato stalks,2.10582063956421,48.4338747099768,,19.02
+Lignin,30.0,65.6,8.9,,Dariy manure + Tomato stalks,1.66279969064192,49.8839907192575,,4.98
+Lignin,40.0,53.0,8.2,,Dariy manure + Tomato stalks,1.35730858468677,54.292343387471,,3.97
+Lignin,42.0,47.5,6.9,,Tomato stalks,1.28300740249696,53.8863109048724,,2.67
+Lignin,23.8,,8.2,,Straw,1.79,42.59,,30.4
+Lignin,30.6,,8.4,,Straw,4.45,44.38,,23.0
+Food waste,22.1,60.0,5.01,,Corn stalks ,1.79,39.6,,47.4
+Food waste,18.2,60.0,4.43,,Corn stalks ,1.98,36.0,Chemical,30.7
+Food waste,19.1,60.0,4.28,,Corn stalks ,1.89,36.0,Chemical,37.5
+Manure,12.2,81.0,7.0,Manure,,3.86,46.9,,39.9
+Manure,15.3,75.8,7.1,Manure ,Rice Straw,3.18,48.8,,30.9
+Digestate,22.3,77.3,8.7,,Rice Straw,2.16,48.2,,27.1
+Digestate,20.1,77.0,8.8,,Rice Straw,2.25,45.3,,30.3
+Digestate,29.9,80.0,6.7,,Sugarcane,1.82,54.5,,31.8
+Digestate,16.9,84.1,10.7,,,2.26,38.3,Physical,39.3
+Digestate,20.5,80.7,9.8,,Rice Straw,2.21,45.3,Physical,31.2
+Digestate,21.3,81.5,10.0,,Rice Straw,2.03,42.5,Physical,29.4
+Manure,16.0,60.0,,Cow manure,Maize stalks,,,,22.0
+Manure,19.0,65.0,,Cow manure,Maize stalks,,,,23.0
+Manure,22.0,70.0,,Cow manure,Maize stalks,,,,19.0
+Manure,16.0,70.0,,Cow manure,Maize stalks,,,,40.0
+Manure,19.0,60.0,,Cow manure,Maize stalks,,,,28.0
+Manure,22.0,65.0,,Cow manure,Maize stalks,,,,29.0
+Manure,16.0,65.0,,Cow manure,Maize stalks,,,,45.0
+Manure,19.0,70.0,,Cow manure,Maize stalks,,,,36.0
+Manure,22.0,60.0,,Cow manure,Maize stalks,,,,32.0
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,21.3
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,23.0
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,36.6
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,44.1
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,44.1
+Manure,17.3,,,Swine manure,Corn stalk,2.12,36.7,,33.6
+Manure,,,,Swine manure,Wheat straw,,,,19.8
+Manure,,,,Swine manure,Wheat straw,,,Biological,19.8
+Manure,,,,Swine manure,Wheat straw,,,Biological,36.1
+Manure,,,,Swine manure,Wheat straw,,,Biological,21.2
+Manure,,,,Swine manure,Wheat straw,,,Biological,14.6
+Manure,21.0526315789474,61.0,,Cow manure,Sawdust ,1.9,40.0,,14.0
+Manure,21.0526315789474,61.0,,Cow manure,Sawdust ,1.9,40.0,,15.0
+Manure,21.0526315789474,61.0,,Cow manure,Sawdust ,1.9,40.0,,12.0
+Manure,21.0526315789474,61.0,,Cow manure,Sawdust ,1.9,40.0,,11.0
+Manure,12.9390243902439,,6.5,Swine manure,Wheat straw,2.46,31.83,,58.0
+Manure,11.1533546325879,,6.1,Swine manure,Wheat straw,3.13,34.91,Biological,44.1
+Manure,10.9563636363636,,7.2,Swine manure,Wheat straw,2.75,30.13,Physical,50.3
+Manure,9.83606557377049,,6.2,Swine manure,Wheat straw,3.05,30.0,Chemical,34.1
+Digestate,16.9583333333333,69.0,,,Food waste,2.4,40.7,,17.7
+Digestate,16.9583333333333,63.0,,,Food waste,2.4,40.7,Physical,13.5
+Digestate,22.4064171122995,63.0,,,Food waste,1.87,41.9,Physical,3.1
+Digestate,24.8730964467005,58.0,,,Food waste,1.97,49.0,Physical,12.8
+Digestate,20.8040201005025,70.0,,,Food waste,1.99,41.4,Physical,13.2
+Digestate,16.9583333333333,62.0,,,Food waste,2.4,40.7,Physical,10.2
+Digestate,19.8086124401914,61.0,,,Food waste,2.09,41.4,Physical,13.1
+Digestate,21.1162790697674,57.0,,,Food waste,2.15,45.4,Physical,14.0
+Digestate,17.0886075949367,64.0,,,Food waste,2.37,40.5,Physical,8.7
+Manure,16.5,83.0,8.45,Cow manure,Barley straw,1.65,43.0,,0.3
+Manure,16.5,83.0,8.45,Cow manure,Barley straw,1.65,43.0,,17.3
+Manure,6.1,71.0,6.8,Poultry manure,Barley straw,4.6,35.2,,48.0
+Manure,6.1,71.0,6.8,Poultry manure,Barley straw,4.61,35.2,,58.0
+Manure,12.2,65.0,6.95,Poultry manure,Barley straw,3.42,48.7,Physical,42.0
+Manure,12.2,65.0,6.95,Poultry manure,Barley straw,3.42,48.7,Physical,48.0
+Food waste,,,,,,,,,29.0
+Food waste,,,,,Corn stalk,,,,25.0
+Food waste,,,,,Sawdust ,,,,23.0
+Food waste,,,,,Spend mush room residue,,,,27.0
+Manure,,,,Swine manure,Cornstalks,2.17,38.76,,40.4
+Manure,,,,Swine manure,Cornstalks,1.96,36.72,Chemical,32.7
+Manure,,,,Swine manure,Cornstalks,2.06,36.53,Mixture,31.6
+Manure,,,,Swine manure,Cornstalks,2.1,37.4,Mixture,34.2
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.28
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.38
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.39
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.2
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.37
+Manure,17.8,63.0,8.6,Swine manure,Cornstalks,2.07,36.9,,0.34
+Lignin,19.5,,8.3,,Poultry manure,2.02,39.66,,43.1
+Lignin,19.5,,7.97,,Poultry manure,2.06,40.31,Chemical,31.9
+Lignin,18.7,,8.02,,Poultry manure,2.11,39.32,Chemical,31.6
+Lignin,13.5,,8.88,,Sheep manure,1.86,25.19,,32.4
+Lignin,14.2,,8.52,,Sheep manure,1.92,27.23,Chemical,29.4
+Lignin,15.0,,8.35,,Sheep manure,3.103822807137219,28.84,Chemical,20.9
+Manure,15.0,65.0,,Swine manure,Corn stalks ,2.4,34.8,,21.0
+Manure,15.0,70.0,,Swine manure,Corn stalks ,2.4,35.2,,46.0
+Manure,15.0,75.0,,Swine manure,Corn stalks ,2.4,35.3,,40.0
+Manure,21.0,75.0,,Swine manure,Corn stalks ,1.9,40.9,,18.0
+Manure,21.0,70.0,,Swine manure,Corn stalks ,1.9,40.1,,28.0
+Manure,21.0,65.0,,Swine manure,Corn stalks ,1.9,39.4,,31.0
+Manure,18.0,70.0,,Swine manure,Corn stalks ,2.1,38.0,,22.0
+Manure,18.0,65.0,,Swine manure,Corn stalks ,2.1,38.0,,27.0
+Manure,18.0,75.0,,Swine manure,Corn stalks ,2.1,37.6,,35.0
+Manure,15.0,65.0,,Swine manure,Corn stalks ,2.4,34.8,,21.0
+Manure,21.0,75.0,,Swine manure,Corn stalks ,1.9,40.9,,18.0
+Manure,18.0,70.0,,Swine manure,Corn stalks ,2.1,38.0,,22.0
+Manure,15.0,75.0,,Swine manure,Corn stalks ,2.4,35.3,,40.0
+Manure,21.0,70.0,,Swine manure,Corn stalks ,1.9,40.1,,28.0
+Manure,18.0,65.0,,Swine manure,Corn stalks ,2.1,38.0,,27.0
+Manure,15.0,70.0,,Swine manure,Corn stalks ,2.4,35.2,,46.0
+Manure,21.0,65.0,,Swine manure,Corn stalks ,1.9,39.4,,31.0
+Manure,18.0,75.0,,Swine manure,Corn stalks ,2.1,37.6,,35.0
+Manure,20.0,65.0,,Poultry manure,Corn stalk + Dry grass,,,,1.74
+Manure,20.0,65.0,,Poultry manure,Corn stalk + Dry grass,,,,14.65
+Manure,20.0,65.0,,Poultry manure,Corn stalk + Dry grass,,,,24.93
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,7.61
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,15.2
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,10.9
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,1.74
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,13.1
+Manure,32.0,49.6,7.84,Poultry manure,Sawdust,1.15,37.3,,3.38
+Sewage sludge,22.0,62.0,,,Munciple waste,2.1,46.0,,45.0
+Sewage sludge,19.0,65.0,,,Munciple waste,2.4,46.0,,60.0
+Sewage sludge,26.0,58.0,,,Munciple waste,1.8,47.0,,63.0
+Sewage sludge,23.0,59.0,,,Munciple waste,1.9,43.0,,52.0
+Sewage sludge,28.0,59.0,,,Munciple waste,1.7,47.0,,30.0
+Sewage sludge,30.0,56.0,,,Munciple waste,1.4,42.0,,52.0
+Manure,14.7,64.1,,Swine manure,Cornstalk,2.36,34.8,,21.3
+Manure,18.4,71.3,,Swine manure,Cornstalk,2.06,38.0,,22.0
+Manure,21.2,75.7,,Swine manure,Cornstalk,1.93,40.9,,18.4
+Manure,18.3,65.2,,Swine manure,Cornstalk,2.08,38.0,,26.6
+Manure,21.1,70.6,,Swine manure,Cornstalk,1.9,40.1,,28.4
+Manure,14.9,76.8,,Swine manure,Cornstalk,2.37,35.3,,40.3
+Manure,20.7,63.7,,Swine manure,Cornstalk,1.9,39.4,,30.6
+Manure,15.0,70.8,,Swine manure,Cornstalk,2.35,35.2,,45.9
+Manure,18.0,74.0,,Swine manure,Cornstalk,2.09,37.6,,35.3
+Manure,14.7,64.1,,Swine manure,Cornstalk,2.36,34.8,,21.3
+Manure,18.4,71.3,,Swine manure,Cornstalk,2.06,38.0,,22.0
+Manure,21.2,75.7,,Swine manure,Cornstalk,1.93,40.9,,18.4
+Manure,18.3,65.2,,Swine manure,Cornstalk,2.08,38.0,,26.6
+Manure,21.1,70.6,,Swine manure,Cornstalk,1.9,40.1,,28.4
+Manure,14.9,76.8,,Swine manure,Cornstalk,2.37,35.3,,40.3
+Manure,20.7,63.7,,Swine manure,Cornstalk,1.9,39.4,,30.6
+Manure,15.0,70.8,,Swine manure,Cornstalk,2.35,35.2,,45.9
+Manure,18.0,74.0,,Swine manure,Cornstalk,2.09,37.6,,35.3
+Manure,26.6666666666667,76.0,,Cow manure,,1.8,48.0,,8.0
+Manure,26.6666666666667,76.0,,Cow manure,,1.8,48.0,,10.0
+Manure,15.0,65.0,7.6,Swine manure,Cornstalk,2.25,,,35.0
+Manure,15.0,65.0,7.4,Swine manure,Cornstalk,2.25,,Chemical,12.0
+Manure,15.0,65.0,6.6,Swine manure,Cornstalk,2.25,,Chemical,5.0
+Manure,15.0,65.0,6.4,Swine manure,Cornstalk,2.25,,Chemical,1.0
+Lignin,10.13,60.0,7.0,,Sewage sludge,3.87,39.2031,,35.0
+Lignin,41.7,60.0,6.7,,Sewage sludge,1.26,52.542,,51.0
+Lignin,14.67,60.0,6.9,,Sewage sludge,2.98,43.7166,,27.0
+Lignin,11.92,60.0,7.0,,Sewage sludge,3.42,40.7664,,20.0
+Manure,,,,Poultry manure,wood chip,,,,90.5
+Manure,,,,Poultry manure,wood chip + straw,,,,78.6
+Manure,,,,Poultry manure,wood chip + straw,,,,76.5
+Manure,20.0,,,Poultry manure,Sawdust,,,,88.17
+Manure,20.0,,,Poultry manure,Sawdust,,,,82.72
+Manure,20.0,,,Poultry manure,Sawdust,,,,86.8
+Manure,25.0,,,Poultry manure,Sawdust,,,,82.85
+Manure,25.0,,,Poultry manure,Sawdust,,,,70.73
+Manure,25.0,,,Poultry manure,Sawdust,,,,87.42
+Manure,30.0,,,Poultry manure,Sawdust,,,,87.12
+Manure,30.0,,,Poultry manure,Sawdust,,,,83.93
+Manure,30.0,,,Poultry manure,Sawdust,,,,81.34
+Manure,20.0,,,Poultry manure,Sawdust,,,,88.17
+Manure,25.0,,,Poultry manure,Sawdust,,,,82.85
+Manure,30.0,,,Poultry manure,Sawdust,,,,87.12
+Manure,20.0,,,Poultry manure,Sawdust,,,,82.72
+Manure,25.0,,,Poultry manure,Sawdust,,,,70.73
+Manure,30.0,,,Poultry manure,Sawdust,,,,83.93
+Manure,20.0,,,Poultry manure,Sawdust,,,,86.8
+Manure,25.0,,,Poultry manure,Sawdust,,,,87.42
+Manure,30.0,,,Poultry manure,Sawdust,,,,81.34
+Manure,20.0,,,Poultry manure,Sawdust,,,,82.72
+Manure,25.0,,,Poultry manure,Sawdust,,,,70.73
+Manure,30.0,,,Poultry manure,Sawdust,,,,83.93
+Manure,,,,Cow manure,Wood,,,,19.0
+Manure,,,,Cow manure,Straw,,,,33.5
+Lignin,30.0,61.7,,,,1.46,39.6,,3.4
+Lignin,30.0,61.1,,,Muncipal compost,1.44,38.9,,3.5
+Lignin,30.0,60.6,,,Muncipal compost,1.41,36.8,,5.7
+Lignin,30.0,61.0,,,Muncipal compost,1.37,35.8,,6.6
+Lignin,30.0,61.1,,,Muncipal compost,1.34,30.9,,20.2
+Lignin,30.0,60.9,,,Muncipal compost,1.3,28.0,,25.4
+Manure,17.9,62.63,8.3,Cow manure,,1.4,25.04,,21.4285714285714
+Manure,17.8,65.46,7.6,Cow manure,,1.33,23.63,Chemical,20.5479452054795
+Manure,18.9,64.61,7.6,Cow manure,,1.32,24.89,Chemical,19.3548387096774
+Manure,18.5,65.46,7.4,Cow manure,,1.29,23.82,Chemical,26.8292682926829
+Manure,20.1,64.12,8.4,Cow manure,,1.29,25.93,Physical,11.9718309859155
+Manure,17.1,61.07,8.6,Cow manure,,1.12,19.14,Physical,5.18518518518518
+Manure,18.9,63.73,8.7,Cow manure,,1.23,23.12,Physical,13.0434782608696
+Manure,14.4,71.9,7.9,Poultry manure,Corn bare cob + shavings + sawdust,2.9,40.4,,82.0
+Manure,23.5,72.4,8.3,Poultry manure,Corn bare cob + shavings + sawdust,1.6,36.9,,63.0
+Manure,18.4,69.2,,Swine manure,Cornstalk,2.04,37.48,,37.5
+Manure,18.4,69.2,,Swine manure,Cornstalk,2.04,37.48,Chemical,18.8
+Manure,18.4,69.2,,Swine manure,Cornstalk,2.04,37.48,Chemical,20.8
+Manure,18.4,69.2,,Swine manure,Cornstalk,2.04,37.48,Chemical,17.6
+Manure,18.4,69.2,,Swine manure,Cornstalk,2.04,37.48,Chemical,9.8
+Manure,,,,Swine manure,Wheat straw,,,,40.8
+Manure,,,,Swine manure,Wheat straw,,,Chemical,36.2
+Manure,,,,Swine manure,Wheat straw,,,Chemical,35.2
+Manure,,,,Swine manure,Wheat straw,,,,49.8
+Manure,,,,Swine manure,Wheat straw,,,Biological,45.7
+Manure,,,,Swine manure,Wheat straw,,,Biological,43.7
+Manure,17.91,62.06,,Swine manure,woody peat,1.95,34.92,,20.29
+Manure,18.23,58.95,,Swine manure,woody peat,1.93,35.68,Chemical,13.03
