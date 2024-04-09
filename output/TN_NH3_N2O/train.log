@@ -1,0 +1,1019 @@
+2024-04-09 16:30:05,217: INFO: RF Training-------------------------------------------
+2024-04-09 16:30:05,217: INFO: (360, 9), (360,)
+2024-04-09 16:30:05,217: INFO: Train: The rmse of the RFRegression is: 191.55504730332262
+2024-04-09 16:30:05,218: INFO: Train: The mae of the RFRegression is: 9.678152584759742
+2024-04-09 16:30:05,218: INFO: Train: The R2 of the RFRegression is: 0.4293546950399316
+2024-04-09 16:30:06,516: INFO: RF Training-------------------------------------------
+2024-04-09 16:30:06,516: INFO: (360, 9), (360,)
+2024-04-09 16:30:06,516: INFO: Train: The rmse of the RFRegression is: 121.52102112166463
+2024-04-09 16:30:06,516: INFO: Train: The mae of the RFRegression is: 8.101377584735607
+2024-04-09 16:30:06,517: INFO: Train: The R2 of the RFRegression is: 0.6833135299334236
+2024-04-09 16:30:07,759: INFO: RF Training-------------------------------------------
+2024-04-09 16:30:07,759: INFO: (360, 9), (360,)
+2024-04-09 16:30:07,759: INFO: Train: The rmse of the RFRegression is: 146.77712369842317
+2024-04-09 16:30:07,760: INFO: Train: The mae of the RFRegression is: 9.272457223260856
+2024-04-09 16:30:07,760: INFO: Train: The R2 of the RFRegression is: 0.6504802755265566
+2024-04-09 16:30:09,185: INFO: RF Training-------------------------------------------
+2024-04-09 16:30:09,185: INFO: (360, 9), (360,)
+2024-04-09 16:30:09,185: INFO: Train: The rmse of the RFRegression is: 118.15115115750294
+2024-04-09 16:30:09,185: INFO: Train: The mae of the RFRegression is: 8.170248050220245
+2024-04-09 16:30:09,185: INFO: Train: The R2 of the RFRegression is: 0.6319311819807218
+2024-04-09 16:30:10,450: INFO: RF Training-------------------------------------------
+2024-04-09 16:30:10,450: INFO: (360, 9), (360,)
+2024-04-09 16:30:10,450: INFO: Train: The rmse of the RFRegression is: 172.2756093618493
+2024-04-09 16:30:10,450: INFO: Train: The mae of the RFRegression is: 10.350634119155613
+2024-04-09 16:30:10,451: INFO: Train: The R2 of the RFRegression is: 0.3029143317750237
+2024-04-09 16:31:17,610: INFO: Test: The rmse of the RFRegression is: 150.84259202706727
+2024-04-09 16:31:17,610: INFO: Test: The mae of the RFRegression is: 9.493081989651312
+2024-04-09 16:31:17,610: INFO: Test: The R2 of the RFRegression is: 0.6055462037212433
+2024-04-09 16:31:18,008: INFO: RandomForest Test Result: MSE: 150.84259202706727
+2024-04-09 16:31:18,008: INFO: RandomForest Test Result: MSE: 9.493081989651312
+2024-04-09 16:31:18,008: INFO: RandomForest Test Result: R2: 0.6055462037212433
+2024-04-09 16:33:23,430: INFO: XGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:33:23,618: INFO: (360, 9) (360,)
+2024-04-09 16:33:23,618: INFO: Train: The rmse of the XgbRegression is: 84.46605888846014
+2024-04-09 16:33:23,618: INFO: Train: The mae of the XgbRegression is: 6.811250478313758
+2024-04-09 16:33:23,618: INFO: Train: The R2 of the XgbRegression is: 0.7477784309060518
+2024-04-09 16:33:23,972: INFO: (360, 9) (360,)
+2024-04-09 16:33:23,972: INFO: Train: The rmse of the XgbRegression is: 131.94148793142435
+2024-04-09 16:33:23,973: INFO: Train: The mae of the XgbRegression is: 8.05955116467248
+2024-04-09 16:33:23,973: INFO: Train: The R2 of the XgbRegression is: 0.5438862647967128
+2024-04-09 16:33:24,341: INFO: (360, 9) (360,)
+2024-04-09 16:33:24,341: INFO: Train: The rmse of the XgbRegression is: 173.64923509988046
+2024-04-09 16:33:24,341: INFO: Train: The mae of the XgbRegression is: 8.628401176455652
+2024-04-09 16:33:24,342: INFO: Train: The R2 of the XgbRegression is: 0.4174235364789429
+2024-04-09 16:33:24,829: INFO: (360, 9) (360,)
+2024-04-09 16:33:24,830: INFO: Train: The rmse of the XgbRegression is: 132.46610312487567
+2024-04-09 16:33:24,830: INFO: Train: The mae of the XgbRegression is: 7.9880416113022745
+2024-04-09 16:33:24,830: INFO: Train: The R2 of the XgbRegression is: 0.6404454129288407
+2024-04-09 16:33:25,217: INFO: (360, 9) (360,)
+2024-04-09 16:33:25,217: INFO: Train: The rmse of the XgbRegression is: 120.7244339424151
+2024-04-09 16:33:25,218: INFO: Train: The mae of the XgbRegression is: 7.9464915678475
+2024-04-09 16:33:25,218: INFO: Train: The R2 of the XgbRegression is: 0.735383547236423
+2024-04-09 16:33:53,085: INFO: Test: The rmse of the XgbRegression is: 134.1926100832653
+2024-04-09 16:33:53,086: INFO: Test: The mae of the XgbRegression is: 9.22533566941764
+2024-04-09 16:33:53,086: INFO: Test: The R2 of the XgbRegression is: 0.6490859526571868
+2024-04-09 16:33:53,292: INFO: XGBoost Test Result: MSE: 134.1926100832653
+2024-04-09 16:33:53,292: INFO: XGBoost Test Result: MSE: 9.22533566941764
+2024-04-09 16:33:53,293: INFO: XGBoost Test Result: R2: 0.6490859526571868
+2024-04-09 16:33:53,293: INFO: XGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:35:36,378: INFO: LGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:35:36,931: INFO: (360, 9), (360,)
+2024-04-09 16:35:36,932: INFO: Train: The rmse of the LgbRegression is: 96.14097963004029
+2024-04-09 16:35:36,932: INFO: Train: The mae of the LgbRegression is: 6.959875816603421
+2024-04-09 16:35:36,932: INFO: Train: The R2 of the LgbRegression is: 0.6681607364506258
+2024-04-09 16:35:37,303: INFO: (360, 9), (360,)
+2024-04-09 16:35:37,304: INFO: Train: The rmse of the LgbRegression is: 177.01655392651764
+2024-04-09 16:35:37,304: INFO: Train: The mae of the LgbRegression is: 9.899174451857686
+2024-04-09 16:35:37,304: INFO: Train: The R2 of the LgbRegression is: 0.4625660127658662
+2024-04-09 16:35:37,636: INFO: (360, 9), (360,)
+2024-04-09 16:35:37,637: INFO: Train: The rmse of the LgbRegression is: 131.60872786358317
+2024-04-09 16:35:37,637: INFO: Train: The mae of the LgbRegression is: 8.352315590154532
+2024-04-09 16:35:37,637: INFO: Train: The R2 of the LgbRegression is: 0.6396560606228274
+2024-04-09 16:35:37,958: INFO: (360, 9), (360,)
+2024-04-09 16:35:37,959: INFO: Train: The rmse of the LgbRegression is: 135.25603967869733
+2024-04-09 16:35:37,959: INFO: Train: The mae of the LgbRegression is: 7.621318629034932
+2024-04-09 16:35:37,959: INFO: Train: The R2 of the LgbRegression is: 0.6572485141562829
+2024-04-09 16:35:38,460: INFO: (360, 9), (360,)
+2024-04-09 16:35:38,461: INFO: Train: The rmse of the LgbRegression is: 151.38935585012834
+2024-04-09 16:35:38,461: INFO: Train: The mae of the LgbRegression is: 8.42278007713607
+2024-04-09 16:35:38,462: INFO: Train: The R2 of the LgbRegression is: 0.5700072791770293
+2024-04-09 16:36:10,657: INFO: Test: The rmse of the LgbRegression is: 147.5773683474277
+2024-04-09 16:36:10,658: INFO: Test: The mae of the LgbRegression is: 9.06752542689708
+2024-04-09 16:36:10,658: INFO: Test: The R2 of the LgbRegression is: 0.6140847726945345
+2024-04-09 16:36:10,897: INFO: Lightgbm Test Result: MSE: 147.5773683474277
+2024-04-09 16:36:10,897: INFO: Lightgbm Test Result: MSE: 9.06752542689708
+2024-04-09 16:36:10,897: INFO: Lightgbm Test Result: R2: 0.6140847726945345
+2024-04-09 16:36:10,897: INFO: LGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:37:10,746: INFO: CatRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:37:18,253: INFO: (360, 9) (360,)
+2024-04-09 16:37:18,254: INFO: Train: The rmse of the CatRegression is: 126.04018317879712
+2024-04-09 16:37:18,254: INFO: Train: The mae of the CatRegression is: 8.324451448516545
+2024-04-09 16:37:18,254: INFO: Train: The R2 of the CatRegression is: 0.670046950943407
+2024-04-09 16:37:26,491: INFO: (360, 9) (360,)
+2024-04-09 16:37:26,492: INFO: Train: The rmse of the CatRegression is: 125.27206630547809
+2024-04-09 16:37:26,492: INFO: Train: The mae of the CatRegression is: 8.237408940661805
+2024-04-09 16:37:26,493: INFO: Train: The R2 of the CatRegression is: 0.6137984847383053
+2024-04-09 16:37:34,129: INFO: (360, 9) (360,)
+2024-04-09 16:37:34,130: INFO: Train: The rmse of the CatRegression is: 129.08531869351472
+2024-04-09 16:37:34,130: INFO: Train: The mae of the CatRegression is: 8.242859829660478
+2024-04-09 16:37:34,131: INFO: Train: The R2 of the CatRegression is: 0.6815020204474047
+2024-04-09 16:37:44,581: INFO: (360, 9) (360,)
+2024-04-09 16:37:44,581: INFO: Train: The rmse of the CatRegression is: 113.0577939368768
+2024-04-09 16:37:44,582: INFO: Train: The mae of the CatRegression is: 7.8461688732329735
+2024-04-09 16:37:44,582: INFO: Train: The R2 of the CatRegression is: 0.6067923822340008
+2024-04-09 16:37:53,017: INFO: (360, 9) (360,)
+2024-04-09 16:37:53,017: INFO: Train: The rmse of the CatRegression is: 168.2190898711108
+2024-04-09 16:37:53,018: INFO: Train: The mae of the CatRegression is: 9.396359425336867
+2024-04-09 16:37:53,018: INFO: Train: The R2 of the CatRegression is: 0.5113505532968755
+2024-04-09 16:39:16,388: INFO: Test: The rmse of the CatRegression is: 145.48048703104675
+2024-04-09 16:39:16,389: INFO: Test: The mae of the CatRegression is: 9.519692045027067
+2024-04-09 16:39:16,389: INFO: Test: The R2 of the CatRegression is: 0.6195681231493189
+2024-04-09 16:39:16,588: INFO: CatRegression Test Result: MSE: 145.48048703104675
+2024-04-09 16:39:16,589: INFO: CatRegression Test Result: MSE: 9.519692045027067
+2024-04-09 16:39:16,589: INFO: CatRegression Test Result: R2: 0.6195681231493189
+2024-04-09 16:39:16,589: INFO: CatRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:39:31,103: INFO: RidgeRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:39:31,110: INFO: (360, 9), (360,)
+2024-04-09 16:39:31,110: INFO: Train: The rmse of the RidgeRegression is: 307.30106069386653
+2024-04-09 16:39:31,110: INFO: Train: The mae of the RidgeRegression is: 14.07894734445995
+2024-04-09 16:39:31,110: INFO: Train: The R2 of the RidgeRegression is: 0.06193726742800776
+2024-04-09 16:39:31,287: INFO: (360, 9), (360,)
+2024-04-09 16:39:31,288: INFO: Train: The rmse of the RidgeRegression is: 332.1983463345348
+2024-04-09 16:39:31,288: INFO: Train: The mae of the RidgeRegression is: 14.59650645194216
+2024-04-09 16:39:31,288: INFO: Train: The R2 of the RidgeRegression is: -0.0778606572857905
+2024-04-09 16:39:31,484: INFO: (360, 9), (360,)
+2024-04-09 16:39:31,485: INFO: Train: The rmse of the RidgeRegression is: 287.5056366435625
+2024-04-09 16:39:31,485: INFO: Train: The mae of the RidgeRegression is: 13.342036734155158
+2024-04-09 16:39:31,485: INFO: Train: The R2 of the RidgeRegression is: 0.09693669545610306
+2024-04-09 16:39:31,689: INFO: (360, 9), (360,)
+2024-04-09 16:39:31,689: INFO: Train: The rmse of the RidgeRegression is: 312.8354036368681
+2024-04-09 16:39:31,690: INFO: Train: The mae of the RidgeRegression is: 14.64173904186412
+2024-04-09 16:39:31,690: INFO: Train: The R2 of the RidgeRegression is: 0.16150246839159854
+2024-04-09 16:39:31,945: INFO: (360, 9), (360,)
+2024-04-09 16:39:31,945: INFO: Train: The rmse of the RidgeRegression is: 357.23145009970955
+2024-04-09 16:39:31,946: INFO: Train: The mae of the RidgeRegression is: 14.703901375633968
+2024-04-09 16:39:31,946: INFO: Train: The R2 of the RidgeRegression is: 0.12271618920476224
+2024-04-09 16:39:52,717: INFO: Test: The rmse of the RidgeRegression is: 317.4257637967105
+2024-04-09 16:39:52,717: INFO: Test: The mae of the RidgeRegression is: 14.374353202926999
+2024-04-09 16:39:52,717: INFO: Test: The R2 of the RidgeRegression is: 0.1699307477835661
+2024-04-09 16:39:52,911: INFO: RidgeRegression Test Result: MSE: 317.4257637967105
+2024-04-09 16:39:52,911: INFO: RidgeRegression Test Result: MSE: 14.374353202926999
+2024-04-09 16:39:52,911: INFO: RidgeRegression Test Result: R2: 0.1699307477835661
+2024-04-09 16:39:52,911: INFO: RidgeRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:40:19,013: INFO: LinearRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:40:19,020: INFO: (360, 9), (360,)
+2024-04-09 16:40:19,020: INFO: Train: The rmse of the LR is: 319.04089885703667
+2024-04-09 16:40:19,021: INFO: Train: The mae of the LR is: 14.516357125777136
+2024-04-09 16:40:19,021: INFO: Train: The R2 of the LR is: 0.16257047263734936
+2024-04-09 16:40:19,210: INFO: (360, 9), (360,)
+2024-04-09 16:40:19,211: INFO: Train: The rmse of the LR is: 262.31858847977253
+2024-04-09 16:40:19,211: INFO: Train: The mae of the LR is: 13.106842186543831
+2024-04-09 16:40:19,211: INFO: Train: The R2 of the LR is: 0.01981103011342633
+2024-04-09 16:40:19,394: INFO: (360, 9), (360,)
+2024-04-09 16:40:19,394: INFO: Train: The rmse of the LR is: 310.35885115619254
+2024-04-09 16:40:19,394: INFO: Train: The mae of the LR is: 14.395209997154117
+2024-04-09 16:40:19,394: INFO: Train: The R2 of the LR is: -0.16734837756227994
+2024-04-09 16:40:19,573: INFO: (360, 9), (360,)
+2024-04-09 16:40:19,573: INFO: Train: The rmse of the LR is: 438.9930635883693
+2024-04-09 16:40:19,574: INFO: Train: The mae of the LR is: 15.874319620608711
+2024-04-09 16:40:19,574: INFO: Train: The R2 of the LR is: 0.1348418419651225
+2024-04-09 16:40:19,772: INFO: (360, 9), (360,)
+2024-04-09 16:40:19,773: INFO: Train: The rmse of the LR is: 300.1398562940691
+2024-04-09 16:40:19,773: INFO: Train: The mae of the LR is: 14.05723751995723
+2024-04-09 16:40:19,773: INFO: Train: The R2 of the LR is: 0.012361527131220629
+2024-04-09 16:40:37,564: INFO: Test: The rmse of the LinearRegression is: 309.3385617604199
+2024-04-09 16:40:37,564: INFO: Test: The mae of the LinearRegression is: 14.154168908062596
+2024-04-09 16:40:37,565: INFO: Test: The R2 of the LinearRegression is: 0.19107880352577777
+2024-04-09 16:40:37,810: INFO: LinearRegression Test Result: MSE: 309.3385617604199
+2024-04-09 16:40:37,811: INFO: LinearRegression Test Result: MSE: 14.154168908062596
+2024-04-09 16:40:37,811: INFO: LinearRegression Test Result: R2: 0.19107880352577777
+2024-04-09 16:40:37,811: INFO: LinearRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:41:21,044: INFO: MLP Training --------------------------------------------------------------------------------------
+2024-04-09 16:41:21,888: INFO: (360, 9), (360,)
+2024-04-09 16:41:21,888: INFO: Train: The rmse of the MLP is: 279.86649179271643
+2024-04-09 16:41:21,889: INFO: Train: The mae of the MLP is: 11.302525315705985
+2024-04-09 16:41:21,889: INFO: Train: The R2 of the MLP is: 0.2521720280147287
+2024-04-09 16:41:23,564: INFO: (360, 9), (360,)
+2024-04-09 16:41:23,565: INFO: Train: The rmse of the MLP is: 269.6425302398102
+2024-04-09 16:41:23,565: INFO: Train: The mae of the MLP is: 11.793960702035065
+2024-04-09 16:41:23,566: INFO: Train: The R2 of the MLP is: 0.340087956701315
+2024-04-09 16:41:25,446: INFO: (360, 9), (360,)
+2024-04-09 16:41:25,446: INFO: Train: The rmse of the MLP is: 223.83122700305321
+2024-04-09 16:41:25,447: INFO: Train: The mae of the MLP is: 11.9333901600342
+2024-04-09 16:41:25,447: INFO: Train: The R2 of the MLP is: 0.3550642798981891
+2024-04-09 16:41:27,745: INFO: (360, 9), (360,)
+2024-04-09 16:41:27,746: INFO: Train: The rmse of the MLP is: 123.3315131671049
+2024-04-09 16:41:27,746: INFO: Train: The mae of the MLP is: 8.4883832675818
+2024-04-09 16:41:27,746: INFO: Train: The R2 of the MLP is: 0.6083439509906859
+2024-04-09 16:41:29,701: INFO: (360, 9), (360,)
+2024-04-09 16:41:29,702: INFO: Train: The rmse of the MLP is: 240.7354327255123
+2024-04-09 16:41:29,702: INFO: Train: The mae of the MLP is: 11.33815805948308
+2024-04-09 16:41:29,703: INFO: Train: The R2 of the MLP is: 0.1565348979934328
+2024-04-09 16:41:30,141: INFO: Test: The rmse of the MLP is: 219.445042973198
+2024-04-09 16:41:30,142: INFO: Test: The mae of the MLP is: 11.151289577349415
+2024-04-09 16:41:30,147: INFO: Test: The R2 of the MLP is: 0.4261506043346146
+2024-04-09 16:41:30,522: INFO: MLP Test Result: MSE: 219.445042973198
+2024-04-09 16:41:30,522: INFO: MLP Test Result: MSE: 11.151289577349415
+2024-04-09 16:41:30,522: INFO: MLP Test Result: R2: 0.4261506043346146
+2024-04-09 16:41:30,522: INFO: MLP Training End--------------------------------------------------------------------------------------
+2024-04-09 16:41:47,808: INFO: SVR Training --------------------------------------------------------------------------------------
+2024-04-09 16:41:47,818: INFO: (360, 9), (360,)
+2024-04-09 16:41:47,819: INFO: Train: The rmse of the SVR is: 321.15049510584686
+2024-04-09 16:41:47,819: INFO: Train: The mae of the SVR is: 14.03577890708399
+2024-04-09 16:41:47,819: INFO: Train: The R2 of the SVR is: 0.08396754498740733
+2024-04-09 16:41:48,051: INFO: (360, 9), (360,)
+2024-04-09 16:41:48,052: INFO: Train: The rmse of the SVR is: 432.62196580271575
+2024-04-09 16:41:48,052: INFO: Train: The mae of the SVR is: 15.938886098071956
+2024-04-09 16:41:48,053: INFO: Train: The R2 of the SVR is: 0.020086494844569813
+2024-04-09 16:41:48,284: INFO: (360, 9), (360,)
+2024-04-09 16:41:48,285: INFO: Train: The rmse of the SVR is: 248.3577195835665
+2024-04-09 16:41:48,285: INFO: Train: The mae of the SVR is: 12.332748102287221
+2024-04-09 16:41:48,286: INFO: Train: The R2 of the SVR is: 0.12575861576848557
+2024-04-09 16:41:48,502: INFO: (360, 9), (360,)
+2024-04-09 16:41:48,502: INFO: Train: The rmse of the SVR is: 255.25590590647738
+2024-04-09 16:41:48,503: INFO: Train: The mae of the SVR is: 12.552982583450289
+2024-04-09 16:41:48,503: INFO: Train: The R2 of the SVR is: 0.02753500596381342
+2024-04-09 16:41:48,721: INFO: (360, 9), (360,)
+2024-04-09 16:41:48,722: INFO: Train: The rmse of the SVR is: 397.29424581630974
+2024-04-09 16:41:48,722: INFO: Train: The mae of the SVR is: 14.46810646267743
+2024-04-09 16:41:48,722: INFO: Train: The R2 of the SVR is: -0.010707590307556858
+2024-04-09 16:42:09,062: INFO: Test: The rmse of the SVR is: 391.4902954072576
+2024-04-09 16:42:09,063: INFO: Test: The mae of the SVR is: 14.39641916215466
+2024-04-09 16:42:09,063: INFO: Test: The R2 of the SVR is: -0.023748207681120626
+2024-04-09 16:42:09,247: INFO: SVR Test Result: MSE: 391.4902954072576
+2024-04-09 16:42:09,247: INFO: SVR Test Result: MSE: 14.39641916215466
+2024-04-09 16:42:09,247: INFO: SVR Test Result: R2: -0.023748207681120626
+2024-04-09 16:42:09,247: INFO: SVR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:42:30,520: INFO: GaussR Training --------------------------------------------------------------------------------------
+2024-04-09 16:42:30,589: INFO: (360, 9), (360,)
+2024-04-09 16:42:30,589: INFO: Train: The rmse of the GaussR is: 838.2093049914537
+2024-04-09 16:42:30,590: INFO: Train: The mae of the GaussR is: 23.082574238927727
+2024-04-09 16:42:30,590: INFO: Train: The R2 of the GaussR is: -1.3252491893166973
+2024-04-09 16:42:30,816: INFO: (360, 9), (360,)
+2024-04-09 16:42:30,817: INFO: Train: The rmse of the GaussR is: 713.1942976577676
+2024-04-09 16:42:30,817: INFO: Train: The mae of the GaussR is: 21.024398608211573
+2024-04-09 16:42:30,817: INFO: Train: The R2 of the GaussR is: -1.1368568892539286
+2024-04-09 16:42:31,052: INFO: (360, 9), (360,)
+2024-04-09 16:42:31,052: INFO: Train: The rmse of the GaussR is: 639.3558546215085
+2024-04-09 16:42:31,052: INFO: Train: The mae of the GaussR is: 19.40438187689521
+2024-04-09 16:42:31,052: INFO: Train: The R2 of the GaussR is: -1.2906243221181977
+2024-04-09 16:42:31,276: INFO: (360, 9), (360,)
+2024-04-09 16:42:31,276: INFO: Train: The rmse of the GaussR is: 616.3993239634864
+2024-04-09 16:42:31,276: INFO: Train: The mae of the GaussR is: 19.443300510194234
+2024-04-09 16:42:31,276: INFO: Train: The R2 of the GaussR is: -0.9456971519783246
+2024-04-09 16:42:31,534: INFO: (360, 9), (360,)
+2024-04-09 16:42:31,534: INFO: Train: The rmse of the GaussR is: 846.4106927618942
+2024-04-09 16:42:31,534: INFO: Train: The mae of the GaussR is: 21.34306485961291
+2024-04-09 16:42:31,534: INFO: Train: The R2 of the GaussR is: -0.8805220832149026
+2024-04-09 16:42:49,957: INFO: Test: The rmse of the GaussR is: 869.520212561032
+2024-04-09 16:42:49,958: INFO: Test: The mae of the GaussR is: 23.65507321056202
+2024-04-09 16:42:49,959: INFO: Test: The R2 of the GaussR is: -1.273797766112803
+2024-04-09 16:42:50,361: INFO: GaussR Test Result: MSE: 869.520212561032
+2024-04-09 16:42:50,361: INFO: GaussR Test Result: MSE: 23.65507321056202
+2024-04-09 16:42:50,361: INFO: GaussR Test Result: R2: -1.273797766112803
+2024-04-09 16:42:50,361: INFO: GaussR Training End--------------------------------------------------------------------------------------
+
+
+2024-04-09 16:46:53,563: INFO: NH3-N loss (%) Prediction Training--------------------------------------------------------------------------------------
+2024-04-09 16:46:53,563: INFO: NH3-N loss (%) Prediction Training--------------------------------------------------------------------------------------
+2024-04-09 16:46:53,642: INFO: RF Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:46:53,642: INFO: RF Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:46:55,212: INFO: (535, 9), (535,)
+2024-04-09 16:46:55,212: INFO: (535, 9), (535,)
+2024-04-09 16:46:55,212: INFO: Train: The rmse of the RFRegression is: 69.13858980475665
+2024-04-09 16:46:55,212: INFO: Train: The rmse of the RFRegression is: 69.13858980475665
+2024-04-09 16:46:55,213: INFO: Train: The mae of the RFRegression is: 6.096575483602872
+2024-04-09 16:46:55,213: INFO: Train: The mae of the RFRegression is: 6.096575483602872
+2024-04-09 16:46:55,213: INFO: Train: The R2 of the RFRegression is: 0.43657831510057665
+2024-04-09 16:46:55,213: INFO: Train: The R2 of the RFRegression is: 0.43657831510057665
+2024-04-09 16:46:57,656: INFO: (535, 9), (535,)
+2024-04-09 16:46:57,656: INFO: (535, 9), (535,)
+2024-04-09 16:46:57,657: INFO: Train: The rmse of the RFRegression is: 60.30199481779759
+2024-04-09 16:46:57,657: INFO: Train: The rmse of the RFRegression is: 60.30199481779759
+2024-04-09 16:46:57,658: INFO: Train: The mae of the RFRegression is: 6.159180139046011
+2024-04-09 16:46:57,658: INFO: Train: The mae of the RFRegression is: 6.159180139046011
+2024-04-09 16:46:57,658: INFO: Train: The R2 of the RFRegression is: 0.45002069862277505
+2024-04-09 16:46:57,658: INFO: Train: The R2 of the RFRegression is: 0.45002069862277505
+2024-04-09 16:46:59,588: INFO: (535, 9), (535,)
+2024-04-09 16:46:59,588: INFO: (535, 9), (535,)
+2024-04-09 16:46:59,589: INFO: Train: The rmse of the RFRegression is: 93.4711476540547
+2024-04-09 16:46:59,589: INFO: Train: The rmse of the RFRegression is: 93.4711476540547
+2024-04-09 16:46:59,589: INFO: Train: The mae of the RFRegression is: 7.116045399538613
+2024-04-09 16:46:59,589: INFO: Train: The mae of the RFRegression is: 7.116045399538613
+2024-04-09 16:46:59,590: INFO: Train: The R2 of the RFRegression is: 0.2260899863499536
+2024-04-09 16:46:59,590: INFO: Train: The R2 of the RFRegression is: 0.2260899863499536
+2024-04-09 16:47:01,376: INFO: (535, 9), (535,)
+2024-04-09 16:47:01,376: INFO: (535, 9), (535,)
+2024-04-09 16:47:01,376: INFO: Train: The rmse of the RFRegression is: 52.17756305387274
+2024-04-09 16:47:01,376: INFO: Train: The rmse of the RFRegression is: 52.17756305387274
+2024-04-09 16:47:01,377: INFO: Train: The mae of the RFRegression is: 5.614706339008674
+2024-04-09 16:47:01,377: INFO: Train: The mae of the RFRegression is: 5.614706339008674
+2024-04-09 16:47:01,377: INFO: Train: The R2 of the RFRegression is: 0.4051898925889328
+2024-04-09 16:47:01,377: INFO: Train: The R2 of the RFRegression is: 0.4051898925889328
+2024-04-09 16:47:03,649: INFO: (536, 9), (536,)
+2024-04-09 16:47:03,649: INFO: (536, 9), (536,)
+2024-04-09 16:47:03,649: INFO: Train: The rmse of the RFRegression is: 99.68484259836467
+2024-04-09 16:47:03,649: INFO: Train: The rmse of the RFRegression is: 99.68484259836467
+2024-04-09 16:47:03,650: INFO: Train: The mae of the RFRegression is: 6.704493213695212
+2024-04-09 16:47:03,650: INFO: Train: The mae of the RFRegression is: 6.704493213695212
+2024-04-09 16:47:03,650: INFO: Train: The R2 of the RFRegression is: 0.44895739711115923
+2024-04-09 16:47:03,650: INFO: Train: The R2 of the RFRegression is: 0.44895739711115923
+2024-04-09 16:47:03,976: INFO: Test: The rmse of the RFRegression is: 105.97322508059023
+2024-04-09 16:47:03,976: INFO: Test: The rmse of the RFRegression is: 105.97322508059023
+2024-04-09 16:47:03,977: INFO: Test: The mae of the RFRegression is: 6.5532716725404505
+2024-04-09 16:47:03,977: INFO: Test: The mae of the RFRegression is: 6.5532716725404505
+2024-04-09 16:47:03,977: INFO: Test: The R2 of the RFRegression is: 0.3473503176736703
+2024-04-09 16:47:03,977: INFO: Test: The R2 of the RFRegression is: 0.3473503176736703
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: MSE: 105.97322508059023
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: MSE: 105.97322508059023
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: MSE: 6.5532716725404505
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: MSE: 6.5532716725404505
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: R2: 0.3473503176736703
+2024-04-09 16:47:04,567: INFO: RandomForest Test Result: R2: 0.3473503176736703
+2024-04-09 16:47:04,567: INFO: RF Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:04,567: INFO: RF Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:04,594: INFO: XGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:47:04,594: INFO: XGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:47:04,874: INFO: (535, 9) (535,)
+2024-04-09 16:47:04,874: INFO: (535, 9) (535,)
+2024-04-09 16:47:04,874: INFO: Train: The rmse of the XgbRegression is: 65.63947424536872
+2024-04-09 16:47:04,874: INFO: Train: The rmse of the XgbRegression is: 65.63947424536872
+2024-04-09 16:47:04,874: INFO: Train: The mae of the XgbRegression is: 5.437761023617926
+2024-04-09 16:47:04,874: INFO: Train: The mae of the XgbRegression is: 5.437761023617926
+2024-04-09 16:47:04,875: INFO: Train: The R2 of the XgbRegression is: 0.45275938526774484
+2024-04-09 16:47:04,875: INFO: Train: The R2 of the XgbRegression is: 0.45275938526774484
+2024-04-09 16:47:05,574: INFO: (535, 9) (535,)
+2024-04-09 16:47:05,574: INFO: (535, 9) (535,)
+2024-04-09 16:47:05,575: INFO: Train: The rmse of the XgbRegression is: 51.711673206946465
+2024-04-09 16:47:05,575: INFO: Train: The rmse of the XgbRegression is: 51.711673206946465
+2024-04-09 16:47:05,575: INFO: Train: The mae of the XgbRegression is: 4.821322647029375
+2024-04-09 16:47:05,575: INFO: Train: The mae of the XgbRegression is: 4.821322647029375
+2024-04-09 16:47:05,576: INFO: Train: The R2 of the XgbRegression is: 0.5118581333408844
+2024-04-09 16:47:05,576: INFO: Train: The R2 of the XgbRegression is: 0.5118581333408844
+2024-04-09 16:47:06,458: INFO: (535, 9) (535,)
+2024-04-09 16:47:06,458: INFO: (535, 9) (535,)
+2024-04-09 16:47:06,459: INFO: Train: The rmse of the XgbRegression is: 103.51518851212266
+2024-04-09 16:47:06,459: INFO: Train: The rmse of the XgbRegression is: 103.51518851212266
+2024-04-09 16:47:06,460: INFO: Train: The mae of the XgbRegression is: 6.444221115659338
+2024-04-09 16:47:06,460: INFO: Train: The mae of the XgbRegression is: 6.444221115659338
+2024-04-09 16:47:06,460: INFO: Train: The R2 of the XgbRegression is: 0.3502935530253547
+2024-04-09 16:47:06,460: INFO: Train: The R2 of the XgbRegression is: 0.3502935530253547
+2024-04-09 16:47:07,207: INFO: (535, 9) (535,)
+2024-04-09 16:47:07,207: INFO: (535, 9) (535,)
+2024-04-09 16:47:07,207: INFO: Train: The rmse of the XgbRegression is: 65.94104760480603
+2024-04-09 16:47:07,207: INFO: Train: The rmse of the XgbRegression is: 65.94104760480603
+2024-04-09 16:47:07,208: INFO: Train: The mae of the XgbRegression is: 6.162015814374645
+2024-04-09 16:47:07,208: INFO: Train: The mae of the XgbRegression is: 6.162015814374645
+2024-04-09 16:47:07,208: INFO: Train: The R2 of the XgbRegression is: 0.3966524052542637
+2024-04-09 16:47:07,208: INFO: Train: The R2 of the XgbRegression is: 0.3966524052542637
+2024-04-09 16:47:08,052: INFO: (536, 9) (536,)
+2024-04-09 16:47:08,052: INFO: (536, 9) (536,)
+2024-04-09 16:47:08,053: INFO: Train: The rmse of the XgbRegression is: 72.74076845397403
+2024-04-09 16:47:08,053: INFO: Train: The rmse of the XgbRegression is: 72.74076845397403
+2024-04-09 16:47:08,053: INFO: Train: The mae of the XgbRegression is: 5.994853727413515
+2024-04-09 16:47:08,053: INFO: Train: The mae of the XgbRegression is: 5.994853727413515
+2024-04-09 16:47:08,054: INFO: Train: The R2 of the XgbRegression is: 0.4511788972279537
+2024-04-09 16:47:08,054: INFO: Train: The R2 of the XgbRegression is: 0.4511788972279537
+2024-04-09 16:47:08,438: INFO: Test: The rmse of the XgbRegression is: 90.24865182796042
+2024-04-09 16:47:08,438: INFO: Test: The rmse of the XgbRegression is: 90.24865182796042
+2024-04-09 16:47:08,438: INFO: Test: The mae of the XgbRegression is: 5.89660452226896
+2024-04-09 16:47:08,438: INFO: Test: The mae of the XgbRegression is: 5.89660452226896
+2024-04-09 16:47:08,439: INFO: Test: The R2 of the XgbRegression is: 0.4441921164416275
+2024-04-09 16:47:08,439: INFO: Test: The R2 of the XgbRegression is: 0.4441921164416275
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: MSE: 90.24865182796042
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: MSE: 90.24865182796042
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: MSE: 5.89660452226896
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: MSE: 5.89660452226896
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: R2: 0.4441921164416275
+2024-04-09 16:47:08,800: INFO: XGBoost Test Result: R2: 0.4441921164416275
+2024-04-09 16:47:08,800: INFO: XGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:08,800: INFO: XGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:08,824: INFO: LGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:47:08,824: INFO: LGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:47:09,089: INFO: (536, 9), (535,)
+2024-04-09 16:47:09,089: INFO: (536, 9), (535,)
+2024-04-09 16:47:09,089: INFO: Train: The rmse of the LgbRegression is: 91.7663314875814
+2024-04-09 16:47:09,089: INFO: Train: The rmse of the LgbRegression is: 91.7663314875814
+2024-04-09 16:47:09,090: INFO: Train: The mae of the LgbRegression is: 6.392939032041244
+2024-04-09 16:47:09,090: INFO: Train: The mae of the LgbRegression is: 6.392939032041244
+2024-04-09 16:47:09,091: INFO: Train: The R2 of the LgbRegression is: 0.3250845675840488
+2024-04-09 16:47:09,091: INFO: Train: The R2 of the LgbRegression is: 0.3250845675840488
+2024-04-09 16:47:09,927: INFO: (536, 9), (535,)
+2024-04-09 16:47:09,927: INFO: (536, 9), (535,)
+2024-04-09 16:47:09,927: INFO: Train: The rmse of the LgbRegression is: 77.52458614272207
+2024-04-09 16:47:09,927: INFO: Train: The rmse of the LgbRegression is: 77.52458614272207
+2024-04-09 16:47:09,928: INFO: Train: The mae of the LgbRegression is: 6.269893528452285
+2024-04-09 16:47:09,928: INFO: Train: The mae of the LgbRegression is: 6.269893528452285
+2024-04-09 16:47:09,929: INFO: Train: The R2 of the LgbRegression is: 0.47572455637745126
+2024-04-09 16:47:09,929: INFO: Train: The R2 of the LgbRegression is: 0.47572455637745126
+2024-04-09 16:47:11,496: INFO: (536, 9), (535,)
+2024-04-09 16:47:11,496: INFO: (536, 9), (535,)
+2024-04-09 16:47:11,497: INFO: Train: The rmse of the LgbRegression is: 79.11816260164763
+2024-04-09 16:47:11,497: INFO: Train: The rmse of the LgbRegression is: 79.11816260164763
+2024-04-09 16:47:11,497: INFO: Train: The mae of the LgbRegression is: 6.932329309036867
+2024-04-09 16:47:11,497: INFO: Train: The mae of the LgbRegression is: 6.932329309036867
+2024-04-09 16:47:11,498: INFO: Train: The R2 of the LgbRegression is: 0.41157342443652
+2024-04-09 16:47:11,498: INFO: Train: The R2 of the LgbRegression is: 0.41157342443652
+2024-04-09 16:47:12,581: INFO: (536, 9), (535,)
+2024-04-09 16:47:12,581: INFO: (536, 9), (535,)
+2024-04-09 16:47:12,582: INFO: Train: The rmse of the LgbRegression is: 72.89423966017233
+2024-04-09 16:47:12,582: INFO: Train: The rmse of the LgbRegression is: 72.89423966017233
+2024-04-09 16:47:12,582: INFO: Train: The mae of the LgbRegression is: 5.97415955276604
+2024-04-09 16:47:12,582: INFO: Train: The mae of the LgbRegression is: 5.97415955276604
+2024-04-09 16:47:12,583: INFO: Train: The R2 of the LgbRegression is: 0.21345576466692517
+2024-04-09 16:47:12,583: INFO: Train: The R2 of the LgbRegression is: 0.21345576466692517
+2024-04-09 16:47:13,927: INFO: (536, 9), (536,)
+2024-04-09 16:47:13,927: INFO: (536, 9), (536,)
+2024-04-09 16:47:13,928: INFO: Train: The rmse of the LgbRegression is: 51.852125567092244
+2024-04-09 16:47:13,928: INFO: Train: The rmse of the LgbRegression is: 51.852125567092244
+2024-04-09 16:47:13,929: INFO: Train: The mae of the LgbRegression is: 4.955659092493038
+2024-04-09 16:47:13,929: INFO: Train: The mae of the LgbRegression is: 4.955659092493038
+2024-04-09 16:47:13,929: INFO: Train: The R2 of the LgbRegression is: 0.5474815547913915
+2024-04-09 16:47:13,929: INFO: Train: The R2 of the LgbRegression is: 0.5474815547913915
+2024-04-09 16:47:14,450: INFO: Test: The rmse of the LgbRegression is: 91.2323166644833
+2024-04-09 16:47:14,450: INFO: Test: The rmse of the LgbRegression is: 91.2323166644833
+2024-04-09 16:47:14,451: INFO: Test: The mae of the LgbRegression is: 5.906557746190595
+2024-04-09 16:47:14,451: INFO: Test: The mae of the LgbRegression is: 5.906557746190595
+2024-04-09 16:47:14,452: INFO: Test: The R2 of the LgbRegression is: 0.4381340905338189
+2024-04-09 16:47:14,452: INFO: Test: The R2 of the LgbRegression is: 0.4381340905338189
+2024-04-09 16:47:14,977: INFO: Lightgbm Test Result: MSE: 91.2323166644833
+2024-04-09 16:47:14,977: INFO: Lightgbm Test Result: MSE: 91.2323166644833
+2024-04-09 16:47:14,977: INFO: Lightgbm Test Result: MSE: 5.906557746190595
+2024-04-09 16:47:14,977: INFO: Lightgbm Test Result: MSE: 5.906557746190595
+2024-04-09 16:47:14,978: INFO: Lightgbm Test Result: R2: 0.4381340905338189
+2024-04-09 16:47:14,978: INFO: Lightgbm Test Result: R2: 0.4381340905338189
+2024-04-09 16:47:14,978: INFO: LGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:14,978: INFO: LGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:15,016: INFO: CatRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:15,016: INFO: CatRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:21,560: INFO: (535, 9) (535,)
+2024-04-09 16:47:21,560: INFO: (535, 9) (535,)
+2024-04-09 16:47:21,561: INFO: Train: The rmse of the CatRegression is: 75.26395218727357
+2024-04-09 16:47:21,561: INFO: Train: The rmse of the CatRegression is: 75.26395218727357
+2024-04-09 16:47:21,561: INFO: Train: The mae of the CatRegression is: 6.648459612137527
+2024-04-09 16:47:21,561: INFO: Train: The mae of the CatRegression is: 6.648459612137527
+2024-04-09 16:47:21,561: INFO: Train: The R2 of the CatRegression is: 0.4155002598890817
+2024-04-09 16:47:21,561: INFO: Train: The R2 of the CatRegression is: 0.4155002598890817
+2024-04-09 16:47:28,380: INFO: (535, 9) (535,)
+2024-04-09 16:47:28,380: INFO: (535, 9) (535,)
+2024-04-09 16:47:28,381: INFO: Train: The rmse of the CatRegression is: 69.20647425837011
+2024-04-09 16:47:28,381: INFO: Train: The rmse of the CatRegression is: 69.20647425837011
+2024-04-09 16:47:28,381: INFO: Train: The mae of the CatRegression is: 5.974107358781798
+2024-04-09 16:47:28,381: INFO: Train: The mae of the CatRegression is: 5.974107358781798
+2024-04-09 16:47:28,381: INFO: Train: The R2 of the CatRegression is: 0.4674081862788946
+2024-04-09 16:47:28,381: INFO: Train: The R2 of the CatRegression is: 0.4674081862788946
+2024-04-09 16:47:35,279: INFO: (535, 9) (535,)
+2024-04-09 16:47:35,279: INFO: (535, 9) (535,)
+2024-04-09 16:47:35,280: INFO: Train: The rmse of the CatRegression is: 65.616248603813
+2024-04-09 16:47:35,280: INFO: Train: The rmse of the CatRegression is: 65.616248603813
+2024-04-09 16:47:35,280: INFO: Train: The mae of the CatRegression is: 6.239258759329213
+2024-04-09 16:47:35,280: INFO: Train: The mae of the CatRegression is: 6.239258759329213
+2024-04-09 16:47:35,280: INFO: Train: The R2 of the CatRegression is: 0.41189238494599045
+2024-04-09 16:47:35,280: INFO: Train: The R2 of the CatRegression is: 0.41189238494599045
+2024-04-09 16:47:41,890: INFO: (535, 9) (535,)
+2024-04-09 16:47:41,890: INFO: (535, 9) (535,)
+2024-04-09 16:47:41,891: INFO: Train: The rmse of the CatRegression is: 65.28950045055326
+2024-04-09 16:47:41,891: INFO: Train: The rmse of the CatRegression is: 65.28950045055326
+2024-04-09 16:47:41,891: INFO: Train: The mae of the CatRegression is: 6.284282315401634
+2024-04-09 16:47:41,891: INFO: Train: The mae of the CatRegression is: 6.284282315401634
+2024-04-09 16:47:41,891: INFO: Train: The R2 of the CatRegression is: 0.38561813310350423
+2024-04-09 16:47:41,891: INFO: Train: The R2 of the CatRegression is: 0.38561813310350423
+2024-04-09 16:47:48,502: INFO: (536, 9) (536,)
+2024-04-09 16:47:48,502: INFO: (536, 9) (536,)
+2024-04-09 16:47:48,503: INFO: Train: The rmse of the CatRegression is: 66.29497191908477
+2024-04-09 16:47:48,503: INFO: Train: The rmse of the CatRegression is: 66.29497191908477
+2024-04-09 16:47:48,503: INFO: Train: The mae of the CatRegression is: 6.092147534444556
+2024-04-09 16:47:48,503: INFO: Train: The mae of the CatRegression is: 6.092147534444556
+2024-04-09 16:47:48,504: INFO: Train: The R2 of the CatRegression is: 0.5481056971644094
+2024-04-09 16:47:48,504: INFO: Train: The R2 of the CatRegression is: 0.5481056971644094
+2024-04-09 16:47:48,803: INFO: Test: The rmse of the CatRegression is: 91.7609373140381
+2024-04-09 16:47:48,803: INFO: Test: The rmse of the CatRegression is: 91.7609373140381
+2024-04-09 16:47:48,804: INFO: Test: The mae of the CatRegression is: 6.356652313670649
+2024-04-09 16:47:48,804: INFO: Test: The mae of the CatRegression is: 6.356652313670649
+2024-04-09 16:47:48,805: INFO: Test: The R2 of the CatRegression is: 0.4348785125447494
+2024-04-09 16:47:48,805: INFO: Test: The R2 of the CatRegression is: 0.4348785125447494
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: MSE: 91.7609373140381
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: MSE: 91.7609373140381
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: MSE: 6.356652313670649
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: MSE: 6.356652313670649
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: R2: 0.4348785125447494
+2024-04-09 16:47:49,078: INFO: CatRegression Test Result: R2: 0.4348785125447494
+2024-04-09 16:47:49,078: INFO: CatRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:49,078: INFO: CatRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:49,105: INFO: RidgeRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:49,105: INFO: RidgeRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:49,109: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,109: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,109: INFO: Train: The rmse of the RidgeRegression is: 115.23382667106546
+2024-04-09 16:47:49,109: INFO: Train: The rmse of the RidgeRegression is: 115.23382667106546
+2024-04-09 16:47:49,109: INFO: Train: The mae of the RidgeRegression is: 8.719220539354891
+2024-04-09 16:47:49,109: INFO: Train: The mae of the RidgeRegression is: 8.719220539354891
+2024-04-09 16:47:49,112: INFO: Train: The R2 of the RidgeRegression is: -0.0031311851363557963
+2024-04-09 16:47:49,112: INFO: Train: The R2 of the RidgeRegression is: -0.0031311851363557963
+2024-04-09 16:47:49,528: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,528: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,529: INFO: Train: The rmse of the RidgeRegression is: 121.0036043693708
+2024-04-09 16:47:49,529: INFO: Train: The rmse of the RidgeRegression is: 121.0036043693708
+2024-04-09 16:47:49,529: INFO: Train: The mae of the RidgeRegression is: 8.092695439349777
+2024-04-09 16:47:49,529: INFO: Train: The mae of the RidgeRegression is: 8.092695439349777
+2024-04-09 16:47:49,529: INFO: Train: The R2 of the RidgeRegression is: 0.1295653217126702
+2024-04-09 16:47:49,529: INFO: Train: The R2 of the RidgeRegression is: 0.1295653217126702
+2024-04-09 16:47:49,798: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,798: INFO: (535, 9), (535,)
+2024-04-09 16:47:49,799: INFO: Train: The rmse of the RidgeRegression is: 128.63181845933292
+2024-04-09 16:47:49,799: INFO: Train: The rmse of the RidgeRegression is: 128.63181845933292
+2024-04-09 16:47:49,799: INFO: Train: The mae of the RidgeRegression is: 8.755877684400053
+2024-04-09 16:47:49,799: INFO: Train: The mae of the RidgeRegression is: 8.755877684400053
+2024-04-09 16:47:49,800: INFO: Train: The R2 of the RidgeRegression is: 0.07670146164505742
+2024-04-09 16:47:49,800: INFO: Train: The R2 of the RidgeRegression is: 0.07670146164505742
+2024-04-09 16:47:50,143: INFO: (535, 9), (535,)
+2024-04-09 16:47:50,143: INFO: (535, 9), (535,)
+2024-04-09 16:47:50,144: INFO: Train: The rmse of the RidgeRegression is: 95.88668185433649
+2024-04-09 16:47:50,144: INFO: Train: The rmse of the RidgeRegression is: 95.88668185433649
+2024-04-09 16:47:50,144: INFO: Train: The mae of the RidgeRegression is: 8.123507222282267
+2024-04-09 16:47:50,144: INFO: Train: The mae of the RidgeRegression is: 8.123507222282267
+2024-04-09 16:47:50,144: INFO: Train: The R2 of the RidgeRegression is: 0.07392198316390541
+2024-04-09 16:47:50,144: INFO: Train: The R2 of the RidgeRegression is: 0.07392198316390541
+2024-04-09 16:47:50,385: INFO: (536, 9), (536,)
+2024-04-09 16:47:50,385: INFO: (536, 9), (536,)
+2024-04-09 16:47:50,386: INFO: Train: The rmse of the RidgeRegression is: 115.48907269231684
+2024-04-09 16:47:50,386: INFO: Train: The rmse of the RidgeRegression is: 115.48907269231684
+2024-04-09 16:47:50,386: INFO: Train: The mae of the RidgeRegression is: 8.824361897466137
+2024-04-09 16:47:50,386: INFO: Train: The mae of the RidgeRegression is: 8.824361897466137
+2024-04-09 16:47:50,386: INFO: Train: The R2 of the RidgeRegression is: 0.08805614738442458
+2024-04-09 16:47:50,386: INFO: Train: The R2 of the RidgeRegression is: 0.08805614738442458
+2024-04-09 16:47:50,700: INFO: Test: The rmse of the RidgeRegression is: 153.27912572171851
+2024-04-09 16:47:50,700: INFO: Test: The rmse of the RidgeRegression is: 153.27912572171851
+2024-04-09 16:47:50,700: INFO: Test: The mae of the RidgeRegression is: 9.048806859387883
+2024-04-09 16:47:50,700: INFO: Test: The mae of the RidgeRegression is: 9.048806859387883
+2024-04-09 16:47:50,701: INFO: Test: The R2 of the RidgeRegression is: 0.0560108684673809
+2024-04-09 16:47:50,701: INFO: Test: The R2 of the RidgeRegression is: 0.0560108684673809
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: MSE: 153.27912572171851
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: MSE: 153.27912572171851
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: MSE: 9.048806859387883
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: MSE: 9.048806859387883
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: R2: 0.0560108684673809
+2024-04-09 16:47:51,061: INFO: RidgeRegression Test Result: R2: 0.0560108684673809
+2024-04-09 16:47:51,061: INFO: RidgeRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:51,061: INFO: RidgeRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:51,086: INFO: LinearRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:51,086: INFO: LinearRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:51,092: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,092: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,092: INFO: Train: The rmse of the LR is: 136.63896663361115
+2024-04-09 16:47:51,092: INFO: Train: The rmse of the LR is: 136.63896663361115
+2024-04-09 16:47:51,092: INFO: Train: The mae of the LR is: 9.003228043174479
+2024-04-09 16:47:51,092: INFO: Train: The mae of the LR is: 9.003228043174479
+2024-04-09 16:47:51,093: INFO: Train: The R2 of the LR is: -0.018827268690013943
+2024-04-09 16:47:51,093: INFO: Train: The R2 of the LR is: -0.018827268690013943
+2024-04-09 16:47:51,398: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,398: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,399: INFO: Train: The rmse of the LR is: 107.9289441584476
+2024-04-09 16:47:51,399: INFO: Train: The rmse of the LR is: 107.9289441584476
+2024-04-09 16:47:51,400: INFO: Train: The mae of the LR is: 8.537248069774085
+2024-04-09 16:47:51,400: INFO: Train: The mae of the LR is: 8.537248069774085
+2024-04-09 16:47:51,400: INFO: Train: The R2 of the LR is: 0.12985852279856258
+2024-04-09 16:47:51,400: INFO: Train: The R2 of the LR is: 0.12985852279856258
+2024-04-09 16:47:51,714: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,714: INFO: (535, 9), (535,)
+2024-04-09 16:47:51,714: INFO: Train: The rmse of the LR is: 119.87560044160207
+2024-04-09 16:47:51,714: INFO: Train: The rmse of the LR is: 119.87560044160207
+2024-04-09 16:47:51,715: INFO: Train: The mae of the LR is: 8.847806596688892
+2024-04-09 16:47:51,715: INFO: Train: The mae of the LR is: 8.847806596688892
+2024-04-09 16:47:51,715: INFO: Train: The R2 of the LR is: 0.12448206770567449
+2024-04-09 16:47:51,715: INFO: Train: The R2 of the LR is: 0.12448206770567449
+2024-04-09 16:47:52,076: INFO: (535, 9), (535,)
+2024-04-09 16:47:52,076: INFO: (535, 9), (535,)
+2024-04-09 16:47:52,076: INFO: Train: The rmse of the LR is: 85.10725852837611
+2024-04-09 16:47:52,076: INFO: Train: The rmse of the LR is: 85.10725852837611
+2024-04-09 16:47:52,077: INFO: Train: The mae of the LR is: 7.6686872566764945
+2024-04-09 16:47:52,077: INFO: Train: The mae of the LR is: 7.6686872566764945
+2024-04-09 16:47:52,077: INFO: Train: The R2 of the LR is: 0.07154068690563908
+2024-04-09 16:47:52,077: INFO: Train: The R2 of the LR is: 0.07154068690563908
+2024-04-09 16:47:52,391: INFO: (536, 9), (536,)
+2024-04-09 16:47:52,391: INFO: (536, 9), (536,)
+2024-04-09 16:47:52,391: INFO: Train: The rmse of the LR is: 128.04441857041112
+2024-04-09 16:47:52,391: INFO: Train: The rmse of the LR is: 128.04441857041112
+2024-04-09 16:47:52,392: INFO: Train: The mae of the LR is: 8.565692793098188
+2024-04-09 16:47:52,392: INFO: Train: The mae of the LR is: 8.565692793098188
+2024-04-09 16:47:52,392: INFO: Train: The R2 of the LR is: 0.07949735347944553
+2024-04-09 16:47:52,392: INFO: Train: The R2 of the LR is: 0.07949735347944553
+2024-04-09 16:47:52,755: INFO: Test: The rmse of the LinearRegression is: 154.9852578600697
+2024-04-09 16:47:52,755: INFO: Test: The rmse of the LinearRegression is: 154.9852578600697
+2024-04-09 16:47:52,755: INFO: Test: The mae of the LinearRegression is: 8.959318725161463
+2024-04-09 16:47:52,755: INFO: Test: The mae of the LinearRegression is: 8.959318725161463
+2024-04-09 16:47:52,756: INFO: Test: The R2 of the LinearRegression is: 0.04550343512981059
+2024-04-09 16:47:52,756: INFO: Test: The R2 of the LinearRegression is: 0.04550343512981059
+2024-04-09 16:47:53,161: INFO: LinearRegression Test Result: MSE: 154.9852578600697
+2024-04-09 16:47:53,161: INFO: LinearRegression Test Result: MSE: 154.9852578600697
+2024-04-09 16:47:53,161: INFO: LinearRegression Test Result: MSE: 8.959318725161463
+2024-04-09 16:47:53,161: INFO: LinearRegression Test Result: MSE: 8.959318725161463
+2024-04-09 16:47:53,162: INFO: LinearRegression Test Result: R2: 0.04550343512981059
+2024-04-09 16:47:53,162: INFO: LinearRegression Test Result: R2: 0.04550343512981059
+2024-04-09 16:47:53,162: INFO: LinearRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:53,162: INFO: LinearRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:47:53,201: INFO: MLP Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:53,201: INFO: MLP Training --------------------------------------------------------------------------------------
+2024-04-09 16:47:55,466: INFO: (535, 9), (535,)
+2024-04-09 16:47:55,466: INFO: (535, 9), (535,)
+2024-04-09 16:47:55,467: INFO: Train: The rmse of the MLP is: 146.92171345870563
+2024-04-09 16:47:55,467: INFO: Train: The rmse of the MLP is: 146.92171345870563
+2024-04-09 16:47:55,467: INFO: Train: The mae of the MLP is: 8.33779791968837
+2024-04-09 16:47:55,467: INFO: Train: The mae of the MLP is: 8.33779791968837
+2024-04-09 16:47:55,467: INFO: Train: The R2 of the MLP is: -0.016281192932790844
+2024-04-09 16:47:55,467: INFO: Train: The R2 of the MLP is: -0.016281192932790844
+2024-04-09 16:47:57,961: INFO: (535, 9), (535,)
+2024-04-09 16:47:57,961: INFO: (535, 9), (535,)
+2024-04-09 16:47:57,962: INFO: Train: The rmse of the MLP is: 96.92637311521962
+2024-04-09 16:47:57,962: INFO: Train: The rmse of the MLP is: 96.92637311521962
+2024-04-09 16:47:57,962: INFO: Train: The mae of the MLP is: 7.253619392213832
+2024-04-09 16:47:57,962: INFO: Train: The mae of the MLP is: 7.253619392213832
+2024-04-09 16:47:57,963: INFO: Train: The R2 of the MLP is: 0.047975571958771446
+2024-04-09 16:47:57,963: INFO: Train: The R2 of the MLP is: 0.047975571958771446
+2024-04-09 16:48:00,421: INFO: (535, 9), (535,)
+2024-04-09 16:48:00,421: INFO: (535, 9), (535,)
+2024-04-09 16:48:00,422: INFO: Train: The rmse of the MLP is: 100.84705874296068
+2024-04-09 16:48:00,422: INFO: Train: The rmse of the MLP is: 100.84705874296068
+2024-04-09 16:48:00,422: INFO: Train: The mae of the MLP is: 7.587493189341518
+2024-04-09 16:48:00,422: INFO: Train: The mae of the MLP is: 7.587493189341518
+2024-04-09 16:48:00,422: INFO: Train: The R2 of the MLP is: 0.12560610048960863
+2024-04-09 16:48:00,422: INFO: Train: The R2 of the MLP is: 0.12560610048960863
+2024-04-09 16:48:02,841: INFO: (535, 9), (535,)
+2024-04-09 16:48:02,841: INFO: (535, 9), (535,)
+2024-04-09 16:48:02,842: INFO: Train: The rmse of the MLP is: 100.21610813743762
+2024-04-09 16:48:02,842: INFO: Train: The rmse of the MLP is: 100.21610813743762
+2024-04-09 16:48:02,842: INFO: Train: The mae of the MLP is: 7.77073190003386
+2024-04-09 16:48:02,842: INFO: Train: The mae of the MLP is: 7.77073190003386
+2024-04-09 16:48:02,843: INFO: Train: The R2 of the MLP is: 0.27226439608823294
+2024-04-09 16:48:02,843: INFO: Train: The R2 of the MLP is: 0.27226439608823294
+2024-04-09 16:48:05,443: INFO: (536, 9), (536,)
+2024-04-09 16:48:05,443: INFO: (536, 9), (536,)
+2024-04-09 16:48:05,444: INFO: Train: The rmse of the MLP is: 110.55010029682417
+2024-04-09 16:48:05,444: INFO: Train: The rmse of the MLP is: 110.55010029682417
+2024-04-09 16:48:05,444: INFO: Train: The mae of the MLP is: 7.805380328936188
+2024-04-09 16:48:05,444: INFO: Train: The mae of the MLP is: 7.805380328936188
+2024-04-09 16:48:05,445: INFO: Train: The R2 of the MLP is: 0.11585607213215787
+2024-04-09 16:48:05,445: INFO: Train: The R2 of the MLP is: 0.11585607213215787
+2024-04-09 16:48:05,872: INFO: Test: The rmse of the MLP is: 135.47854824560298
+2024-04-09 16:48:05,872: INFO: Test: The rmse of the MLP is: 135.47854824560298
+2024-04-09 16:48:05,872: INFO: Test: The mae of the MLP is: 8.005627714797292
+2024-04-09 16:48:05,872: INFO: Test: The mae of the MLP is: 8.005627714797292
+2024-04-09 16:48:05,873: INFO: Test: The R2 of the MLP is: 0.16563800519155958
+2024-04-09 16:48:05,873: INFO: Test: The R2 of the MLP is: 0.16563800519155958
+2024-04-09 16:48:06,205: INFO: MLP Test Result: MSE: 135.47854824560298
+2024-04-09 16:48:06,205: INFO: MLP Test Result: MSE: 135.47854824560298
+2024-04-09 16:48:06,206: INFO: MLP Test Result: MSE: 8.005627714797292
+2024-04-09 16:48:06,206: INFO: MLP Test Result: MSE: 8.005627714797292
+2024-04-09 16:48:06,206: INFO: MLP Test Result: R2: 0.16563800519155958
+2024-04-09 16:48:06,206: INFO: MLP Test Result: R2: 0.16563800519155958
+2024-04-09 16:48:06,206: INFO: MLP Training End--------------------------------------------------------------------------------------
+2024-04-09 16:48:06,206: INFO: MLP Training End--------------------------------------------------------------------------------------
+2024-04-09 16:48:06,238: INFO: SVR Training --------------------------------------------------------------------------------------
+2024-04-09 16:48:06,238: INFO: SVR Training --------------------------------------------------------------------------------------
+2024-04-09 16:48:06,263: INFO: (535, 9), (535,)
+2024-04-09 16:48:06,263: INFO: (535, 9), (535,)
+2024-04-09 16:48:06,264: INFO: Train: The rmse of the SVR is: 95.16485177479952
+2024-04-09 16:48:06,264: INFO: Train: The rmse of the SVR is: 95.16485177479952
+2024-04-09 16:48:06,264: INFO: Train: The mae of the SVR is: 7.549149441247189
+2024-04-09 16:48:06,264: INFO: Train: The mae of the SVR is: 7.549149441247189
+2024-04-09 16:48:06,264: INFO: Train: The R2 of the SVR is: 0.09301030109560204
+2024-04-09 16:48:06,264: INFO: Train: The R2 of the SVR is: 0.09301030109560204
+2024-04-09 16:48:06,678: INFO: (535, 9), (535,)
+2024-04-09 16:48:06,678: INFO: (535, 9), (535,)
+2024-04-09 16:48:06,679: INFO: Train: The rmse of the SVR is: 142.45281574124064
+2024-04-09 16:48:06,679: INFO: Train: The rmse of the SVR is: 142.45281574124064
+2024-04-09 16:48:06,680: INFO: Train: The mae of the SVR is: 9.274777399148196
+2024-04-09 16:48:06,680: INFO: Train: The mae of the SVR is: 9.274777399148196
+2024-04-09 16:48:06,680: INFO: Train: The R2 of the SVR is: -0.028010112129559728
+2024-04-09 16:48:06,680: INFO: Train: The R2 of the SVR is: -0.028010112129559728
+2024-04-09 16:48:07,031: INFO: (535, 9), (535,)
+2024-04-09 16:48:07,031: INFO: (535, 9), (535,)
+2024-04-09 16:48:07,031: INFO: Train: The rmse of the SVR is: 108.52689392551969
+2024-04-09 16:48:07,031: INFO: Train: The rmse of the SVR is: 108.52689392551969
+2024-04-09 16:48:07,031: INFO: Train: The mae of the SVR is: 8.398235431775973
+2024-04-09 16:48:07,031: INFO: Train: The mae of the SVR is: 8.398235431775973
+2024-04-09 16:48:07,032: INFO: Train: The R2 of the SVR is: 0.04549780893553357
+2024-04-09 16:48:07,032: INFO: Train: The R2 of the SVR is: 0.04549780893553357
+2024-04-09 16:48:07,332: INFO: (535, 9), (535,)
+2024-04-09 16:48:07,332: INFO: (535, 9), (535,)
+2024-04-09 16:48:07,332: INFO: Train: The rmse of the SVR is: 104.28188249918156
+2024-04-09 16:48:07,332: INFO: Train: The rmse of the SVR is: 104.28188249918156
+2024-04-09 16:48:07,332: INFO: Train: The mae of the SVR is: 8.08955871980828
+2024-04-09 16:48:07,332: INFO: Train: The mae of the SVR is: 8.08955871980828
+2024-04-09 16:48:07,333: INFO: Train: The R2 of the SVR is: 0.02589781799362534
+2024-04-09 16:48:07,333: INFO: Train: The R2 of the SVR is: 0.02589781799362534
+2024-04-09 16:48:07,650: INFO: (536, 9), (536,)
+2024-04-09 16:48:07,650: INFO: (536, 9), (536,)
+2024-04-09 16:48:07,651: INFO: Train: The rmse of the SVR is: 148.7657556713395
+2024-04-09 16:48:07,651: INFO: Train: The rmse of the SVR is: 148.7657556713395
+2024-04-09 16:48:07,651: INFO: Train: The mae of the SVR is: 8.47984008173202
+2024-04-09 16:48:07,651: INFO: Train: The mae of the SVR is: 8.47984008173202
+2024-04-09 16:48:07,652: INFO: Train: The R2 of the SVR is: 0.0706121890848106
+2024-04-09 16:48:07,652: INFO: Train: The R2 of the SVR is: 0.0706121890848106
+2024-04-09 16:48:08,043: INFO: Test: The rmse of the SVR is: 153.51664277633742
+2024-04-09 16:48:08,043: INFO: Test: The rmse of the SVR is: 153.51664277633742
+2024-04-09 16:48:08,044: INFO: Test: The mae of the SVR is: 8.466765264042687
+2024-04-09 16:48:08,044: INFO: Test: The mae of the SVR is: 8.466765264042687
+2024-04-09 16:48:08,045: INFO: Test: The R2 of the SVR is: 0.054548089259460864
+2024-04-09 16:48:08,045: INFO: Test: The R2 of the SVR is: 0.054548089259460864
+2024-04-09 16:48:08,597: INFO: SVR Test Result: MSE: 153.51664277633742
+2024-04-09 16:48:08,597: INFO: SVR Test Result: MSE: 153.51664277633742
+2024-04-09 16:48:08,597: INFO: SVR Test Result: MSE: 8.466765264042687
+2024-04-09 16:48:08,597: INFO: SVR Test Result: MSE: 8.466765264042687
+2024-04-09 16:48:08,597: INFO: SVR Test Result: R2: 0.054548089259460864
+2024-04-09 16:48:08,597: INFO: SVR Test Result: R2: 0.054548089259460864
+2024-04-09 16:48:08,597: INFO: SVR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:48:08,597: INFO: SVR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:48:08,624: INFO: GaussR Training --------------------------------------------------------------------------------------
+2024-04-09 16:48:08,624: INFO: GaussR Training --------------------------------------------------------------------------------------
+2024-04-09 16:48:08,783: INFO: (535, 9), (535,)
+2024-04-09 16:48:08,783: INFO: (535, 9), (535,)
+2024-04-09 16:48:08,784: INFO: Train: The rmse of the GaussR is: 213.74172445503854
+2024-04-09 16:48:08,784: INFO: Train: The rmse of the GaussR is: 213.74172445503854
+2024-04-09 16:48:08,784: INFO: Train: The mae of the GaussR is: 10.510570669701423
+2024-04-09 16:48:08,784: INFO: Train: The mae of the GaussR is: 10.510570669701423
+2024-04-09 16:48:08,784: INFO: Train: The R2 of the GaussR is: -0.9137601712864503
+2024-04-09 16:48:08,784: INFO: Train: The R2 of the GaussR is: -0.9137601712864503
+2024-04-09 16:48:09,208: INFO: (535, 9), (535,)
+2024-04-09 16:48:09,208: INFO: (535, 9), (535,)
+2024-04-09 16:48:09,209: INFO: Train: The rmse of the GaussR is: 290.33151974863824
+2024-04-09 16:48:09,209: INFO: Train: The rmse of the GaussR is: 290.33151974863824
+2024-04-09 16:48:09,209: INFO: Train: The mae of the GaussR is: 11.30600783866224
+2024-04-09 16:48:09,209: INFO: Train: The mae of the GaussR is: 11.30600783866224
+2024-04-09 16:48:09,210: INFO: Train: The R2 of the GaussR is: -0.6772615483300279
+2024-04-09 16:48:09,210: INFO: Train: The R2 of the GaussR is: -0.6772615483300279
+2024-04-09 16:48:09,627: INFO: (535, 9), (535,)
+2024-04-09 16:48:09,627: INFO: (535, 9), (535,)
+2024-04-09 16:48:09,627: INFO: Train: The rmse of the GaussR is: 233.613725875979
+2024-04-09 16:48:09,627: INFO: Train: The rmse of the GaussR is: 233.613725875979
+2024-04-09 16:48:09,628: INFO: Train: The mae of the GaussR is: 10.230696106216943
+2024-04-09 16:48:09,628: INFO: Train: The mae of the GaussR is: 10.230696106216943
+2024-04-09 16:48:09,628: INFO: Train: The R2 of the GaussR is: -0.7633279435347688
+2024-04-09 16:48:09,628: INFO: Train: The R2 of the GaussR is: -0.7633279435347688
+2024-04-09 16:48:10,069: INFO: (535, 9), (535,)
+2024-04-09 16:48:10,069: INFO: (535, 9), (535,)
+2024-04-09 16:48:10,070: INFO: Train: The rmse of the GaussR is: 197.61052670845916
+2024-04-09 16:48:10,070: INFO: Train: The rmse of the GaussR is: 197.61052670845916
+2024-04-09 16:48:10,070: INFO: Train: The mae of the GaussR is: 9.975692949465888
+2024-04-09 16:48:10,070: INFO: Train: The mae of the GaussR is: 9.975692949465888
+2024-04-09 16:48:10,071: INFO: Train: The R2 of the GaussR is: -0.757476513525718
+2024-04-09 16:48:10,071: INFO: Train: The R2 of the GaussR is: -0.757476513525718
+2024-04-09 16:48:10,634: INFO: (536, 9), (536,)
+2024-04-09 16:48:10,634: INFO: (536, 9), (536,)
+2024-04-09 16:48:10,635: INFO: Train: The rmse of the GaussR is: 152.29899869158987
+2024-04-09 16:48:10,635: INFO: Train: The rmse of the GaussR is: 152.29899869158987
+2024-04-09 16:48:10,635: INFO: Train: The mae of the GaussR is: 8.492054412900165
+2024-04-09 16:48:10,635: INFO: Train: The mae of the GaussR is: 8.492054412900165
+2024-04-09 16:48:10,635: INFO: Train: The R2 of the GaussR is: -0.7112605357997417
+2024-04-09 16:48:10,635: INFO: Train: The R2 of the GaussR is: -0.7112605357997417
+2024-04-09 16:48:10,935: INFO: Test: The rmse of the GaussR is: 260.0716212052962
+2024-04-09 16:48:10,935: INFO: Test: The rmse of the GaussR is: 260.0716212052962
+2024-04-09 16:48:10,936: INFO: Test: The mae of the GaussR is: 9.954823845955346
+2024-04-09 16:48:10,936: INFO: Test: The mae of the GaussR is: 9.954823845955346
+2024-04-09 16:48:10,936: INFO: Test: The R2 of the GaussR is: -0.6016843955881306
+2024-04-09 16:48:10,936: INFO: Test: The R2 of the GaussR is: -0.6016843955881306
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: MSE: 260.0716212052962
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: MSE: 260.0716212052962
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: MSE: 9.954823845955346
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: MSE: 9.954823845955346
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: R2: -0.6016843955881306
+2024-04-09 16:48:11,188: INFO: GaussR Test Result: R2: -0.6016843955881306
+2024-04-09 16:48:11,188: INFO: GaussR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:48:11,188: INFO: GaussR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:49:28,081: INFO:  
+2024-04-09 16:49:28,081: INFO:  
+2024-04-09 16:50:25,463: INFO: N2O-N loss (%) Prediction Training--------------------------------------------------------------------------------------
+2024-04-09 16:50:25,666: INFO: RF Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:50:27,512: INFO: (364, 9), (364,)
+2024-04-09 16:50:27,513: INFO: Train: The rmse of the RFRegression is: 3.692978022818429
+2024-04-09 16:50:27,513: INFO: Train: The mae of the RFRegression is: 0.9671477821794873
+2024-04-09 16:50:27,513: INFO: Train: The R2 of the RFRegression is: 0.40763770878363126
+2024-04-09 16:50:29,563: INFO: (365, 9), (365,)
+2024-04-09 16:50:29,564: INFO: Train: The rmse of the RFRegression is: 2.5830497787200346
+2024-04-09 16:50:29,564: INFO: Train: The mae of the RFRegression is: 0.8422124007000198
+2024-04-09 16:50:29,565: INFO: Train: The R2 of the RFRegression is: 0.3669403176421848
+2024-04-09 16:50:31,477: INFO: (365, 9), (365,)
+2024-04-09 16:50:31,484: INFO: Train: The rmse of the RFRegression is: 2.3099005636111305
+2024-04-09 16:50:31,485: INFO: Train: The mae of the RFRegression is: 0.8574723112326543
+2024-04-09 16:50:31,485: INFO: Train: The R2 of the RFRegression is: 0.2720037078892519
+2024-04-09 16:50:33,568: INFO: (365, 9), (365,)
+2024-04-09 16:50:33,568: INFO: Train: The rmse of the RFRegression is: 2.237551444146835
+2024-04-09 16:50:33,569: INFO: Train: The mae of the RFRegression is: 0.7752237508233063
+2024-04-09 16:50:33,569: INFO: Train: The R2 of the RFRegression is: 0.43746601770501004
+2024-04-09 16:50:35,554: INFO: (365, 9), (365,)
+2024-04-09 16:50:35,555: INFO: Train: The rmse of the RFRegression is: 3.943718950936205
+2024-04-09 16:50:35,555: INFO: Train: The mae of the RFRegression is: 1.0247675982276705
+2024-04-09 16:50:35,556: INFO: Train: The R2 of the RFRegression is: 0.22089120068071177
+2024-04-09 16:50:35,981: INFO: Test: The rmse of the RFRegression is: 1.8182820816950316
+2024-04-09 16:50:35,982: INFO: Test: The mae of the RFRegression is: 0.7539906759739589
+2024-04-09 16:50:35,982: INFO: Test: The R2 of the RFRegression is: 0.3573017311229344
+2024-04-09 16:50:36,663: INFO: RandomForest Test Result: MSE: 1.8182820816950316
+2024-04-09 16:50:36,664: INFO: RandomForest Test Result: MSE: 0.7539906759739589
+2024-04-09 16:50:36,664: INFO: RandomForest Test Result: R2: 0.3573017311229344
+2024-04-09 16:50:36,664: INFO: RF Training End--------------------------------------------------------------------------------------
+2024-04-09 16:50:36,773: INFO: XGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:50:37,157: INFO: (364, 9) (364,)
+2024-04-09 16:50:37,158: INFO: Train: The rmse of the XgbRegression is: 2.4180249079209086
+2024-04-09 16:50:37,158: INFO: Train: The mae of the XgbRegression is: 0.7843606219609629
+2024-04-09 16:50:37,159: INFO: Train: The R2 of the XgbRegression is: 0.157311957268081
+2024-04-09 16:50:37,871: INFO: (365, 9) (365,)
+2024-04-09 16:50:37,872: INFO: Train: The rmse of the XgbRegression is: 2.09263939269415
+2024-04-09 16:50:37,873: INFO: Train: The mae of the XgbRegression is: 0.7563167582795628
+2024-04-09 16:50:37,874: INFO: Train: The R2 of the XgbRegression is: 0.517419782881744
+2024-04-09 16:50:38,702: INFO: (365, 9) (365,)
+2024-04-09 16:50:38,703: INFO: Train: The rmse of the XgbRegression is: 2.9339856484857485
+2024-04-09 16:50:38,703: INFO: Train: The mae of the XgbRegression is: 0.7795431752280018
+2024-04-09 16:50:38,703: INFO: Train: The R2 of the XgbRegression is: 0.26841423150847366
+2024-04-09 16:50:39,388: INFO: (365, 9) (365,)
+2024-04-09 16:50:39,389: INFO: Train: The rmse of the XgbRegression is: 2.4741653864896382
+2024-04-09 16:50:39,389: INFO: Train: The mae of the XgbRegression is: 0.8427937160788826
+2024-04-09 16:50:39,390: INFO: Train: The R2 of the XgbRegression is: 0.5131626336580848
+2024-04-09 16:50:40,054: INFO: (365, 9) (365,)
+2024-04-09 16:50:40,055: INFO: Train: The rmse of the XgbRegression is: 3.4145563655143154
+2024-04-09 16:50:40,056: INFO: Train: The mae of the XgbRegression is: 0.9614449517183258
+2024-04-09 16:50:40,056: INFO: Train: The R2 of the XgbRegression is: 0.45336663514588293
+2024-04-09 16:50:40,378: INFO: Test: The rmse of the XgbRegression is: 1.9297923954390865
+2024-04-09 16:50:40,379: INFO: Test: The mae of the XgbRegression is: 0.7329372402039841
+2024-04-09 16:50:40,379: INFO: Test: The R2 of the XgbRegression is: 0.31788678757444333
+2024-04-09 16:50:40,826: INFO: XGBoost Test Result: MSE: 1.9297923954390865
+2024-04-09 16:50:40,826: INFO: XGBoost Test Result: MSE: 0.7329372402039841
+2024-04-09 16:50:40,827: INFO: XGBoost Test Result: R2: 0.31788678757444333
+2024-04-09 16:50:40,827: INFO: XGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:50:41,008: INFO: LGB Training Begin--------------------------------------------------------------------------------------
+2024-04-09 16:50:41,383: INFO: (365, 9), (364,)
+2024-04-09 16:50:41,384: INFO: Train: The rmse of the LgbRegression is: 1.572554517995454
+2024-04-09 16:50:41,384: INFO: Train: The mae of the LgbRegression is: 0.7304335718635854
+2024-04-09 16:50:41,385: INFO: Train: The R2 of the LgbRegression is: 0.2540569889879778
+2024-04-09 16:50:41,913: INFO: (365, 9), (365,)
+2024-04-09 16:50:41,914: INFO: Train: The rmse of the LgbRegression is: 1.5941267009519862
+2024-04-09 16:50:41,914: INFO: Train: The mae of the LgbRegression is: 0.8163081707738218
+2024-04-09 16:50:41,915: INFO: Train: The R2 of the LgbRegression is: 0.28840806930381735
+2024-04-09 16:50:42,421: INFO: (365, 9), (365,)
+2024-04-09 16:50:42,422: INFO: Train: The rmse of the LgbRegression is: 2.7953831618852107
+2024-04-09 16:50:42,422: INFO: Train: The mae of the LgbRegression is: 0.891910101530005
+2024-04-09 16:50:42,423: INFO: Train: The R2 of the LgbRegression is: 0.5097675976078194
+2024-04-09 16:50:42,953: INFO: (365, 9), (365,)
+2024-04-09 16:50:42,954: INFO: Train: The rmse of the LgbRegression is: 2.4120263583291077
+2024-04-09 16:50:42,955: INFO: Train: The mae of the LgbRegression is: 0.9644561042434209
+2024-04-09 16:50:42,955: INFO: Train: The R2 of the LgbRegression is: 0.5677539261573087
+2024-04-09 16:50:43,460: INFO: (365, 9), (365,)
+2024-04-09 16:50:43,461: INFO: Train: The rmse of the LgbRegression is: 4.604113052479494
+2024-04-09 16:50:43,462: INFO: Train: The mae of the LgbRegression is: 0.9288543848067071
+2024-04-09 16:50:43,463: INFO: Train: The R2 of the LgbRegression is: 0.3218360068519419
+2024-04-09 16:50:43,890: INFO: Test: The rmse of the LgbRegression is: 1.881343766855355
+2024-04-09 16:50:43,890: INFO: Test: The mae of the LgbRegression is: 0.8159494186476567
+2024-04-09 16:50:43,891: INFO: Test: The R2 of the LgbRegression is: 0.3350116605706096
+2024-04-09 16:50:44,270: INFO: Lightgbm Test Result: MSE: 1.881343766855355
+2024-04-09 16:50:44,270: INFO: Lightgbm Test Result: MSE: 0.8159494186476567
+2024-04-09 16:50:44,270: INFO: Lightgbm Test Result: R2: 0.3350116605706096
+2024-04-09 16:50:44,270: INFO: LGB Training End--------------------------------------------------------------------------------------
+2024-04-09 16:50:44,340: INFO: CatRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:50:52,231: INFO: (364, 9) (364,)
+2024-04-09 16:50:52,232: INFO: Train: The rmse of the CatRegression is: 4.526008861630919
+2024-04-09 16:50:52,232: INFO: Train: The mae of the CatRegression is: 1.1034978421752353
+2024-04-09 16:50:52,232: INFO: Train: The R2 of the CatRegression is: 0.31019582084150044
+2024-04-09 16:51:00,074: INFO: (365, 9) (365,)
+2024-04-09 16:51:00,075: INFO: Train: The rmse of the CatRegression is: 2.325536108292624
+2024-04-09 16:51:00,075: INFO: Train: The mae of the CatRegression is: 0.9216657924323857
+2024-04-09 16:51:00,075: INFO: Train: The R2 of the CatRegression is: 0.34433245395860435
+2024-04-09 16:51:07,918: INFO: (365, 9) (365,)
+2024-04-09 16:51:07,919: INFO: Train: The rmse of the CatRegression is: 2.6203925527711127
+2024-04-09 16:51:07,919: INFO: Train: The mae of the CatRegression is: 0.9405242038439927
+2024-04-09 16:51:07,919: INFO: Train: The R2 of the CatRegression is: 0.48258589382311023
+2024-04-09 16:51:16,145: INFO: (365, 9) (365,)
+2024-04-09 16:51:16,147: INFO: Train: The rmse of the CatRegression is: 0.8071059531830473
+2024-04-09 16:51:16,147: INFO: Train: The mae of the CatRegression is: 0.59505884435502
+2024-04-09 16:51:16,147: INFO: Train: The R2 of the CatRegression is: 0.7541616403762148
+2024-04-09 16:51:23,938: INFO: (365, 9) (365,)
+2024-04-09 16:51:23,938: INFO: Train: The rmse of the CatRegression is: 2.1844740686009203
+2024-04-09 16:51:23,939: INFO: Train: The mae of the CatRegression is: 0.7941161102284925
+2024-04-09 16:51:23,939: INFO: Train: The R2 of the CatRegression is: 0.45570555888586173
+2024-04-09 16:51:24,230: INFO: Test: The rmse of the CatRegression is: 1.7960842206570662
+2024-04-09 16:51:24,230: INFO: Test: The mae of the CatRegression is: 0.7497057312988641
+2024-04-09 16:51:24,230: INFO: Test: The R2 of the CatRegression is: 0.3651478882211634
+2024-04-09 16:51:24,491: INFO: CatRegression Test Result: MSE: 1.7960842206570662
+2024-04-09 16:51:24,491: INFO: CatRegression Test Result: MSE: 0.7497057312988641
+2024-04-09 16:51:24,492: INFO: CatRegression Test Result: R2: 0.3651478882211634
+2024-04-09 16:51:24,492: INFO: CatRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:24,600: INFO: RidgeRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:51:24,605: INFO: (364, 9), (364,)
+2024-04-09 16:51:24,605: INFO: Train: The rmse of the RidgeRegression is: 5.84030861587191
+2024-04-09 16:51:24,605: INFO: Train: The mae of the RidgeRegression is: 1.4456830315908646
+2024-04-09 16:51:24,605: INFO: Train: The R2 of the RidgeRegression is: 0.04362842661625144
+2024-04-09 16:51:24,872: INFO: (365, 9), (365,)
+2024-04-09 16:51:24,873: INFO: Train: The rmse of the RidgeRegression is: 3.2754044382438168
+2024-04-09 16:51:24,873: INFO: Train: The mae of the RidgeRegression is: 1.3253732428438278
+2024-04-09 16:51:24,874: INFO: Train: The R2 of the RidgeRegression is: -0.07345641807656311
+2024-04-09 16:51:25,113: INFO: (365, 9), (365,)
+2024-04-09 16:51:25,114: INFO: Train: The rmse of the RidgeRegression is: 3.8006970502232083
+2024-04-09 16:51:25,114: INFO: Train: The mae of the RidgeRegression is: 1.206123300297115
+2024-04-09 16:51:25,114: INFO: Train: The R2 of the RidgeRegression is: 0.03483324525062248
+2024-04-09 16:51:25,448: INFO: (365, 9), (365,)
+2024-04-09 16:51:25,449: INFO: Train: The rmse of the RidgeRegression is: 5.852614841984278
+2024-04-09 16:51:25,449: INFO: Train: The mae of the RidgeRegression is: 1.3316923627953194
+2024-04-09 16:51:25,450: INFO: Train: The R2 of the RidgeRegression is: 0.0401137932705149
+2024-04-09 16:51:25,719: INFO: (365, 9), (365,)
+2024-04-09 16:51:25,720: INFO: Train: The rmse of the RidgeRegression is: 3.2646756814527396
+2024-04-09 16:51:25,721: INFO: Train: The mae of the RidgeRegression is: 1.1481769812901124
+2024-04-09 16:51:25,721: INFO: Train: The R2 of the RidgeRegression is: 0.00929389491451671
+2024-04-09 16:51:26,101: INFO: Test: The rmse of the RidgeRegression is: 2.8666742780964096
+2024-04-09 16:51:26,102: INFO: Test: The mae of the RidgeRegression is: 1.1636351847492614
+2024-04-09 16:51:26,103: INFO: Test: The R2 of the RidgeRegression is: -0.013267751200326972
+2024-04-09 16:51:26,427: INFO: RidgeRegression Test Result: MSE: 2.8666742780964096
+2024-04-09 16:51:26,427: INFO: RidgeRegression Test Result: MSE: 1.1636351847492614
+2024-04-09 16:51:26,427: INFO: RidgeRegression Test Result: R2: -0.013267751200326972
+2024-04-09 16:51:26,427: INFO: RidgeRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:26,462: INFO: LinearRegression Training --------------------------------------------------------------------------------------
+2024-04-09 16:51:26,466: INFO: (364, 9), (364,)
+2024-04-09 16:51:26,467: INFO: Train: The rmse of the LR is: 4.687804463761151
+2024-04-09 16:51:26,467: INFO: Train: The mae of the LR is: 1.3233284084472512
+2024-04-09 16:51:26,467: INFO: Train: The R2 of the LR is: -0.05059498172094545
+2024-04-09 16:51:26,748: INFO: (365, 9), (365,)
+2024-04-09 16:51:26,749: INFO: Train: The rmse of the LR is: 4.383543570147356
+2024-04-09 16:51:26,749: INFO: Train: The mae of the LR is: 1.3207731523597501
+2024-04-09 16:51:26,750: INFO: Train: The R2 of the LR is: 0.07109025762544607
+2024-04-09 16:51:27,030: INFO: (365, 9), (365,)
+2024-04-09 16:51:27,031: INFO: Train: The rmse of the LR is: 2.5454267964125497
+2024-04-09 16:51:27,031: INFO: Train: The mae of the LR is: 1.1400297073326737
+2024-04-09 16:51:27,032: INFO: Train: The R2 of the LR is: 0.02332873552903325
+2024-04-09 16:51:27,342: INFO: (365, 9), (365,)
+2024-04-09 16:51:27,343: INFO: Train: The rmse of the LR is: 5.122318186039938
+2024-04-09 16:51:27,343: INFO: Train: The mae of the LR is: 1.3678928314764827
+2024-04-09 16:51:27,344: INFO: Train: The R2 of the LR is: 0.054040805096186584
+2024-04-09 16:51:27,634: INFO: (365, 9), (365,)
+2024-04-09 16:51:27,635: INFO: Train: The rmse of the LR is: 5.107955381908342
+2024-04-09 16:51:27,635: INFO: Train: The mae of the LR is: 1.3161953167318192
+2024-04-09 16:51:27,635: INFO: Train: The R2 of the LR is: 0.04502406330478037
+2024-04-09 16:51:27,916: INFO: Test: The rmse of the LinearRegression is: 2.7370908614713088
+2024-04-09 16:51:27,917: INFO: Test: The mae of the LinearRegression is: 1.0883047015033898
+2024-04-09 16:51:27,918: INFO: Test: The R2 of the LinearRegression is: 0.03253539363542368
+2024-04-09 16:51:28,239: INFO: LinearRegression Test Result: MSE: 2.7370908614713088
+2024-04-09 16:51:28,239: INFO: LinearRegression Test Result: MSE: 1.0883047015033898
+2024-04-09 16:51:28,239: INFO: LinearRegression Test Result: R2: 0.03253539363542368
+2024-04-09 16:51:28,239: INFO: LinearRegression Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:28,269: INFO: MLP Training --------------------------------------------------------------------------------------
+2024-04-09 16:51:30,115: INFO: (364, 9), (364,)
+2024-04-09 16:51:30,115: INFO: Train: The rmse of the MLP is: 3.0487779073550914
+2024-04-09 16:51:30,116: INFO: Train: The mae of the MLP is: 1.059318164793875
+2024-04-09 16:51:30,116: INFO: Train: The R2 of the MLP is: 0.41878882424687025
+2024-04-09 16:51:32,339: INFO: (365, 9), (365,)
+2024-04-09 16:51:32,340: INFO: Train: The rmse of the MLP is: 4.460479419675263
+2024-04-09 16:51:32,340: INFO: Train: The mae of the MLP is: 1.2359580350348354
+2024-04-09 16:51:32,340: INFO: Train: The R2 of the MLP is: 0.12802667775321563
+2024-04-09 16:51:34,297: INFO: (365, 9), (365,)
+2024-04-09 16:51:34,298: INFO: Train: The rmse of the MLP is: 4.892472379759899
+2024-04-09 16:51:34,298: INFO: Train: The mae of the MLP is: 1.176189415947641
+2024-04-09 16:51:34,299: INFO: Train: The R2 of the MLP is: -0.3172831669528602
+2024-04-09 16:51:36,570: INFO: (365, 9), (365,)
+2024-04-09 16:51:36,570: INFO: Train: The rmse of the MLP is: 3.209726848811481
+2024-04-09 16:51:36,570: INFO: Train: The mae of the MLP is: 1.2236085097876523
+2024-04-09 16:51:36,571: INFO: Train: The R2 of the MLP is: 0.20117952397561123
+2024-04-09 16:51:38,679: INFO: (365, 9), (365,)
+2024-04-09 16:51:38,680: INFO: Train: The rmse of the MLP is: 3.9828135677642043
+2024-04-09 16:51:38,680: INFO: Train: The mae of the MLP is: 1.2385786971933277
+2024-04-09 16:51:38,681: INFO: Train: The R2 of the MLP is: 0.106664797857706
+2024-04-09 16:51:38,994: INFO: Test: The rmse of the MLP is: 3.5430315726280517
+2024-04-09 16:51:38,994: INFO: Test: The mae of the MLP is: 1.2080679045082525
+2024-04-09 16:51:38,995: INFO: Test: The R2 of the MLP is: -0.2523360820792375
+2024-04-09 16:51:39,373: INFO: MLP Test Result: MSE: 3.5430315726280517
+2024-04-09 16:51:39,373: INFO: MLP Test Result: MSE: 1.2080679045082525
+2024-04-09 16:51:39,373: INFO: MLP Test Result: R2: -0.2523360820792375
+2024-04-09 16:51:39,373: INFO: MLP Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:39,403: INFO: SVR Training --------------------------------------------------------------------------------------
+2024-04-09 16:51:39,417: INFO: (364, 9), (364,)
+2024-04-09 16:51:39,418: INFO: Train: The rmse of the SVR is: 3.076066241256462
+2024-04-09 16:51:39,418: INFO: Train: The mae of the SVR is: 0.8471240275759548
+2024-04-09 16:51:39,418: INFO: Train: The R2 of the SVR is: 0.041394337775900625
+2024-04-09 16:51:39,687: INFO: (365, 9), (365,)
+2024-04-09 16:51:39,688: INFO: Train: The rmse of the SVR is: 8.80358765890534
+2024-04-09 16:51:39,688: INFO: Train: The mae of the SVR is: 1.372395130679657
+2024-04-09 16:51:39,688: INFO: Train: The R2 of the SVR is: -0.14822174383221376
+2024-04-09 16:51:39,979: INFO: (365, 9), (365,)
+2024-04-09 16:51:39,979: INFO: Train: The rmse of the SVR is: 6.960383917519352
+2024-04-09 16:51:39,980: INFO: Train: The mae of the SVR is: 1.119638829864344
+2024-04-09 16:51:39,980: INFO: Train: The R2 of the SVR is: -0.10646303369610743
+2024-04-09 16:51:40,257: INFO: (365, 9), (365,)
+2024-04-09 16:51:40,258: INFO: Train: The rmse of the SVR is: 2.6857243300675058
+2024-04-09 16:51:40,258: INFO: Train: The mae of the SVR is: 0.8863742658856212
+2024-04-09 16:51:40,258: INFO: Train: The R2 of the SVR is: -0.03872680103215864
+2024-04-09 16:51:40,528: INFO: (365, 9), (365,)
+2024-04-09 16:51:40,528: INFO: Train: The rmse of the SVR is: 2.892402949086576
+2024-04-09 16:51:40,529: INFO: Train: The mae of the SVR is: 0.8818709704611976
+2024-04-09 16:51:40,529: INFO: Train: The R2 of the SVR is: -0.11656487547627159
+2024-04-09 16:51:40,837: INFO: Test: The rmse of the SVR is: 2.8955422971057048
+2024-04-09 16:51:40,838: INFO: Test: The mae of the SVR is: 0.8600511897939807
+2024-04-09 16:51:40,838: INFO: Test: The R2 of the SVR is: -0.023471572725031642
+2024-04-09 16:51:41,170: INFO: SVR Test Result: MSE: 2.8955422971057048
+2024-04-09 16:51:41,170: INFO: SVR Test Result: MSE: 0.8600511897939807
+2024-04-09 16:51:41,170: INFO: SVR Test Result: R2: -0.023471572725031642
+2024-04-09 16:51:41,171: INFO: SVR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:41,195: INFO: GaussR Training --------------------------------------------------------------------------------------
+2024-04-09 16:51:41,283: INFO: (364, 9), (364,)
+2024-04-09 16:51:41,284: INFO: Train: The rmse of the GaussR is: 4.473191085231628
+2024-04-09 16:51:41,284: INFO: Train: The mae of the GaussR is: 0.9775398089796489
+2024-04-09 16:51:41,284: INFO: Train: The R2 of the GaussR is: -0.26508248225418085
+2024-04-09 16:51:41,640: INFO: (365, 9), (365,)
+2024-04-09 16:51:41,641: INFO: Train: The rmse of the GaussR is: 2.290691758192866
+2024-04-09 16:51:41,641: INFO: Train: The mae of the GaussR is: 0.7740313410065928
+2024-04-09 16:51:41,641: INFO: Train: The R2 of the GaussR is: 0.06766813682875406
+2024-04-09 16:51:42,041: INFO: (365, 9), (365,)
+2024-04-09 16:51:42,041: INFO: Train: The rmse of the GaussR is: 5.852083843057723
+2024-04-09 16:51:42,041: INFO: Train: The mae of the GaussR is: 1.163665366442558
+2024-04-09 16:51:42,042: INFO: Train: The R2 of the GaussR is: -0.09098515596210777
+2024-04-09 16:51:42,373: INFO: (365, 9), (365,)
+2024-04-09 16:51:42,374: INFO: Train: The rmse of the GaussR is: 5.716047510970771
+2024-04-09 16:51:42,374: INFO: Train: The mae of the GaussR is: 1.029283496675826
+2024-04-09 16:51:42,374: INFO: Train: The R2 of the GaussR is: 0.1640924052135906
+2024-04-09 16:51:42,722: INFO: (365, 9), (365,)
+2024-04-09 16:51:42,722: INFO: Train: The rmse of the GaussR is: 4.869269664543158
+2024-04-09 16:51:42,723: INFO: Train: The mae of the GaussR is: 1.0026160228842256
+2024-04-09 16:51:42,723: INFO: Train: The R2 of the GaussR is: -0.13099352166932143
+2024-04-09 16:51:43,043: INFO: Test: The rmse of the GaussR is: 2.8610325484036236
+2024-04-09 16:51:43,043: INFO: Test: The mae of the GaussR is: 0.8889101158494755
+2024-04-09 16:51:43,044: INFO: Test: The R2 of the GaussR is: -0.011273599718811367
+2024-04-09 16:51:43,294: INFO: GaussR Test Result: MSE: 2.8610325484036236
+2024-04-09 16:51:43,294: INFO: GaussR Test Result: MSE: 0.8889101158494755
+2024-04-09 16:51:43,294: INFO: GaussR Test Result: R2: -0.011273599718811367
+2024-04-09 16:51:43,294: INFO: GaussR Training End--------------------------------------------------------------------------------------
+2024-04-09 16:51:58,708: INFO:  
