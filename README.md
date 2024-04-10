@@ -42,3 +42,6 @@
   * [Docker最新超详细版教程通俗易懂(基础版) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/442442997)
   * 视频教程：https://www.bilibili.com/video/BV11L411g7U1/
   * 视频教程文字版：https://docker.easydoc.net/
+ 
+### Git使用
+- 如何合并分支：https://blog.csdn.net/m0_57236802/article/details/133826681
