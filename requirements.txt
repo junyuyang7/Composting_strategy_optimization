@@ -15,9 +15,9 @@ xgboost==1.6.2
 ydata_profiling==4.1.1
 funcy
 numexpr
-sklearn
 smart-open==1.8.1
 xlrd==1.2.0
 ipywidgets
 nbformat==4.2.0
 deap==1.4.1
+kaleido
