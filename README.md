@@ -15,10 +15,11 @@
 
 ### 文件说明
 
+- model 文件包含了预测使用的模型，如果添加模型可继承其中的ModelBase类进行添加使用
 - data中包含原始数据以及数据处理后的文件
 - output是输出的模型以及绘制的图，以及各个模型的表现情况
   - 其中Model_{target}文件夹保存了模型的训练参数。
-- 数据分析.ipynb（data_processing.py）：包含了数据的分析与特征处理
+- 数据分析.ipynb（data_processing.py）：包含了数据的分析与特征处理，包括对类别特征和数值特征的处理
 - 模型训练.ipynb（training.py）：主要进行不同模型的训练
 - 全球预测.ipynb（Final_predict.py）：主要进行最终的预测
 - Tips：data_processing.py / training.py / Final_predict.py：这几个是为了导出依赖从而创建的
