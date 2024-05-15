@@ -21,10 +21,10 @@ result_model = {}
 
 # target = ['TN loss (%)', 'NH3-N loss (%)', 'N2O-N loss (%)']
 # target = ['EF %', 'LN(EF)', 'LNR(N2O)', 'N2O rate(kg N ha-1 y-1)']
-target = 'N2O-N loss (%)' # 要预测啥就换个名字
+target = 'N2O-N loss  (%)' # 要预测啥就换个名字
 
-output_file = 'output/TN_NH3_N2O' # 输出文件夹
-input_file = 'data/TN_NH3_N2O' # 输入数据文件夹
+output_file = 'output\TN_NH3_N2O_TC loss_CH4-C loss_CO2-C loss' # 输出文件夹
+input_file = 'data\TN_NH3_N2O_TC loss_CH4-C loss_CO2-C loss' # 输入数据文件夹
 model_save_file = f'{output_file}/model_{target}' # 模型参数文件夹
 
 # output_file = 'output/EF_LNEF_N2O_LNRN2O'
@@ -88,10 +88,10 @@ np.isnan(X_train).any()
 # %%
 from sklearn.ensemble import RandomForestRegressor
 
-rf_model = RandomForestRegressor(n_estimators=1000, criterion='mse',
+rf_model = RandomForestRegressor(n_estimators=1000, criterion='absolute_error',
                             max_depth=10, min_samples_split=2,
                             min_samples_leaf=1, min_weight_fraction_leaf=0.0,
-                            max_features='auto',  max_leaf_nodes=None,
+                            max_features='sqrt',  max_leaf_nodes=None,
                             bootstrap=True, oob_score=False,
                             n_jobs=1, random_state=None,
                             verbose=0, warm_start=False)
