@@ -5,7 +5,14 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 
 class ModelBase:
-    def __init__(self, X_train, y_train, X_test, y_test, kf, model_save_file, target, method):
+    def __init__(self, X_train=None, 
+                 y_train=None, 
+                 X_test=None, 
+                 y_test=None, 
+                 kf=None, 
+                 model_save_file=None, 
+                 target=None, 
+                 method=None):
         self.X_train = X_train
         self.y_train = y_train
         self.X_test = X_test

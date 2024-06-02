@@ -3,6 +3,12 @@ import logging
 import numpy as np
 import random
 import os
+import plotly.express as px
+import plotly.io as pio
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import json
+from deap import base, creator, tools, algorithms
 
 def set_logger(log_path):
     logger = logging.getLogger()
@@ -18,3 +24,114 @@ def set_seed(seed):
     np.random.seed(seed)
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
+
+# 设置各个储存路径
+def set_filename(target, output_file, input_file):
+    model_save_file = f'{output_file}/model_{target}' # 模型参数文件夹
+    
+    os.makedirs(model_save_file, exist_ok=True)
+    data_path = f'{input_file}/data_for_{target}.csv'
+    model_performance_path = f'{model_save_file}/Model_{target}.html'
+    mse_json = f'{model_save_file}/result_mse_{target}.json'
+    mae_json = f'{model_save_file}/result_mae_{target}.json'
+    r2_json = f'{model_save_file}/result_r2_{target}.json'
+
+    return data_path, model_performance_path, mse_json, mae_json, r2_json, model_save_file
+
+# 获取数据
+def get_data(data_path):
+    data_all_ef = pd.read_csv(data_path)
+    X_all = data_all_ef.iloc[:, :-1]
+    y_all = data_all_ef.iloc[:, -1]
+    X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.2, random_state=2023)
+    y_train = y_train.reset_index(drop=True)
+    input_cols = X_all.columns.tolist()
+    return X_train, X_test, y_train, y_test, input_cols
+
+# 获得各个模型的效果对比条形图
+def get_r2_compare(target, output_file, input_file):
+    data_path, model_performance_path, mse_json, mae_json, r2_json, model_save_file = set_filename(target, output_file, input_file)
+    with open(r2_json, 'r') as json_file:
+        result_mse = json.load(json_file)
+
+    result_mse = dict(sorted(result_mse.items(), key=lambda item: item[1]))
+    categories = list(result_mse.keys())
+    values = list(result_mse.values())
+        
+    # 创建柱状图
+    # fig = px.bar(x=categories, y=values, title=f'Models Performance in {target}', color=color_mapping)
+    fig = px.bar(x=categories, y=values, title=f'Models Performance in {target}')
+    fig.update_layout(template="seaborn")
+    # 显示图表
+    # fig.show()
+    # 保存柱状图为 HTML 文件
+    pio.write_html(fig, file=model_performance_path)
+
+# GA
+def get_min_max_df(df, cols):
+    min_max_values = {}
+    for feature in cols:
+        # 如果特征不存在，创建新的特征项
+        if feature not in min_max_values:
+            min_max_values[feature] = {'Minimum': None, 'Maximum': None}
+        # 计算输入特征的最小值和最大值，并更新字典中的值
+        if min_max_values[feature]['Minimum'] is None:
+            min_max_values[feature]['Minimum'] = round(df[feature].min(), 2)
+        else:
+            min_max_values[feature]['Minimum'] = min(round(min_max_values[feature]['Minimum'], 2), round(df[feature].min(), 2))
+        if min_max_values[feature]['Maximum'] is None:
+            min_max_values[feature]['Maximum'] = round(df[feature].max(), 2)
+        else:
+            min_max_values[feature]['Maximum'] = max(round(min_max_values[feature]['Maximum'], 2), round(df[feature].max(), 2))
+    
+    return min_max_values
+
+def create_individual(input_ranges, toolbox, cat_feas):
+    individual = []
+    for attr_name, attr_info in input_ranges.items():
+        if attr_name in cat_feas:
+            individual.append(toolbox.attr_int(attr_info['Minimum'], attr_info['Maximum']))
+        else:
+            individual.append(toolbox.attr_float(attr_info['Minimum'], attr_info['Maximum']))
+    return creator.Individual(individual)
+
+# 使用相应预测模型定义评估函数
+def evaluate(individual, input_ranges, cat_feas, model):
+    individual_with_names = {attr_name: value for attr_name, value in zip(input_ranges.keys(), individual)}
+
+    # 检查每个特征值是否超出范围，如果超出范围则返回一个非常大的适应度值
+    for key, value in individual_with_names.items():
+        if key in cat_feas:
+            if not isinstance(value, int) or value < input_ranges[key]['Minimum'] or value > input_ranges[key]['Maximum']:
+                return (1e6,)  # 返回一个非常大的适应度值，表示不合法的个体
+        else:
+            if value < input_ranges[key]['Minimum'] or value > input_ranges[key]['Maximum']:
+                return (1e6,)  # 返回一个非常大的适应度值，表示不合法的个体
+    # 使用模型进行预测
+    prediction = model.predict([individual])
+
+    # 计算模型输出并返回其负值作为适应度（因为我们是最小化问题）
+    fitness = -prediction
+    return fitness,
+
+# 进化算法
+def main(toolbox, population_size=100, n_generations=50, cxpb=0.5, mutpb=0.2):
+    pop = toolbox.population(n=population_size)
+    hof = tools.HallOfFame(1)
+    stats = tools.Statistics(lambda ind: ind.fitness.values)
+    stats.register("min", min)
+
+    algorithms.eaSimple(pop, toolbox, cxpb=cxpb, mutpb=mutpb, ngen=n_generations, stats=stats, halloffame=hof, verbose=False)
+
+    return pop, stats, hof
+
+def get_best_model_name(json_path):
+    with open(json_path, "r", encoding="utf-8") as file:
+        max_value = float('-inf')
+        data = json.load(file)
+        # 查找最大值的键
+        for key, value in data.items():
+            if value > max_value:
+                best_model_name = key
+                max_value = value
+    return best_model_name

@@ -13,7 +13,14 @@ import seaborn as sns
 from sklearn.linear_model import Ridge
 
 class RidgeTraining(ModelBase):
-    def __init__(self, X_train, y_train, X_test, y_test, kf, model_save_file, target, method):
+    def __init__(self, X_train=None, 
+                 y_train=None, 
+                 X_test=None, 
+                 y_test=None, 
+                 kf=None, 
+                 model_save_file=None, 
+                 target=None, 
+                 method=None):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
     
         self.model = Ridge(alpha=0.5,fit_intercept=True)
@@ -80,4 +87,4 @@ class RidgeTraining(ModelBase):
         joblib.dump(self.model, f'{self.save_path}/{self.method}_model.pkl') 
         df_tmp = pd.DataFrame({'pred': self.pred_test, 'true': self.y_test})
         df_tmp.to_csv(f'{self.save_path}/{self.method}_pred.csv', index=False)
-        print('save ok...')
+        print(f'{self.__class__.__name__} save ok...')

@@ -15,7 +15,14 @@ temp = dict(layout=go.Layout(font=dict(family="Franklin Gothic", size=12), width
 colors=px.colors.qualitative.Plotly
 
 class XGBTraining(ModelBase):
-    def __init__(self, X_train, y_train, X_test, y_test, kf, model_save_file, target, method):
+    def __init__(self, X_train=None, 
+                 y_train=None, 
+                 X_test=None, 
+                 y_test=None, 
+                 kf=None, 
+                 model_save_file=None, 
+                 target=None, 
+                 method=None):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
         self.model = xgb.XGBRegressor(max_depth=8, learning_rate=0.1, n_estimators=300,
                         n_jobs=4, colsample_bytree=0.8, subsample=0.8, random_state=32,
@@ -108,4 +115,4 @@ class XGBTraining(ModelBase):
 
         # 保存为图像文件
         # fig.write_image(f"{self.save_path}/feature_importance.png")
-        print('save ok-----------')
+        print(f'{self.__class__.__name__} save ok...')
