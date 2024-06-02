@@ -80,7 +80,7 @@ class ShapAnalyse:
 
     def get_subplot(self):
         input_cols = self.cols.tolist()
-        fig, axes = plt.subplots(len(input_cols)//3+1, 3, figsize=(20,90))
+        fig, axes = plt.subplots(len(input_cols)//3+1, 3, figsize=(30,90))
         for i, col in enumerate(input_cols):
             shap.dependence_plot(col, self.shap_values, self.X_train, interaction_index=None, show=False, ax=axes[i//3,i%3])
         plt.tight_layout()

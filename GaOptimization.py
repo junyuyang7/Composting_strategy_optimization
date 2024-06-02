@@ -7,11 +7,11 @@ input_file = 'data/TN_NH3_N2O_0531' # 输入数据文件夹
 targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
 
 # 设置参数
-population_size = 200
-n_generations = 100
+population_size = 400
+n_generations = 200
 cxpb = 0.5  # 交叉概率
 mutpb = 0.01  # 变异概率
-num_runs = 100  # 运行次数
+num_runs = 200  # 运行次数
 
 for target in targets:
     print(f'--------------Optimizate {target}------------------')
