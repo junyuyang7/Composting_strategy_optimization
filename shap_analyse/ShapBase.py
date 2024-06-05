@@ -5,6 +5,8 @@ import joblib
 import os
 import sys
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("Agg")
 
 class ShapAnalyse:
     def __init__(self, X_train, 

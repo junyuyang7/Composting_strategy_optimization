@@ -17,6 +17,7 @@ from models import ModelBase, RFTraining, LGBTraining, XGBTraining, CatTraining,
                 RidgeTraining, MLPTraining, SVRTraining, GSRTraining
 from shap_analyse.ShapBase import ShapAnalyse
 
+seed=72
 warnings.filterwarnings('ignore')  
 plt.rcParams['font.sans-serif']=['SimHei'] #显示中文  
 
@@ -27,12 +28,12 @@ log_path = output_file + f"/train.log" # 日志路径
 # 设置日志和种子数
 os.makedirs(os.path.dirname(log_path), exist_ok=True)
 set_logger(log_path)
-set_seed(seed=2024)
+set_seed(seed=seed)
 sns.set(font='Microsoft YaHei')
 
 # ================================参数设置===================================
 targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
-# targets = ['N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
+# targets = ['TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
 
 num_folds = 5
 kf = KFold(n_splits=num_folds, shuffle=True)
@@ -58,7 +59,7 @@ for target in targets:
     result_r2 = {}
     result_mae = {}
     data_path, model_performance_path, mse_json, mae_json, r2_json, model_save_file = set_filename(target, output_file, input_file)
-    X_train, X_test, y_train, y_test, input_cols = get_data(data_path)
+    X_train, X_test, y_train, y_test, input_cols = get_data(data_path, seed)
     for model_name in use_models:
         model: ModelBase = models[model_name](X_train, y_train, X_test, y_test, \
                                         kf, model_save_file, target, method=model_name)
