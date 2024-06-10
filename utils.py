@@ -68,7 +68,7 @@ def get_r2_compare(target, output_file, input_file):
     pio.write_html(fig, file=model_performance_path)
 
 # GA
-def get_min_max_df(df, cols):
+def get_min_max_df(df, cols, output_file):
     min_max_values = {}
     for feature in cols:
         # 如果特征不存在，创建新的特征项
@@ -84,6 +84,10 @@ def get_min_max_df(df, cols):
         else:
             min_max_values[feature]['Maximum'] = max(round(min_max_values[feature]['Maximum'], 2), round(df[feature].max(), 2))
     
+    min_max_df = pd.DataFrame(min_max_values)
+    min_max_df = min_max_df.transpose()
+    min_max_df.to_csv(f'{output_file}/GaReasult/min_max.csv', index=False)
+
     return min_max_values
 
 def create_individual(input_ranges, toolbox, cat_feas):

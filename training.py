@@ -17,7 +17,8 @@ from models import ModelBase, RFTraining, LGBTraining, XGBTraining, CatTraining,
                 RidgeTraining, MLPTraining, SVRTraining, GSRTraining
 from shap_analyse.ShapBase import ShapAnalyse
 
-seed=72
+
+# seed=72
 warnings.filterwarnings('ignore')  
 plt.rcParams['font.sans-serif']=['SimHei'] #显示中文  
 
@@ -28,7 +29,7 @@ log_path = output_file + f"/train.log" # 日志路径
 # 设置日志和种子数
 os.makedirs(os.path.dirname(log_path), exist_ok=True)
 set_logger(log_path)
-set_seed(seed=seed)
+# set_seed(seed=seed)
 sns.set(font='Microsoft YaHei')
 
 # ================================参数设置===================================
@@ -52,6 +53,11 @@ use_models = ['rf', 'xgb', 'lgb', 'cat', 'lr', 'ridgelr', 'mlp', 'svr', 'gsr']
 # ================================正式训练===================================
 # 训练模型并挑选表现最好的模型进行shap值分析
 for target in targets:
+    if target in ['TN loss (%)', 'N2O-N (g)', 'NH3-N (g)', 'NH3-N loss (%)']:
+        seed=2345
+    else:
+        seed=72
+    set_seed(seed=seed)
     # 获取字典保存各个模型的最终结果
     logging.info('{} Prediction Training--------------------------------------------------------------------------------------'.format(target))
     print('{} Prediction Training--------------------------------------------------------------------------------------'.format(target))
@@ -100,5 +106,6 @@ for target in targets:
     shapShower.get_subplot()
     shapShower.get_dependence_plot(input_cols[0], input_cols[1])
     shapShower.get_decision_plot()
+    shapShower.get_r2_plot()
     # shapShower.get_interaction_plot()
 

@@ -6,6 +6,9 @@ import os
 import sys
 import matplotlib.pyplot as plt
 import matplotlib
+from sklearn.metrics import r2_score, mean_squared_error
+import numpy as np
+import seaborn as sns
 matplotlib.use("Agg")
 
 class ShapAnalyse:
@@ -28,6 +31,7 @@ class ShapAnalyse:
                 'gsr': GSRTraining}
         self.X_train = X_train
         self.cols = X_train.columns
+        self.input_path = save_path
         self.save_path = f'{save_path}/shap_plot/{target}_{model_name}/'
         os.makedirs(self.save_path, exist_ok=True)
     
@@ -108,5 +112,28 @@ class ShapAnalyse:
     def get_decision_plot(self,):
         shap.decision_plot(self.expected_value, self.shap_values, self.X_train, show=False, ignore_warnings=True)
         plt.savefig(f'{self.save_path}{self.target}_decision_plot.png')
+        print(f'{sys._getframe().f_code.co_name} finish')
+
+    def get_r2_plot(self):
+        fig, ax = plt.subplots(1, 1, figsize=(10, 10))
+
+        input_path = f'{self.input_path}/model_{self.target}/{self.model_name}/{self.model_name}_pred.csv'
+        df = pd.read_csv(input_path)
+        y = df['true'].tolist()
+        y_pred = df['pred'].tolist()
+        r2 = r2_score(y, y_pred)
+        rmse = np.sqrt(mean_squared_error(y, y_pred))
+
+        sns.scatterplot(x=y, y=y_pred, ax=ax)
+        ax.plot([0, 40], [0, 40], 'k--')
+        ax.set_title(f"{self.model_name}\n$R^2 = {r2:.2f}$\nRMSE = {rmse:.2f}")
+        ax.set_xlabel(f"Ture value {self.target}")
+        ax.set_ylabel(f"Predicted value {self.target}")
+        ax.plot([min(y), max(y)], [min(y), max(y)], 'k--')
+
+        plt.tight_layout()
+        output_file = f'{self.input_path}/r2_plot/{self.target}'
+        os.makedirs(output_file, exist_ok=True)
+        plt.savefig(f'{output_file}/{self.model_name}_r2_plot.png')
         print(f'{sys._getframe().f_code.co_name} finish')
     
