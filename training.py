@@ -22,8 +22,10 @@ from shap_analyse.ShapBase import ShapAnalyse
 warnings.filterwarnings('ignore')  
 plt.rcParams['font.sans-serif']=['SimHei'] #显示中文  
 
-output_file = 'output/TN_NH3_N2O_0531' # 输出文件夹
-input_file = 'data/TN_NH3_N2O_0531' # 输入数据文件夹
+output_file = 'output/data_selected_0612/__05' # 输出文件夹
+input_file = 'data/data_selected_0612/__05' # 输入数据文件夹
+isBayesian = True
+
 os.makedirs(output_file, exist_ok=True)
 log_path = output_file + f"/train.log" # 日志路径
 # 设置日志和种子数
@@ -33,11 +35,26 @@ set_logger(log_path)
 sns.set(font='Microsoft YaHei')
 
 # ================================参数设置===================================
-targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
+# targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
+if int(input_file[-1]) % 2 == 1:
+    targets = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+            'CH4-C loss (%)', 'CO2-C loss (%)']
+else:
+    targets =  [
+        "Final Moisture Content (%)", 
+        "Final pH", 
+        "Final TN (%)", 
+        "Final TC (%)", 
+        "Final C_N (%)", 
+        "Final EC (ms_cm)", 
+        "Final GI (%)", 
+        "Final NH3-N (g_kg)", 
+        "Final NO2-N (g_kg)"
+    ]
 # targets = ['TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
 
 num_folds = 5
-kf = KFold(n_splits=num_folds, shuffle=True)
+kf = KFold(n_splits=num_folds, shuffle=True, random_state=42)
 models = {'rf': RFTraining,
           'xgb': XGBTraining,
           'lgb': LGBTraining,
@@ -47,8 +64,9 @@ models = {'rf': RFTraining,
           'mlp': MLPTraining,
           'svr': SVRTraining,
           'gsr': GSRTraining}
-use_models = ['rf', 'xgb', 'lgb', 'cat', 'lr', 'ridgelr', 'mlp', 'svr', 'gsr']
-# use_models = ['rf']
+use_models = ['rf', 'xgb', 'lgb', 'cat', 'lr', 'ridgelr',  'svr', 'gsr']
+# use_models = [ 'mlp', 'svr', 'gsr']
+use_models = ['mlp']
 
 # ================================正式训练===================================
 # 训练模型并挑选表现最好的模型进行shap值分析
@@ -67,9 +85,14 @@ for target in targets:
     data_path, model_performance_path, mse_json, mae_json, r2_json, model_save_file = set_filename(target, output_file, input_file)
     X_train, X_test, y_train, y_test, input_cols = get_data(data_path, seed)
     for model_name in use_models:
+        # 贝叶斯优化类
+        
         model: ModelBase = models[model_name](X_train, y_train, X_test, y_test, \
                                         kf, model_save_file, target, method=model_name)
-        model.train()
+        if isBayesian:
+            model.isBayesian()
+        else:
+            model.train()
         mse, mae, r2, pred = model.test()
         model.save_result()
         if model_name in ['rf', 'xgb', 'lgb', 'cat']:
