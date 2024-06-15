@@ -24,13 +24,7 @@ class RFTraining(ModelBase):
                  target=None, 
                  method=None):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-        self.model = RandomForestRegressor(n_estimators=1000, criterion='mse',
-                    max_depth=10, min_samples_split=2,
-                    min_samples_leaf=1, min_weight_fraction_leaf=0.0,
-                    max_features='auto',  max_leaf_nodes=None,
-                    bootstrap=True, oob_score=False,
-                    n_jobs=1, random_state=None,
-                    verbose=0, warm_start=False)
+        self.model = RandomForestRegressor()
         self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
