@@ -220,22 +220,49 @@ class Data_Pro:
         if data_all is None:
             raise ValueError("Failed to read the input file with provided encodings.")
     
+        # # 初始化数值列和非数值列的列表
+        # numerical_columns = []
+        # non_numerical_columns = []
+        
+        # # 分类数值列和非数值列
+        # for column in data_all.columns:
+        #     try:
+        #         # 过滤非空值
+        #         non_empty_values = data_all[column].dropna()
+        #         # 尝试将非空值转换为数值类型
+        #         pd.to_numeric(non_empty_values)
+        #         numerical_columns.append(column)
+        #     except ValueError:
+        #         non_numerical_columns.append(column)
+        # print('num', numerical_columns)
+        # print('non num', non_numerical_columns)
+        # return data_all, numerical_columns, non_numerical_columns
+    
         # 初始化数值列和非数值列的列表
         numerical_columns = []
         non_numerical_columns = []
-        
-        # 分类数值列和非数值列
+
         for column in data_all.columns:
             try:
                 # 过滤非空值
                 non_empty_values = data_all[column].dropna()
                 # 尝试将非空值转换为数值类型
-                pd.to_numeric(non_empty_values)
-                numerical_columns.append(column)
+                converted_values = pd.to_numeric(non_empty_values, errors='coerce')
+                
+                if converted_values.notna().all():
+                    print(column)
+                    print((converted_values % 1)[converted_values % 1 != 0])
+                    if (converted_values % 1 == 0).all():
+                        non_numerical_columns.append(column)  # 整数类型视为非数值类型
+                    else:
+                        numerical_columns.append(column)
+                else:
+                    non_numerical_columns.append(column)
             except ValueError:
                 non_numerical_columns.append(column)
-        print('num', numerical_columns)
-        print('non num', non_numerical_columns)
+
+        print('Numerical columns:', numerical_columns)
+        print('Non-numerical (including integer) columns:', non_numerical_columns)
         return data_all, numerical_columns, non_numerical_columns
     
     

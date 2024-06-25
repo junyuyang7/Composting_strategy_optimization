@@ -119,11 +119,14 @@ def evaluate(individual, input_ranges, cat_feas, model):
     return fitness,
 
 # 进化算法
-def main(toolbox, population_size=100, n_generations=50, cxpb=0.5, mutpb=0.2):
+def main(toolbox, target ,population_size=100, n_generations=50, cxpb=0.5, mutpb=0.2):
     pop = toolbox.population(n=population_size)
     hof = tools.HallOfFame(1)
     stats = tools.Statistics(lambda ind: ind.fitness.values)
-    stats.register("min", min)
+    if target != "Final GI (%)":
+        stats.register("min", np.min)
+    else:
+        stats.register("max", np.max)
 
     algorithms.eaSimple(pop, toolbox, cxpb=cxpb, mutpb=mutpb, ngen=n_generations, stats=stats, halloffame=hof, verbose=False)
 
@@ -139,3 +142,47 @@ def get_best_model_name(json_path):
                 best_model_name = key
                 max_value = value
     return best_model_name
+
+
+# 自定义交叉函数
+def custom_mate(ind1, ind2, specific_keys):
+    # 保存特定键的原始值
+    original_values1 = {key: ind1[key] for key in specific_keys}
+    original_values2 = {key: ind2[key] for key in specific_keys}
+    # 确保所有值为浮点数
+    ind1_vals = [float(value) for value in ind1.values()]
+    ind2_vals = [float(value) for value in ind2.values()]
+
+    # 进行交叉操作
+    ind1_vals, ind2_vals = tools.cxBlend(ind1_vals, ind2_vals, alpha=0.5)
+
+    # 更新个体的值
+    ind1.update(zip(ind1.keys(), ind1_vals))
+    ind2.update(zip(ind2.keys(), ind2_vals))
+
+    # 恢复特定键的原始值
+    for key in specific_keys:
+        ind1[key] = original_values1[key]
+        ind2[key] = original_values2[key]
+
+    return ind1, ind2
+
+# 自定义变异函数
+def custom_mutate(ind, specific_keys):
+    # 保存特定键的原始值
+    original_values = {key: ind[key] for key in specific_keys}
+
+    # 确保所有值为浮点数
+    ind_values = [float(value) for value in ind.values()]
+
+    # 进行变异操作
+    ind_values, = tools.mutGaussian(ind_values, mu=0, sigma=1, indpb=0.1)
+
+    # 更新个体的值
+    ind.update(zip(ind.keys(), ind_values))
+
+    # 恢复特定键的原始值
+    for key in specific_keys:
+        ind[key] = original_values[key]
+
+    return ind,

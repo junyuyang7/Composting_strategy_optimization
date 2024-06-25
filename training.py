@@ -22,8 +22,8 @@ from shap_analyse.ShapBase import ShapAnalyse
 warnings.filterwarnings('ignore')  
 plt.rcParams['font.sans-serif']=['SimHei'] #显示中文  
 
-output_file = 'output/data_selected_0612/__05' # 输出文件夹
-input_file = 'data/data_selected_0612/__05' # 输入数据文件夹
+output_file = 'output/data_selected_0612/__03' # 输出文件夹
+input_file = 'data/data_selected_0612/__03' # 输入数据文件夹
 isBayesian = True
 
 os.makedirs(output_file, exist_ok=True)
@@ -51,6 +51,8 @@ else:
         "Final NH3-N (g_kg)", 
         "Final NO2-N (g_kg)"
     ]
+targets = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+        'CH4-C loss (%)', 'CO2-C loss (%)']
 # targets = ['TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
 
 num_folds = 5
@@ -66,7 +68,7 @@ models = {'rf': RFTraining,
           'gsr': GSRTraining}
 use_models = ['rf', 'xgb', 'lgb', 'cat', 'lr', 'ridgelr',  'svr', 'gsr']
 # use_models = [ 'mlp', 'svr', 'gsr']
-use_models = ['mlp']
+# use_models = ['mlp']
 
 # ================================正式训练===================================
 # 训练模型并挑选表现最好的模型进行shap值分析

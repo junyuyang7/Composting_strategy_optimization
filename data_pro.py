@@ -11,8 +11,8 @@ import math
 
 
 # 配置文件
-input_file = 'data/data_0612/堆肥-机器学习预测分组.xlsx' # 文件输入路径
-output_file = 'data/data_selected_0612/__05' # 文件输出路径
+input_file = 'data\data_0612\堆肥-机器学习预测分组.xlsx' # 文件输入路径
+output_file = 'data\Ga\GI__04' # 文件输出路径
 os.makedirs(output_file, exist_ok=True)
 
 use_norm = False # 是否使用归一化
@@ -20,7 +20,7 @@ use_mean_encodeing = False # 使用平均数编码
 missing_rate = 0.25 # 筛选缺失值的比例阈值
 fillcontent = 0
 times = 3
-sheet_name = "分组5"
+sheet_name = "分组4"
 
 
 # 这一块自己定义
@@ -33,7 +33,12 @@ catetory_factors = ['Material_Main', 'Material_2', 'Material_3', 'Additive Speci
 # catetory_factors = ['Crop type']
 
 # 数值特征
-# numeric_factors = ['Application Rate (%DW)', 'Initial Moisture Content (%)', 'Initial pH','Initial TN (%)','Initial TC (%)','Initial C/N (%)', 'Initial EC (ms/cm)', 'Initial GI (%)', 'Initial FW (kg)', 'Initial DW (kg)', 'Initial NO2-N (g/kg)', 'Initial NH3-N (g/kg)', 'Final Moisture Content (%)', 'Final pH', 'Final TN (%)', 'Final TC (%)', 'Final C/N (%)', 'Final EC (ms/cm)', 'Final GI (%)', 'Final FW (kg)', 'Final DW (kg)', 'Final NH3-N (g/kg)', 'Final NO2-N (g/kg)', 'Period (d)', 'Compost volume (m3)', 'Initial density (kg/L)', 'Turning times', 'V2_Ventilation Interval (min)', 'V3_Ventilation Duration (min)', 'V4_Ventilation Day', 'V5_Ventilation rate (L/min/kg iniDW)']
+# numeric_factors = ['Application Rate (%DW)', 'Initial Moisture Content (%)', 'Initial pH','Initial TN (%)','Initial TC (%)',
+# 'Initial C/N (%)', 'Initial EC (ms/cm)', 'Initial GI (%)', 'Initial FW (kg)', 'Initial DW (kg)', 'Initial NO2-N (g/kg)', 
+# 'Initial NH3-N (g/kg)', 'Final Moisture Content (%)', 'Final pH', 'Final TN (%)', 'Final TC (%)', 'Final C/N (%)', 
+# 'Final EC (ms/cm)', 'Final GI (%)', 'Final FW (kg)', 'Final DW (kg)', 'Final NH3-N (g/kg)', 'Final NO2-N (g/kg)', 
+# 'Period (d)', 'Compost volume (m3)', 'Initial density (kg/L)', 'Turning times', 'V2_Ventilation Interval (min)', 
+# 'V3_Ventilation Duration (min)', 'V4_Ventilation Day', 'V5_Ventilation rate (L/min/kg iniDW)']
 numeric_factors = ['Application Rate (%DW)', 'Initial Moisture Content (%)', 'Initial pH','Initial TN (%)',
                    'Initial TC (%)','Initial C/N (%)', 'Initial EC (ms/cm)', 'Initial GI (%)', 'Initial FW (kg)', 
                    'Initial DW (kg)', 'Initial NO2-N (g/kg)', 'Initial NH3-N (g/kg)', 'Period (d)', 'Compost volume (m3)', 
@@ -60,6 +65,10 @@ else:
         "Final NH3-N (g_kg)", 
         "Final NO2-N (g_kg)"
     ]
+
+
+# target = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+#         'CH4-C loss (%)', 'CO2-C loss (%)']
 
 # target = ['EF %', 'LN(EF)', 'LNR(N2O)', 'N2O rate(kg N ha-1 y-1)']
 

@@ -1,10 +1,11 @@
 from GA_method.GAoptimation import GAOptimation
 from utils import get_best_model_name
 
-output_file = 'output/TN_NH3_N2O_0531' # 输出文件夹
-input_file = 'data/TN_NH3_N2O_0531' # 输入数据文件夹
+output_file = 'output\Ga\GI__04' # 输出文件夹
+input_file = 'data\Ga\GI__04' # 输入数据文件夹
 
-targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
+targets = ['NH3-N loss (%)', 'N2O-N loss (%)', 'CH4-C loss (%)', 'CO2-C loss (%)']
+targets = ["Final GI (%)"]
 
 # 设置参数
 population_size = 400
