@@ -11,16 +11,16 @@ import math
 
 
 # 配置文件
-input_file = 'data\data_0612\堆肥-机器学习预测分组.xlsx' # 文件输入路径
-output_file = 'data\Ga\GI__04' # 文件输出路径
+input_file = 'data\data_0625\堆肥数据库-机器学习v5.xlsx' # 文件输入路径
+output_file = 'data\data_selected_0625_0.5\__19' # 文件输出路径
 os.makedirs(output_file, exist_ok=True)
-
+last_number = int(output_file.split('_')[-1])
 use_norm = False # 是否使用归一化
 use_mean_encodeing = False # 使用平均数编码
-missing_rate = 0.25 # 筛选缺失值的比例阈值
+missing_rate = 0.5 # 筛选缺失值的比例阈值
 fillcontent = 0
 times = 3
-sheet_name = "分组4"
+sheet_name = "19"
 
 
 # 这一块自己定义
@@ -48,7 +48,7 @@ numeric_factors = ['Application Rate (%DW)', 'Initial Moisture Content (%)', 'In
 target = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 
           'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
           'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
-# 要预测的目标
+# 要预测的目标  16,18
 if sheet_name not in ['分组2','分组4']:
 
     target = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
@@ -65,7 +65,35 @@ else:
         "Final NH3-N (g_kg)", 
         "Final NO2-N (g_kg)"
     ]
+    
+# 12,13,14,15
+# target = [
+#             'TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+#             'CH4-C loss (%)', 'CO2-C loss (%)',
+#             "Final GI (%)",
+#             ]
 
+## 17  19
+# target = [
+#             "Final GI (%)",
+#             ]
+
+
+if last_number in [13, 15, 18, 19]:
+    target = [
+                "Final GI (%)",
+                ]
+elif last_number in [12, 14]:
+    # 12  14 
+    target = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+            'CH4-C loss (%)', 'CO2-C loss (%)',
+            "Final GI (%)",
+            ]
+elif last_number in [16,17]:
+    # 16 17
+    target = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
+            'CH4-C loss (%)', 'CO2-C loss (%)',
+            ]
 
 # target = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
 #         'CH4-C loss (%)', 'CO2-C loss (%)']
@@ -117,7 +145,11 @@ print(data_all.shape)
 # 观察有没有异常值
 data_all.describe()
 
-# 异常值处理
+
+# 将 'Initial pH' 列转换为数值类型，无法转换的字符串将变为 NaN
+data_all['Initial pH'] = pd.to_numeric(data_all['Initial pH'], errors='coerce')
+
+# 应用 clip 方法，将 'Initial pH' 列的值限制在 3 到 14 之间
 data_all['Initial pH'] = data_all['Initial pH'].clip(lower=3, upper=14)
 
 # 利用方差检验法检查异常值
@@ -221,7 +253,7 @@ for trg in target:
     print("===========data_for_pre的列有没有重复的===========")
     print(data_for_pre.columns)
     print('{} after: {}'.format(trg, len(data_for_pre)))
-    data_for_pre = data_for_pre.applymap(lambda x: round(x, 2) if isinstance(x, (int, float)) else x)
+    data_for_pre = data_for_pre.applymap(lambda x: round(x, 5) if isinstance(x, (int, float)) else x)
     data_for_pre.to_csv(f'{output_file}/data_for_{trg}.csv', index=False)
 
 
