@@ -216,7 +216,8 @@ class Data_Pro:
                 break  # 如果成功读取数据，则跳出循环
             except Exception as e:
                 print(f"An error occurred with encoding {encoding}: {e}")
-        data_all.replace('-', 0, inplace=True)
+        nan_list = ['-', 'None']
+        data_all.replace(nan_list, 0, inplace=True)
         if data_all is None:
             raise ValueError("Failed to read the input file with provided encodings.")
     

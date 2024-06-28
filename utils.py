@@ -43,7 +43,8 @@ def get_data(data_path, seed):
     data_all_ef = pd.read_csv(data_path)
     X_all = data_all_ef.iloc[:, :-1]
     y_all = data_all_ef.iloc[:, -1]
-    X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.2, random_state=seed)
+    # 91
+    X_train, X_test, y_train, y_test = train_test_split(X_all, y_all, test_size=0.1, random_state=seed)
     y_train = y_train.reset_index(drop=True)
     input_cols = X_all.columns.tolist()
     return X_train, X_test, y_train, y_test, input_cols
