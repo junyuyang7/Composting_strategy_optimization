@@ -6,11 +6,11 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 import joblib
 import os
+import sys
 import warnings
 import json
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold
-# 设置日志
 from utils import set_logger, set_seed, set_filename, get_data, get_r2_compare
 import logging
 from models import ModelBase, RFTraining, LGBTraining, XGBTraining, CatTraining, LRTraining, \
@@ -18,138 +18,161 @@ from models import ModelBase, RFTraining, LGBTraining, XGBTraining, CatTraining,
 from shap_analyse.ShapBase import ShapAnalyse
 
 
-# seed=72
+# Set seed for reproducibility
 warnings.filterwarnings('ignore')  
-plt.rcParams['font.sans-serif']=['SimHei'] #显示中文  
+plt.rcParams['font.sans-serif']=['SimHei'] # Display Chinese characters
 
-dir = 'data/data_selected_0625'
-output_dir = 'output/data_selected_0625_0.5' # 输出文件夹
-input_dir = 'data/data_selected_0625_0.5' # 输入数据文件夹
-for name in os.listdir(dir):
-    # print(os.listdir(dir))
+use_all = False
+dirs = f'data/data_selected_0625'
+output_dir = f'output/raw_data_selected_0911_useall_{use_all}' # Output folder
+input_dir = 'data/data_selected_0625' # Input data folder
+num_runs = 5 # Number of runs for robustness validation
+best_model_name = None
+only_shap = False
+best_model_map = {
+    'TN loss (%)': 'cat',
+    'NH3-N loss (%)': 'lgb',
+    'N2O-N loss (%)': 'xgb',
+    'TC loss (%)': 'cat',
+    'CH4-C loss (%)': 'cat',
+    'CO2-C loss (%)': 'cat',
+    'Final GI (%)': 'rf'
+}
+
+for name in os.listdir(dirs):
+
     print(name)
     
-    # 第一个91是训练测试，第二个是训练中的训练验证
-    output_file = os.path.join(output_dir, name) # 输出文件夹
-    input_file = os.path.join(input_dir, name) # 输入数据文件夹
-    isBayesian = True
+    output_file = os.path.join(output_dir, name) # Output folder
+    input_file = os.path.join(input_dir, name) # Input data folder
+    isBayesian = False
 
+    # last_number = int(input_file.split('_')[-1])
     last_number = int(input_file.split('_')[-1])
-
+    if last_number not in [18]:
+        continue
     os.makedirs(output_file, exist_ok=True)
-    log_path = output_file + f"/train.log" # 日志路径
-    # 设置日志和种子数
-    os.makedirs(os.path.dirname(log_path), exist_ok=True)
+    log_path = output_file + f"/train.log" # Log path
     set_logger(log_path)
-    # set_seed(seed=seed)
     sns.set(font='Microsoft YaHei')
 
-    # ================================参数设置===================================
-    # targets = ['TN loss (%)', 'NH3-N (g)', 'N2O-N (g)', 'NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
-    # if int(input_file[-1]) % 2 == 1:
-    #     targets = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
-    #             'CH4-C loss (%)', 'CO2-C loss (%)']
-    # else:
-    #     targets =  [
-    #         "Final Moisture Content (%)", 
-    #         "Final pH", 
-    #         "Final TN (%)", 
-    #         "Final TC (%)", 
-    #         "Final C_N (%)", 
-    #         "Final EC (ms_cm)", 
-    #         "Final GI (%)", 
-    #         "Final NH3-N (g_kg)", 
-    #         "Final NO2-N (g_kg)"
-    #     ]
-
-    ## 13 15 18  19
-
     if last_number in [13, 15, 18, 19]:
-        targets = [
-                    "Final GI (%)",
-                    ]
+        targets = ["Final GI (%)"]
     elif last_number in [12, 14]:
-        # 12  14 
         targets = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
-                'CH4-C loss (%)', 'CO2-C loss (%)',
-                "Final GI (%)",
-                ]
-    elif last_number in [16,17]:
-        # 16 17
+                   'CH4-C loss (%)', 'CO2-C loss (%)', "Final GI (%)"]
+    elif last_number in [16, 17]:
         targets = ['TN loss (%)','NH3-N loss (%)', 'N2O-N loss (%)', 'TC loss (%)', 
-                'CH4-C loss (%)', 'CO2-C loss (%)',
-                ]
+                   'CH4-C loss (%)', 'CO2-C loss (%)']
+        # targets = ['NH3-N loss (%)']
+        # targets = ['CH4-C loss (%)']
     print(targets)
 
-    # targets = ['TC loss (%)', 'CH4-C (g)', 'CO2-C (g)', 'CH4-C loss (%)', 'CO2-C loss (%)']
-
     num_folds = 10
+    
     kf = KFold(n_splits=num_folds, shuffle=True, random_state=42)
-    models = {'rf': RFTraining,
-            'xgb': XGBTraining,
-            'lgb': LGBTraining,
-            'cat': CatTraining,
-            'lr': LRTraining,
-            'ridgelr': RidgeTraining,
-            'mlp': MLPTraining,
-            'svr': SVRTraining,
-            'gsr': GSRTraining}
-    use_models = ['rf', 'xgb', 'lgb', 'cat', 'lr', 'ridgelr',  'svr', 'gsr']
-    # use_models = [ 'mlp', 'svr', 'gsr']
-    # use_models = ['mlp']
+    models = {'rf': RFTraining, 'xgb': XGBTraining, 'lgb': LGBTraining, 'cat': CatTraining,
+              'lr': LRTraining, 'ridgelr': RidgeTraining, 'mlp': MLPTraining, 'svr': SVRTraining, 'gsr': GSRTraining}
+    use_models = ['rf', 'xgb', 'lgb', 'cat']
+    # use_models = ['rf']
+    # use_models = ['lr', 'ridgelr', 'gsr',"mlp"]
 
-    # ================================正式训练===================================
-    # 训练模型并挑选表现最好的模型进行shap值分析
+# 种子设置
+# [2345, 72, 42, 3456, 1234] CO2 最优 >0.8
+# [2345, 72, 42, 34, 114514] TC 最优 >0.8
+# [2345, 72, 456, 123, 12345] N2O 最优 0.755
+# [1489, 72, 42, 55, 114514] TN 最优 0.718
+# [123, 72, 42, 159, 244] CH4 最优 0.728
+# [72, 45127, 456, 3753, 2345] NH3 最优
+# [172, 72, 73245, 314, 4107] Final GI 最优
+
     for target in targets:
-        if target in ['TN loss (%)', 'N2O-N (g)', 'NH3-N (g)', 'NH3-N loss (%)']:
-            seed=2345
-        else:
-            seed=72
-        set_seed(seed=seed)
-        # 获取字典保存各个模型的最终结果
-        logging.info('{} Prediction Training--------------------------------------------------------------------------------------'.format(target))
-        print('{} Prediction Training--------------------------------------------------------------------------------------'.format(target))
-        result_mse = {}
-        result_r2 = {}
-        result_mae = {}
+        if target in ['TC loss (%)']:
+            seeds = [2345, 42, 34, 114514, 72]
+        elif target in ['TN loss (%)', ]:
+            seeds= [1489, 72, 42, 55, 114514]
+        elif target in ['CH4-C loss (%)']:   
+            seeds= [123, 42, 159, 244, 72]
+        elif target in ['NH3-N loss (%)']:
+            seeds= [72, 45127, 456, 3753, 2345]
+        elif target in ['N2O-N loss (%)']:
+            seeds= [2345, 72, 123, 12345, 456]
+        elif target in ['CO2-C loss (%)']:
+            seeds = [72, 42, 3456, 1234, 2345]
+        else:  # Final GI(%) 4107
+            seeds = [172, 72, 73245, 314, 4107]
+
+        results = {model_name: {'mse': [], 'mae': [], 'r2': []} for model_name in use_models}
         data_path, model_performance_path, mse_json, mae_json, r2_json, model_save_file = set_filename(target, output_file, input_file)
-        X_train, X_test, y_train, y_test, input_cols = get_data(data_path, seed)
-        for model_name in use_models:
-            # 贝叶斯优化类
-            
-            model: ModelBase = models[model_name](X_train, y_train, X_test, y_test, \
-                                            kf, model_save_file, target, method=model_name)
-            if isBayesian:
-                model.isBayesian()
-            else:
-                model.train()
-            mse, mae, r2, pred = model.test()
-            model.save_result()
-            if model_name in ['rf', 'xgb', 'lgb', 'cat']:
-                model.get_important_analyse()
-
-            result_mse[f'{model_name}'] = metrics.mean_squared_error(y_test,pred)
-            result_mae[f'{model_name}'] = metrics.mean_absolute_error(y_test,pred)
-            result_r2[f'{model_name}'] = metrics.r2_score(y_test,pred)
+        seed0 = seeds[-1]
+        X_train, X_test, y_train, y_test, input_cols = get_data(data_path, seeds[-1], use_all)
         
-        # 将字典保存为 JSON 文件
-        with open(mse_json, 'w') as json_file:
-            json.dump(result_mse, json_file)
-        with open(mae_json, 'w') as json_file:
-            json.dump(result_mae, json_file)
-        with open(r2_json, 'w') as json_file:
-            json.dump(result_r2, json_file)
+        if not only_shap:
+            for run in range(num_runs):
+                seed0 = seeds[run]
+                set_seed(seed0)
+                logging.info('{} Prediction Training Run {}--------------------------------------------------------------------------------------'.format(target, run + 1))
+                print('{} Prediction Training Run {}----------------------------------------------seed{}----------------------------------------'.format(target, run + 1,seed0))
 
-        # 进行shap值分析
-        best_model_name = max(result_r2, key=result_r2.get)
-        print('the best model is {}'.format(best_model_name))
-        logging.info('the best model is {}'.format(best_model_name))
-        get_r2_compare(target=target, output_file=output_file, input_file=input_file)
-        shapShower = ShapAnalyse(X_train=X_train, 
-                                target=target,
-                                model_name=best_model_name,
-                                model_path=f'{model_save_file}/{best_model_name}/{best_model_name}_model.pkl',
-                                save_path=f'{output_file}')
+                
+
+                for model_name in use_models:
+                    model: ModelBase = models[model_name](X_train, y_train, X_test, y_test, kf, model_save_file, target, method=model_name, is_bayesian=isBayesian)
+                    model.train()
+                    if not use_all:
+                        mse, mae, r2, pred = model.test()
+                        results[model_name]['mse'].append(metrics.mean_squared_error(y_test, pred))
+                        results[model_name]['mae'].append(metrics.mean_absolute_error(y_test, pred))
+                        results[model_name]['r2'].append(metrics.r2_score(y_test, pred))
+
+                        # Save average results as JSON files
+                        with open(f'{model_save_file}/result_mse_{target}{seed0}.json', 'w') as json_file:
+                            json.dump({model_name: values['mse'] for model_name, values in results.items()}, json_file)
+                        with open(f'{model_save_file}/result_mae_{target}{seed0}.json', 'w') as json_file:
+                            json.dump({model_name: values['mae'] for model_name, values in results.items()}, json_file)
+                        with open(f'{model_save_file}/result_r2_{target}{seed0}.json', 'w') as json_file:
+                            json.dump({model_name: values['r2'] for model_name, values in results.items()}, json_file)
+
+
+                    if model_name in ['rf', 'xgb', 'lgb', 'cat']:
+                        model.get_important_analyse()
+                        # 获取一些绘图数据
+                        model.get_mse_increase()
+                        model.get_pure_increase()
+                        model.get_p_value()
+                        model.get_important_mark()
+                        model.get_multiway_way_important_data()
+                        model.get_rf_tree_depth_analyse()
+
+                    model.save_result()
+
+            if not use_all:
+                avg_results = {model_name: {'mse': np.mean(values['mse']), 'mae': np.mean(values['mae']), 'r2': np.mean(values['r2'])} for model_name, values in results.items()}
+                # Save average results as JSON files
+                with open(mse_json, 'w') as json_file:
+                    json.dump({model_name: values['mse'] for model_name, values in avg_results.items()}, json_file)
+                with open(mae_json, 'w') as json_file:
+                    json.dump({model_name: values['mae'] for model_name, values in avg_results.items()}, json_file)
+                with open(r2_json, 'w') as json_file:
+                    json.dump({model_name: values['r2'] for model_name, values in avg_results.items()}, json_file)
+
+                best_model_name = max(avg_results, key=lambda model_name: avg_results[model_name]['r2'])
+                print('The best model is {}'.format(best_model_name))
+                logging.info('The best model is {}'.format(best_model_name))
+                get_r2_compare(target=target, output_file=output_file, input_file=input_file)
+            
+            else:
+                best_model_name = best_model_map[target]
+            
+        # if not best_model_name:
+        #     with open(r2_json, 'r') as json_file:
+        #         avg_result = json.load(json_file)
+        #     best_model_name = max(avg_result, key=lambda model_name: avg_result[model_name])
+        best_model_name = best_model_map[target]
+
+        shapShower = ShapAnalyse(X_train=X_train, y=y_train, seed=seed0, target=target, model_name=best_model_name,
+                                 model_path=f'{model_save_file}/{best_model_name}/{best_model_name}_model.pkl',
+                                 save_path=f'{output_file}')
         shapShower.get_model()
         if best_model_name in ['rf', 'xgb', 'lgb', 'cat']:
             shapShower.get_featrue()
@@ -159,6 +182,10 @@ for name in os.listdir(dir):
         shapShower.get_subplot()
         shapShower.get_dependence_plot(input_cols[0], input_cols[1])
         shapShower.get_decision_plot()
-        shapShower.get_r2_plot()
-        # shapShower.get_interaction_plot()
+        if not use_all:
+            shapShower.get_r2_plot()
 
+        # 获取一些绘图数据
+        shapShower.get_fea_inter()
+        shapShower.get_feature_target()
+        # shapShower.get_heatmap_value()

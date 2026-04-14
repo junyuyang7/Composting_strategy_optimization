@@ -20,12 +20,26 @@ class SVRTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-    
-        self.model = SVR()
+        if is_bayesian:
+            self.model = SVR()
+            self.isBayesian()
+        else:
+            self.model = SVR(kernel ='rbf',
+                degree = 3,
+                coef0 = 0.0,
+                tol = 0.001,
+                C = 1.0,
+                epsilon = 0.1,
+                shrinking = True,
+                cache_size = 200,
+                verbose = False,
+                max_iter = -1)
         
-        self.save_path = f'{model_save_file}/{method}'
+        # self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):

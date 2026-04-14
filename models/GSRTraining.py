@@ -21,12 +21,17 @@ class GSRTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-    
-        self.model = GaussianProcessRegressor()
+        if is_bayesian:
+            self.model = GaussianProcessRegressor()
+            self.isBayesian()
+        else:
+            self.model = GaussianProcessRegressor(kernel=RBF())
         
-        self.save_path = f'{model_save_file}/{method}'
+        # self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):

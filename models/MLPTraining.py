@@ -20,11 +20,16 @@ class MLPTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-
-        self.model = MLPRegressor()
-        self.save_path = f'{model_save_file}/{method}'
+        if is_bayesian:
+            self.model = MLPRegressor()
+            self.isBayesian()
+        else:
+            self.model = MLPRegressor(solver='lbfgs',alpha=1e-5, hidden_layer_sizes=(40,40), max_iter=500, random_state=2023)
+        # self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):

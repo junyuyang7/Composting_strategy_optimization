@@ -1,0 +1,4 @@
+V1_Ventilation Type,V1_Ventilation Type_encoded
+Continuous,0
+Intermittent ,1
+None,2

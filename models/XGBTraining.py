@@ -22,10 +22,19 @@ class XGBTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-        self.model = xgb.XGBRegressor()
-        self.save_path = f'{model_save_file}/{method}'
+        if is_bayesian:
+            self.model = xgb.XGBRegressor()
+            self.isBayesian()
+        else:
+            # self.model = xgb.XGBRegressor(max_depth=8, learning_rate=0.1, n_estimators=300,
+            #             n_jobs=4, colsample_bytree=0.8, subsample=0.8, random_state=32,
+            #             tree_method='hist')
+            self.model = xgb.XGBRegressor()
+        # self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):

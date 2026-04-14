@@ -1,0 +1,21 @@
+,feas,Correlation with Target
+0,Material_Main,1.7436663899835794
+1,Period (d),1.8956737366937702
+2,Turning times,3.559304386178028
+3,V2_Ventilation Interval (min),0.3658930668377519
+4,M1_is Enclosed,0.36686957259110775
+5, Composting Method,0.06130004805686262
+6,Additive_3,0.01543730797101441
+7,Additive_2,0.5710392699012483
+8,Additive_1,2.0381819610732093
+9,Material_3,0.37295721359883033
+10,Additive_4,0.0
+11,Material_2,1.83367592580461
+12,Compost volume (m3),1.1839898416675358
+13,V1_Ventilation Type,0.3281459443115586
+14,V4_Ventilation Day,0.5952010266978294
+15,Application Rate (%DW),1.3248893792798713
+16,V3_Ventilation Duration (min),0.5179244489433101
+17,Initial C/N (%),0.9816864466470114
+18,V5_Ventilation rate (L/min/kg iniDW),0.8725389951814014
+19,Initial Moisture Content (%),1.713194956858384

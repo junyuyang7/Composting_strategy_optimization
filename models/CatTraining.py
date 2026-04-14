@@ -22,7 +22,9 @@ class CatTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
         params = {
             'learning_rate': 0.05,
@@ -40,9 +42,29 @@ class CatTraining(ModelBase):
         }
         iterations = 400
         early_stopping_rounds = 200
-        self.model = CatBoostRegressor()
-
-        self.save_path = f'{model_save_file}/{method}'
+        if is_bayesian:
+            self.model = CatBoostRegressor()
+            self.isBayesian()
+        else:
+            params = {
+                'learning_rate': 0.05,
+                'loss_function': "RMSE",
+                'eval_metric': "RMSE", # CrossEntropy
+                'depth': 8,
+                'min_data_in_leaf': 20,
+                'random_seed': 42,
+                'logging_level': 'Silent',
+                'use_best_model': True,
+                'one_hot_max_size': 5,   #类别数量多于此数将使用ordered target statistics编码方法,默认值为2。
+                'boosting_type':"Ordered", #Ordered 或者Plain,数据量较少时建议使用Ordered,训练更慢但能够缓解梯度估计偏差。
+                'max_ctr_complexity': 2, #特征组合的最大特征数量，设置为1取消特征组合，设置为2只做两个特征的组合,默认为4。
+                'nan_mode': 'Min' 
+            }
+            iterations = 400
+            early_stopping_rounds = 200
+            # self.model = CatBoostRegressor(iterations=iterations, early_stopping_rounds = early_stopping_rounds, **params)
+            self.model = CatBoostRegressor()
+        
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):

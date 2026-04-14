@@ -20,11 +20,16 @@ class LRTraining(ModelBase):
                  kf=None, 
                  model_save_file=None, 
                  target=None, 
-                 method=None):
+                 method=None,
+                 num_col=None,
+                 is_bayesian=True):
         super().__init__(X_train, y_train, X_test, y_test, kf, model_save_file, target, method)
-    
-        self.model = LinearRegression()       
-        self.save_path = f'{model_save_file}/{method}'
+        if is_bayesian:
+            self.model = LinearRegression()
+            self.isBayesian()
+        else:
+            self.model = LinearRegression(fit_intercept=True,  copy_X=True, n_jobs=1)       
+        # self.save_path = f'{model_save_file}/{method}'
         os.makedirs(self.save_path, exist_ok=True)
 
     # def train(self):
