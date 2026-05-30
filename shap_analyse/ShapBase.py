@@ -176,7 +176,7 @@ class ShapAnalyse:
     def get_r2_plot(self):
         fig, ax = plt.subplots(1, 1, figsize=(10, 10))
 
-        input_path = f'{self.input_path}/model_{self.target}/{self.model_name}/{self.model_name}_pred.csv'
+        input_path = f'{self.input_path}/model_{self.target}/{self.model_name}/{self.model_name}_pred_te.csv'
         df = pd.read_csv(input_path)
         y = df['true'].tolist()
         y_pred = df['pred'].tolist()

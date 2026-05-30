@@ -4,14 +4,18 @@
 
 ### 使用说明
 
-* python == 3.7.13
-* ```
-  conda create -n cso python==3.7.13
+- python == 3.9.25
+```python
+  conda create -n cso python==3.9.25
   conda activate cso
-  // 进入主目录路径下
+  # 进入主目录路径下
   pip install -r requirements.txt
-  ```
-* 然后依次run all 数据分析.ipynb、模型训练.ipynb、全球预测.ipynb 即可，需修改每个文件的输入输出路径
+  # 模型训练 
+  python training.py
+  # 
+```
+-  
+- 
 
 ### 文件说明
 

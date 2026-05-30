@@ -15,12 +15,12 @@ targets = ["Final GI (%)", 'NH3-N loss (%)', 'N2O-N loss (%)', 'CH4-C loss (%)',
 # targets = ['NH3-N loss (%)', 'N2O-N loss (%)', 'CH4-C loss (%)', 'CO2-C loss (%)']
 
 # 设置参数
-population_size = 50 # 初始种群数量（可以不管）
-n_generations = 20  # 遗传代数（可以不管）
+population_size = 50 # 40  50  80 100
+n_generations = 20  # 20  10  40 30
 cxpb = 0.2  # 交叉概率 0.5
 mutpb = 0.03  # 变异概率 0.05
-num_runs = 600  # 优化轮数 200
-
+num_runs = 600  # 200
+# ratio_map = {"Final GI (%)": 0.8}
 int_feas = ['Material_Main', 'Material_2', 'Material_3', 'Additive Species', 'Additive_1','Additive_2', 
                     'Additive_3',"Additive_4",'Method', 'M1_is Enclosed', 'M2_is Turning', 'M3_isForce aeration',
                     'M4_isVessel', 'M5_isReactor', 'V1_Ventilation Type', 'V6_Extra', 

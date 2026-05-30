@@ -277,7 +277,7 @@ class NSGA_II:
             best_individual = tools.selBest(pop, 1)[0]
             print(f"Run {i+1}: Best individual with fitness {best_individual.fitness.values}")
             # 每次都进行调整
-            best_individual = self.re_map(best_individual, input_ranges)
+            best_individual = self.re_map(best_individual)
             
             best_individual_with_names = dict(best_individual)
             best_individuals.append((best_individual, best_individual_with_names))

@@ -9,3 +9,5 @@ output/raw_data_selected_0625_useall_False
 code_transfer/output
 output
 data\Ga\__08
+__pycache__
+catboost_info
