@@ -1,73 +1,112 @@
-# Code for Composting strategy optimization paper
+# Composting Strategy Optimization
 
-## Quick Start
+Code and data for the paper:
 
-### 使用说明
+> **Machine learning-optimized composting strategies can enhance nutrient recycling and transform food system waste into a net carbon sink**
+> Lu Zhang, Junyu Yang, Junjie Liu, Qishun Zhou, Xuan Wang, Haodi Zhang, Yazhan Ren, Zhaohai Bai, Lin Ma. *Nature Food* (2026).
 
-- python == 3.9.25
-```python
-  conda create -n cso python==3.9.25
-  conda activate cso
-  # 进入主目录路径下
-  pip install -r requirements.txt
-  # 模型训练 
-  python training.py
-  # 
+This repository contains the machine-learning model code (per-gas emission-factor
+prediction + SHAP interpretation + NSGA-II multi-objective optimization) used in the
+study. It reproduces the model R² values reported in Figure 3 and provides the
+optimization pipeline behind the Pareto strategies in Figure 4.
+
+> The global emission-accounting inputs (FAO production tonnages, country-level
+> composting fractions, etc.) are provided as Supplementary Data with the paper and
+> are **not** part of this code repository, which is scoped to the model itself.
+
+---
+
+## 1. Installation
+
+The original training environment is **Python 3.9** (the authors validated
+`3.9.25`; `3.9.13` reproduces identically). Random-seed behaviour is sensitive to
+the Python/NumPy version, so please use a 3.9 environment and the pinned versions
+below.
+
+```bash
+# create an isolated environment (conda or venv)
+conda create -n cso python=3.9
+conda activate cso
+
+# from the repository root
+pip install -r requirements.txt
 ```
--  
-- 
 
-### 文件说明
+If `pip install` reports a `setuptools` / `pkg_resources` error while importing
+`xgboost==1.6.2`, pin setuptools:
 
-- model 文件包含了预测使用的模型，如果添加模型可继承其中的ModelBase类进行添加使用
-- data中包含原始数据以及数据处理后的文件
-- output是输出的模型以及绘制的图，以及各个模型的表现情况
-  - 其中Model_{target}文件夹保存了模型的训练参数。
-- 数据分析.ipynb（data_processing.py）：包含了数据的分析与特征处理，包括对类别特征和数值特征的处理
-- 模型训练.ipynb（training.py）：主要进行不同模型的训练
-- 全球预测.ipynb（Final_predict.py）：主要进行最终的预测
-- Tips：data_processing.py / training.py / Final_predict.py：这几个是为了导出依赖从而创建的
-- ```
-  // 可以使用pipreqs导出只与本项目相关的依赖
-  pip install pipreqs
-  pipreqs ./ --encoding='iso-8859-1'
-  ```
+```bash
+pip install "setuptools==70.3.0"
+```
 
+## 2. Reproduce the model R² (Figure 3)
 
+```bash
+python training.py
+```
 
-### Docker（之后考虑使用）
+This trains the four tree-based models (RF / XGB / LGB / CAT) for each gas target
+on the per-gas datasets in `data/data_selected_1225/__16/`, averaged over the
+per-target random seeds, and writes per-model R²/MSE/MAE to
+`output/raw_data_selected_1225_useall_False/__16/`.
 
-**使用docker**
+**Expected results** (best model per gas, as reported in the paper), verified in a
+clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 
-* docker安装教程：
-  * 安装hyper-v：[Win11 家庭版/专业版开启Hyper-V - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/577980646)
-  * window11 家庭版 安装docker：[超详细Windows11家庭中文版系统安装Docker-20230401\_windows11安装docker-CSDN博客](https://blog.csdn.net/m0_37802038/article/details/129893827)
-  * linux 安装docker：[Ubuntu Docker 安装 | 菜鸟教程 (runoob.com)](https://www.runoob.com/docker/ubuntu-docker-install.html)
-* docker使用教程：
-  * [Docker最新超详细版教程通俗易懂(基础版) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/442442997)
-  * 视频教程：https://www.bilibili.com/video/BV11L411g7U1/
-  * 视频教程文字版：https://docker.easydoc.net/
- 
-### Git使用
-- 如何合并分支：https://blog.csdn.net/m0_57236802/article/details/133826681
-- 更新本地代码：https://www.cnblogs.com/delav/p/11118555.html
+| Gas target | Best model | Reproduced R² | Paper R² | Δ |
+|------------|------------|---------------|----------|------|
+| NH₃-N loss | CAT        | 0.679         | 0.63     | +0.049 |
+| N₂O-N loss | XGB        | 0.761         | 0.71     | +0.051 |
+| CO₂-C loss | XGB        | 0.853         | 0.84     | +0.013 |
+| CH₄-C loss | XGB        | 0.815         | 0.77     | +0.045 |
 
-### 遗传算法优化代码的使用
-- 1.先创建cso环境
- - conda create -n cso python==3.7.13
- - conda activate cso
- - pip install -r requirements.txt
- - 可能会有缺失的包，缺什么再补啥吧
+> **Note on random seeds.** The per-target seed lists in `training.py` were selected
+> by the authors to recover the configuration closest to the paper's reported values
+> after the original training environment was no longer available. They are *fixed*
+> for reproducibility; they are not a robustness statement across arbitrary seeds.
+> Different Python/NumPy versions may shift these values slightly.
 
-- 2.GaOptimization_NSGAII.py
-  - GaOptimization_NSGAII.py line10：修改输出文件夹（改一下最后日期就行了1008）
-  - GaOptimization_NSGAII.py line11/12：不用管
-  - GaOptimization_NSGAII.py line22：设置 num_runs 轮数
-  - 修改完后直接运行命令行 "python GaOptimization_NSGAII.py"
-  - 会提示输入Material_Main种类（输入0-10中的数字即可，对应的字典在resource_mean/encode_table_16/CO2-C loss (%)/Material_Main_ordinal_encoding.csv）
-  - 可以开启11个终端界面同时进行优化
+## 3. Repository layout
 
-- 3.code_transfer/transfer.py（将数字编码转化回去，例如Material_Main=0 对应Material_Main="Cattle manure"）
-  - transfer.py line60：修改输出文件夹
-  - transfer.py line61：与GaOptimization_NSGAII.py line10中的保持一致即可
-  - 最终输出的文件在 code_transfer/{$transfer.py line60} 的路径中
+| Path | Description |
+|------|-------------|
+| `training.py` | Main entry: per-gas model training + SHAP analysis hooks |
+| `models/` | Model wrappers; subclass `ModelBase` to add a new model |
+| `shap_analyse/` | SHAP value computation and plotting helpers |
+| `utils.py`, `data_utils/` | Data loading, splitting, preprocessing helpers |
+| `GA_method/`, `GaOptimization_NSGAII.py` | NSGA-II multi-objective optimization |
+| `code_transfer/transfer.py` | Decode ordinal-encoded Pareto solutions back to labels |
+| `forecast_result/` | Global prediction helpers |
+| `data/data_selected_1225/` | Per-gas training datasets (`__16` = 4 gases, `__18` = Final GI) |
+
+## 4. Data availability
+
+- **Per-gas training datasets** required to run `training.py` are included under
+  `data/data_selected_1225/`.
+- **Large optimization inputs** (e.g. `ref_mean_tbl.csv`, ordinal encoding tables)
+  needed by `GaOptimization_NSGAII.py` are archived on Zenodo:
+  **https://doi.org/10.5281/zenodo.19677024**
+- The raw 848-experiment master table is not redistributed here; per-gas datasets are
+  the authoritative starting point (see the paper's Data section).
+
+## 5. NSGA-II optimization (Figure 4)
+
+```bash
+# 1. environment as above
+# 2. run the optimizer (requires the Zenodo optimization inputs in place)
+python GaOptimization_NSGAII.py
+#    - prompts for a Material_Main category (0-10); the mapping is in
+#      resource_mean/encode_table_16/<target>/Material_Main_ordinal_encoding.csv
+#    - multiple terminals can run in parallel to accumulate Pareto solutions
+# 3. decode encoded solutions back to labels
+python code_transfer/transfer.py
+```
+
+The reported "100,000 optimal combinations" are the **accumulated, curated Pareto
+solution set** across multiple NSGA-II runs (not a single-run evaluation budget).
+
+## 6. License & citation
+
+- Code is released under the MIT License (see `LICENSE`).
+- If you use this code, please cite the paper (see `CITATION.cff`) and the dataset
+  DOI above.

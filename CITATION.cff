@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and the dataset below."
+title: "Composting Strategy Optimization (machine-learning model code)"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Lu
+  - family-names: Yang
+    given-names: Junyu
+  - family-names: Liu
+    given-names: Junjie
+  - family-names: Zhou
+    given-names: Qishun
+  - family-names: Wang
+    given-names: Xuan
+  - family-names: Zhang
+    given-names: Haodi
+  - family-names: Ren
+    given-names: Yazhan
+  - family-names: Bai
+    given-names: Zhaohai
+  - family-names: Ma
+    given-names: Lin
+license: MIT
+repository-code: "https://github.com/junyuyang7/Composting_strategy_optimization"
+preferred-citation:
+  type: article
+  title: "Machine learning-optimized composting strategies can enhance nutrient recycling and transform food system waste into a net carbon sink"
+  authors:
+    - family-names: Zhang
+      given-names: Lu
+    - family-names: Yang
+      given-names: Junyu
+    - family-names: Liu
+      given-names: Junjie
+    - family-names: Zhou
+      given-names: Qishun
+    - family-names: Wang
+      given-names: Xuan
+    - family-names: Zhang
+      given-names: Haodi
+    - family-names: Ren
+      given-names: Yazhan
+    - family-names: Bai
+      given-names: Zhaohai
+    - family-names: Ma
+      given-names: Lin
+  journal: "Nature Food"
+  year: 2026
+  # doi: "<paper DOI to be filled once assigned>"
+references:
+  - type: data
+    title: "Composting Strategy Optimization — dataset"
+    doi: "10.5281/zenodo.19677024"
+    authors:
+      - family-names: Zhang
+        given-names: Lu
+      - family-names: Yang
+        given-names: Junyu
