@@ -191,8 +191,22 @@ class NSGA_II:
     # 从最大GI中去相应相同的特征值  键值对
     def create_individual(self, input_ranges, toolbox):
         individual = {}
+        # 先采样主材料（固定值），确保 Material_Main 先被设置
+        if 'Material_Main' in input_ranges:
+            individual['Material_Main'] = toolbox.attr_int(input_ranges['Material_Main'])
         for attr_name, attr_info in input_ranges.items():
-            if attr_name in int_feas:
+            if attr_name == 'Material_Main':
+                continue
+            elif attr_name == 'Material_2':
+                # 副材料2不能等于主材料
+                pool = [v for v in attr_info if v != individual['Material_Main']]
+                individual[attr_name] = toolbox.attr_int(pool) if pool else toolbox.attr_int(attr_info)
+            elif attr_name == 'Material_3':
+                # 副材料3不能等于主材料，也不能等于副材料2
+                used = {v for v in (individual['Material_Main'], individual.get('Material_2')) if v is not None}
+                pool = [v for v in attr_info if v not in used]
+                individual[attr_name] = toolbox.attr_int(pool) if pool else toolbox.attr_int(attr_info)
+            elif attr_name in int_feas:
                 individual[attr_name] = toolbox.attr_int(attr_info)
             elif attr_name in int_feas_v1:
                 try:
@@ -277,7 +291,9 @@ class NSGA_II:
             best_individual = tools.selBest(pop, 1)[0]
             print(f"Run {i+1}: Best individual with fitness {best_individual.fitness.values}")
             # 每次都进行调整
-            best_individual = self.re_map(best_individual)
+            best_individual = self.re_map(best_individual, input_ranges)
+            # re_map 可能修改了个体的管理参数，需按修改后的参数重新评估，保证导出的预测结果与参数一致
+            best_individual.fitness.values = self.evaluate(best_individual, new_dict)
             
             best_individual_with_names = dict(best_individual)
             best_individuals.append((best_individual, best_individual_with_names))

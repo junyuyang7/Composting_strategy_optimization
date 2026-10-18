@@ -55,8 +55,8 @@ clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 
 | Gas target | Best model | Reproduced R² | Paper R² | Δ |
 |------------|------------|---------------|----------|------|
-| NH₃-N loss | CAT        | 0.679         | 0.63     | +0.049 |
-| N₂O-N loss | XGB        | 0.761         | 0.71     | +0.051 |
+| NH₃-N loss | CAT        | 0.685         | 0.63     | +0.055 |
+| N₂O-N loss | XGB        | 0.759         | 0.71     | +0.049 |
 | CO₂-C loss | XGB        | 0.853         | 0.84     | +0.013 |
 | CH₄-C loss | XGB        | 0.815         | 0.77     | +0.045 |
 
@@ -65,6 +65,9 @@ clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 > after the original training environment was no longer available. They are *fixed*
 > for reproducibility; they are not a robustness statement across arbitrary seeds.
 > Different Python/NumPy versions may shift these values slightly.
+>
+> The ordinal-encoding tables used by these datasets (one CSV per categorical column) are kept
+> next to the data in `data/data_selected_1225/encode_table/`.
 
 ## 3. Repository layout
 

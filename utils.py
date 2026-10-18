@@ -382,6 +382,12 @@ def is_True(inidi):
         condition_14 = inidi["Initial TC (%)"] == inidi["Initial C/N (%)"] * inidi["Initial TN (%)"]
     if "Application Rate (%DW)" in inidi:
         condition_15 = inidi["Application Rate (%DW)"] <= 10 and inidi["Application Rate (%DW)"] >= 0
+    # 主材料与副材料互斥：Material_2 != Material_Main 且 Material_3 != Material_Main 且 Material_3 != Material_2
+    condition_16 = True
+    if "Material_Main" in inidi and "Material_2" in inidi and "Material_3" in inidi:
+        condition_16 = (inidi["Material_2"] != inidi["Material_Main"] and
+                        inidi["Material_3"] != inidi["Material_Main"] and
+                        inidi["Material_3"] != inidi["Material_2"])
     condition_2 = inidi["V4_Ventilation Day"] <= inidi["Period (d)"]
 
     # 4、Reactor and M1 == 1
@@ -411,7 +417,7 @@ def is_True(inidi):
         if not (inidi[key_one] % 1 == 0):
             condition_8 = False
             break
-    return condition_2 and condition_4 and condition_5 and condition_6 and condition_7 and condition_8 and condition_9 and condition_10 and condition_11 and condition_12 and condition_13 and condition_14 and condition_15
+    return condition_2 and condition_4 and condition_5 and condition_6 and condition_7 and condition_8 and condition_9 and condition_10 and condition_11 and condition_12 and condition_13 and condition_14 and condition_15 and condition_16
     pass
 
 
