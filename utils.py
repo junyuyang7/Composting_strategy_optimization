@@ -350,6 +350,16 @@ def get_union(dict1, dict2, int_feas: list):
             result_dict[k] = v
     return result_dict
 
+_ENC_TABLES_CACHE = {}
+def _material_label(col, code):
+    """将某材料列（独立编号）的编码转换为材料标签；Material_2/Material_3 的 None 返回 'None'。"""
+    if col not in _ENC_TABLES_CACHE:
+        path = f'data/data_selected_1225/encode_table/{col}_ordinal_encoding.csv'
+        df = pd.read_csv(path)
+        _ENC_TABLES_CACHE[col] = {int(v): str(x) for x, v in zip(df.iloc[:, 0], df.iloc[:, 1])}
+    tbl = _ENC_TABLES_CACHE[col]
+    return tbl.get(int(code), f'{col}:{code}')
+
 def is_True(inidi):
     # 2、V4 ≤ Period
     # 如果 V4 大于 Period，则整个条件为 False
@@ -382,12 +392,19 @@ def is_True(inidi):
         condition_14 = inidi["Initial TC (%)"] == inidi["Initial C/N (%)"] * inidi["Initial TN (%)"]
     if "Application Rate (%DW)" in inidi:
         condition_15 = inidi["Application Rate (%DW)"] <= 10 and inidi["Application Rate (%DW)"] >= 0
-    # 主材料与副材料互斥：Material_2 != Material_Main 且 Material_3 != Material_Main 且 Material_3 != Material_2
+    # 主材料与副材料互斥：按材料标签判断，不能把不同列的独立编号直接比较
+    # （各列独立编号，整数相同不代表材料相同；None 表示无此辅料，不参与冲突判断）
     condition_16 = True
     if "Material_Main" in inidi and "Material_2" in inidi and "Material_3" in inidi:
-        condition_16 = (inidi["Material_2"] != inidi["Material_Main"] and
-                        inidi["Material_3"] != inidi["Material_Main"] and
-                        inidi["Material_3"] != inidi["Material_2"])
+        mm = _material_label('Material_Main', inidi["Material_Main"])
+        m2 = _material_label('Material_2', inidi["Material_2"])
+        m3 = _material_label('Material_3', inidi["Material_3"])
+        labels = [mm]
+        if m2 != 'None':
+            labels.append(m2)
+        if m3 != 'None':
+            labels.append(m3)
+        condition_16 = len(set(labels)) == len(labels)
     condition_2 = inidi["V4_Ventilation Day"] <= inidi["Period (d)"]
 
     # 4、Reactor and M1 == 1

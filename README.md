@@ -55,10 +55,10 @@ clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 
 | Gas target | Best model | Reproduced R² | Paper R² | Δ |
 |------------|------------|---------------|----------|------|
-| NH₃-N loss | CAT        | 0.685         | 0.63     | +0.055 |
-| N₂O-N loss | XGB        | 0.759         | 0.71     | +0.049 |
-| CO₂-C loss | XGB        | 0.853         | 0.84     | +0.013 |
-| CH₄-C loss | XGB        | 0.815         | 0.77     | +0.045 |
+| NH₃-N loss | CAT        | 0.674         | 0.63     | +0.044 |
+| N₂O-N loss | XGB        | 0.760         | 0.71     | +0.050 |
+| CO₂-C loss | XGB        | 0.840         | 0.84     | +0.000 |
+| CH₄-C loss | XGB        | 0.810         | 0.77     | +0.040 |
 
 > **Note on random seeds.** The per-target seed lists in `training.py` were selected
 > by the authors to recover the configuration closest to the paper's reported values
@@ -98,8 +98,8 @@ clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 # 1. environment as above
 # 2. run the optimizer (requires the Zenodo optimization inputs in place)
 python GaOptimization_NSGAII.py
-#    - prompts for a Material_Main category (0-10); the mapping is in
-#      resource_mean/encode_table_16/<target>/Material_Main_ordinal_encoding.csv
+#    - prompts for a Material_Main category (0-9); the mapping is in
+#      data/data_selected_1225/encode_table/Material_Main_ordinal_encoding.csv
 #    - multiple terminals can run in parallel to accumulate Pareto solutions
 # 3. decode encoded solutions back to labels
 python code_transfer/transfer.py
