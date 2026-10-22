@@ -7,11 +7,11 @@ targets = ["Final GI (%)", 'NH3-N loss (%)', 'N2O-N loss (%)', 'CH4-C loss (%)',
 
 
 model_file_dict = {
-    "Final GI (%)":"output/raw_data_selected_0625_useall_True/__18/model_Final GI (%)/rf/rf_model.pkl",
-    "NH3-N loss (%)":"output/raw_data_selected_0625_useall_True/__16/model_NH3-N loss (%)/lgb/lgb_model.pkl",
-    "N2O-N loss (%)":"output/raw_data_selected_0625_useall_True/__16/model_N2O-N loss (%)/xgb/xgb_model.pkl",
-    "CH4-C loss (%)":"output/raw_data_selected_0625_useall_True/__16/model_CH4-C loss (%)/cat/cat_model.pkl",
-    "CO2-C loss (%)":"output/raw_data_selected_0625_useall_True/__16/model_CO2-C loss (%)/cat/cat_model.pkl",
+    "Final GI (%)":"output/raw_data_selected_1225_useall_False/__18/model_Final GI (%)/cat/cat_model.pkl",
+    "NH3-N loss (%)":"output/raw_data_selected_1225_useall_False/__16/model_NH3-N loss (%)/cat/cat_model.pkl",
+    "N2O-N loss (%)":"output/raw_data_selected_1225_useall_False/__16/model_N2O-N loss (%)/xgb/xgb_model.pkl",
+    "CH4-C loss (%)":"output/raw_data_selected_1225_useall_False/__16/model_CH4-C loss (%)/xgb/xgb_model.pkl",
+    "CO2-C loss (%)":"output/raw_data_selected_1225_useall_False/__16/model_CO2-C loss (%)/xgb/xgb_model.pkl",
 }
 
 data_input_cols = {

@@ -55,9 +55,9 @@ clean-room install (fresh Python 3.9.13 venv + pinned dependencies):
 
 | Gas target | Best model | Reproduced R² | Paper R² | Δ |
 |------------|------------|---------------|----------|------|
-| NH₃-N loss | CAT        | 0.674         | 0.63     | +0.044 |
+| NH₃-N loss | CAT        | 0.677         | 0.63     | +0.047 |
 | N₂O-N loss | XGB        | 0.760         | 0.71     | +0.050 |
-| CO₂-C loss | XGB        | 0.840         | 0.84     | +0.000 |
+| CO₂-C loss | XGB        | 0.853         | 0.84     | +0.013 |
 | CH₄-C loss | XGB        | 0.810         | 0.77     | +0.040 |
 
 > **Note on random seeds.** The per-target seed lists in `training.py` were selected
